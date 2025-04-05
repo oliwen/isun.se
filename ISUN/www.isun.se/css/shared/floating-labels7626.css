@@ -1,0 +1,272 @@
+
+
+/* Wrapper */
+.svlag-floating-label {
+    padding: 0;
+    position: relative;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 12px 0;
+    width: 100%;
+}
+
+    .svlag-floating-label:last-child {
+        margin-bottom: 0;
+    }
+
+    .svlag-floating-label label {
+        position: absolute;
+        left: 9px;
+        top: 16px;
+        transition: all 0.2s;
+        cursor: text;
+        color: #999;
+        font-size:16px;
+        pointer-events: none;
+    }
+    .svlag-floating-label label i {
+        pointer-events: all;
+    }
+    /* Om fältet är fokuserat eller notEmpty() */
+    .svlag-floating-label.fixed-label label,
+    .svlag-floating-label.floating label {
+        top: 6px;
+        font-size: 12px;
+        color: #888;
+    }
+
+    /* Form fields */
+    .svlag-floating-label input,
+    .svlag-floating-label textarea,
+    .svlag-floating-label select {
+        border: solid 1px #D0D0D0;
+        padding: 0 8px;
+        width: 100%;
+        box-sizing: border-box;
+        height: 50px;
+        display: block;
+        border-radius: 3px;
+        text-indent: 0;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        color: #555;
+        font-weight:500;
+        filter: none;
+    }
+
+    .svlag-floating-label.floating input,
+    .svlag-floating-label.floating select {
+        padding-top: 16px;
+    }
+
+    .svlag-floating-label.floating input {
+        white-space: normal;
+    }
+
+    /* Textarea */
+    .svlag-floating-label textarea {
+        min-height: 80px;
+        vertical-align: top;
+        max-height: none;
+    }
+        /* Safari ios padding fix */
+        @supports (-webkit-overflow-scrolling: touch) {
+            .svlag-floating-label textarea {
+                padding: 0 5px;
+            }
+        }
+
+    .svlag-floating-label.floating textarea {
+        padding-top: 22px;
+    }
+
+    .svlag-floating-label select {
+        padding-bottom: 0px;
+        padding-left: 8px !important; /*ie/edge/ffox wants 8px */
+        white-space: nowrap;
+    }
+    /* Custom dropdown arrow */
+    .svlag-floating-label select {
+        padding-right: 37px;
+        background: no-repeat center right;
+        /*SVG: background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAATCAMAAAAtfUTGAAAAKlBMVEWAgID///+AgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDa2toI0lVgAAAADHRSTlMAACo5TGB3xe31+/7dffMQAAAARUlEQVR4AWPgZSQIhr0aBmSAUw0bNw8EcLPhNoeVC6yEi5UBj10snEAlnCy47QIBZg4eDmY87gEDJnYmEEWJv5DB4I4vAOXVBFE/j4EwAAAAAElFTkSuQmCC);*/
+        /*PNG:*/ background-image: url('data:image/png;base64,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');
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+    }
+
+        .svlag-floating-label select::-ms-expand {
+            display: none;
+        }
+
+        .svlag-floating-label select:focus::-ms-value {
+            color: #555;
+            background: transparent;
+        }
+
+        /* Firefox padding fix */
+        @-moz-document url-prefix() {
+          .svlag-floating-label select {
+            padding-left:4px;
+          }
+        }
+
+
+    /* Datepicker */
+    .svlag-floating-label .date,
+    .svlag-floating-label .datepicker {
+        width: 105px;
+    }
+    /* Time: HH:MM ; */
+    .svlag-floating-label .time-hhmm {
+        width: 68px;
+    }
+
+
+    /* Placeholder effect */
+    .svlag-floating-label ::-webkit-input-placeholder {
+        color: transparent;
+    }
+    /* Chrome/Opera/Safari */
+    .svlag-floating-label :-ms-input-placeholder {
+        color: transparent;
+    }
+
+    .svlag-floating-label ::-moz-placeholder {
+        color: transparent;
+        opacity: 1;
+    }
+
+    /* Firefox 18- */
+    .svlag-floating-label.floating ::-webkit-input-placeholder {
+        color: #D0D0D0;
+    }
+
+    .svlag-floating-label.floating :-ms-input-placeholder {
+        color: #D0D0D0;
+    }
+
+    .svlag-floating-label.floating ::-moz-placeholder {
+        color: #D0D0D0;
+    }
+
+
+
+/* Grouped fields ie. date [date|start time|end time]*/
+.grouped-fields {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+    .grouped-fields .svlag-floating-label {
+        width: auto;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+
+
+/* Focued field */
+.svlag-floating-label input:focus,
+.svlag-floating-label textarea:focus,
+.svlag-floating-label select:focus {
+    box-shadow: 0 0 0 2px #298ccd;
+    border-color: #298ccd;
+}
+
+/* Highlighted */
+.svlag-floating-label input.highlight,
+.svlag-floating-label textarea.highlight,
+.svlag-floating-label select.highlight {
+    border-color: #298ccd;
+    background-color: #eaf7ff;
+}
+
+    .svlag-floating-label select.highlight option {
+        background: #fff
+    }
+
+
+
+/* Error */
+.ng-invalid.ng-touched:not(:focus),
+input.invalid,
+textarea.invalid,
+select.invalid,
+input.input-validation-error,
+textarea.input-validation-error,
+select.input-validation-error {
+    background-color: #ffeae8;
+    color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.custom-validation.ng-touched:not(:focus) {
+    box-shadow: none;
+    background-color: transparent;
+    color: inherit;
+    border-color: #D0D0D0;
+}
+
+
+.svlag-floating-label .ng-valid.ng-dirty.ng-touched {
+    box-shadow: none;
+    background-color: transparent;
+    color: inherit;
+    border-color: #D0D0D0;
+}
+
+
+
+/* Disabled */
+.svlag-floating-label *[disabled],
+.svlag-floating-label *[readonly] {
+    cursor: not-allowed;
+    background-color: #eee;
+    opacity: 1;
+    color: #999;
+}
+
+
+
+/* Clubmark icon */
+.svlag-floating-label.clubmark figure {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+    .svlag-floating-label.clubmark figure img {
+        max-height: 30px;
+    }
+
+
+
+
+/* Auto fill fix */
+.svlag-floating-label input:-webkit-autofill { animation: autofill 0.1s; }
+.svlag-floating-label input:-moz-autofill { animation: autofill 0.1s; }
+.svlag-floating-label input:-ms-autofill { animation: autofill 0.1s; }
+.svlag-floating-label input:-autofill { animation: autofill 0.1s; }
+
+
+@-webkit-keyframes autofill {
+  from {opacity: 1.1; margin-left: 0;}
+  to {opacity: 1; margin-left:0px;}
+}
+
+@keyframes autofill {
+  from {opacity: 1.1;margin-left: 0;}
+  to {opacity: 1;margin-left: 0px;}
+}

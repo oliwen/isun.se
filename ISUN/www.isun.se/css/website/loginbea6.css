@@ -1,0 +1,363 @@
+/* Desktop login */
+#login-modal .modal-dialog {
+    width: 520px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+/* Prevent bootstrap scollfix. */
+body.login-open.modal-open {
+    padding-right: 0 !important;
+}
+
+.modal .login-wrapper {
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+    padding-bottom: 55px;
+}
+
+.modal .login-content .club {
+    padding: 50px 20px 35px;
+}
+
+.modal .login-content .form {
+    padding: 0 60px;
+}
+
+.modal .login-wrapper .bottom-link {
+    position: absolute;
+    bottom: 0;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+/* Mobile login */
+.login-mobile,
+.login-mobile body {
+    height: 100%;
+    min-height: 530px;
+}
+
+    .login-mobile .login-wrapper {
+        height: 100%;
+    }
+
+    .login-mobile .login-content {
+        height: 100%;
+        min-height: 100%;
+        margin-bottom: -70px;
+        padding-bottom: 70px;
+    }
+
+    .login-mobile .bottom-link {
+        position: relative;
+        z-index: 2;
+    }
+
+
+/* Login */
+.login-wrapper {
+    color: #fff;
+}
+
+
+/* Login container
+*********************************************/
+.login-content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    position: relative;
+    animation: clubLogo 0.2s ease-in-out;
+}
+
+    .login-content h3 {
+        color: inherit;
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        margin-bottom: 10px;
+    }
+
+    .login-content p {
+        margin: 0.5em 0 1em 0;
+    }
+
+
+
+/* Close icon
+*********************************************/
+.login-icon {
+    position: absolute;
+    top: 20px;
+    z-index: 4;
+}
+
+    .login-icon svg {
+        fill: #fff;
+    }
+
+a.login-icon.close {
+    opacity: .8;
+    right: 20px;
+    text-align: center;
+}
+
+    a.login-icon.close:hover {
+        opacity: .5;
+    }
+
+    a.login-icon.close:active svg {
+        width:80%;
+    }
+
+
+
+
+/* Logo and clubname
+*********************************************/
+.login-content .club {
+    text-align: center;
+    padding: 30px 20px 30px;
+    position: relative;
+}
+
+    .login-content .club img {
+        display: block;
+        margin: 10px auto 10px auto;
+        width: 90px;
+        height: 97px;
+        position: relative;
+        z-index: 4;
+    }
+
+        /*.login-content .club img.png {
+            width: 50px;
+            height: 54px;
+        }*/
+        .login-content .club img.clubmark-small {
+            width: 50px;
+            height: 54px;
+        }
+
+    .login-content .club strong {
+        font-size: 27px;
+        letter-spacing: -0.02em;
+        color: inherit;
+        display: block;
+        line-height: 30px;
+    }
+
+
+
+/* Form elements
+*********************************************/
+.login-content .form {
+    padding: 0 30px;
+    margin: 0 auto 60px auto;
+    position: relative;
+    z-index: 4;
+}
+
+    /* Floating label adjustments */
+    .login-content .form .svlag-floating-label label {
+        top: 14px;
+    }
+
+    .login-content .form .svlag-floating-label.floating label {
+        top: 6px;
+    }
+
+    .login-content .form .svlag-floating-label.fixed-label label {
+        top: 6px;
+    }
+
+
+/* Forgot password / back link */
+.bottom-link {
+    width: 100%;
+    display: block;
+    line-height: 70px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.1);
+}
+/*
+        .text-dark .bottom-link { background-color: rgba(255,255,255,0.1); }
+        .text-light .bottom-link { background-color: rgba(0,0,0,0.1); }
+        */
+
+/* Text link*/
+.login-content .form .text-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.text-dark .text-link {
+    color: #000;
+}
+
+.text-light .text-link {
+    color: #fff;
+}
+
+/* Button */
+.login-content .form .button {
+    border: 0;
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+    color: inherit;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    position: relative;
+    outline: none;
+    background-color: rgba(0,0,0,0.2);
+}
+    /* Button loading icon */
+    .login-content .form .button i {
+        opacity: 0.8;
+        position: absolute;
+        top: 15px;
+        margin-left: 5px;
+    }
+
+
+/* Adjust button color based on primary-color contrast */
+.login-wrapper.button-darkest .button {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.login-wrapper.button-darker .button {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.login-wrapper.button-dark .button {
+    background-color: rgba(0,0,0,0.25);
+}
+
+.login-wrapper.button-light .button {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.login-wrapper.button-lighter .button {
+    background-color: rgba(0,0,0,0.05);
+}
+
+
+/* Fake checkbox */
+.login-content .form .toggle {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+}
+
+    .login-content .form .toggle input {
+        display: none;
+    }
+
+    .login-content .form .toggle label:before {
+        content: '\f096';
+        display: inline-block;
+        font-family: "Fontawesome";
+        font-size: 16pt;
+        vertical-align: middle;
+        margin-top: 0px;
+        margin-right: 2px;
+        width: 24px;
+        height: 24px;
+        line-height: 1em;
+    }
+    /* checked */
+    .login-content .form .toggle input:checked + label:before {
+        content: '\f14a';
+        font-size: 15pt;
+    }
+
+
+/* Error */
+.login-content .form .invalid label {
+    color: #d00;
+}
+
+    .login-content .form .invalid label:before {
+        content: '\f06a';
+        margin-right: 3px;
+        font-family: FontAwesome;
+    }
+
+
+
+/* Error messages */
+.login-wrapper .error-msg {
+    display: none;
+    padding: 0 0 15px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    transform: scale(1,0);
+    animation: clubName 0.2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.button + .error-msg {
+    padding-top: 0;
+}
+
+/* Message icon */
+.login-wrapper .error-msg:not(.link-invalid) > span:before {
+    font: normal normal normal 18px/1 FontAwesome;
+    color: inherit;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: baseline;
+    content: '\f06a';
+}
+
+/* Message button */
+.login-wrapper .error-msg .button {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* Text color (dark) */
+.login-wrapper.text-dark {
+    color: #000;
+    color: rgba(0,0,0,0.8);
+}
+
+    .login-wrapper.text-dark .login-icon svg {
+        fill: #000;
+    }
+
+
+/* Animations */
+@keyframes clubLogo {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes clubName {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

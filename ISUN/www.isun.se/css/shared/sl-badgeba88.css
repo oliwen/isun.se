@@ -1,0 +1,352 @@
+﻿.sl-badge-primary {
+	background-color: #298ccd !important;
+	color: #fff;
+}
+
+a.sl-badge.sl-badge-primary:hover,
+a.sl-badge.sl-badge-primary:focus {
+	background-color: #298ccd !important;
+	color: #fff;
+}
+
+
+.sl-badge-primary-light {
+	background-color: rgba(62,165,235,0.18) !important;
+	color: #4b8bb6;
+}
+
+a.sl-badge.sl-badge-primary-light:hover,
+a.sl-badge.sl-badge-primary-light:focus {
+	color: #4b8bb6;
+}
+
+
+.sl-badge-success {
+	background-color: #41bd7f !important;
+	color: #fff;
+}
+
+a.sl-badge.sl-badge-success:hover,
+a.sl-badge.sl-badge-success:focus {
+	background-color: #41bd7f !important;
+	color: #fff;
+}
+
+
+.sl-badge-success-light {
+	background-color: rgba(86,189,125,0.18) !important;
+	color: #56bd7d;
+}
+
+a.sl-badge.sl-badge-success-light:hover,
+a.sl-badge.sl-badge-success-light:focus {
+	background-color: rgba(86,189,125,0.18) !important;
+	color: #56bd7d;
+}
+
+
+.sl-badge-warning {
+	background-color: #f2b736 !important;
+	color: #fff;
+}
+
+a.sl-badge.sl-badge-warning:hover,
+a.sl-badge.sl-badge-warning:focus {
+	background-color: #f2b736 !important;
+	color: #fff;
+}
+
+
+.sl-badge-warning-light {
+	background-color: rgba(255,190,47,0.18) !important;
+	color: #d9990e;
+}
+
+a.sl-badge.sl-badge-warning-light:hover,
+a.sl-badge.sl-badge-warning-light:focus {
+	background-color: rgba(255,190,47,0.18) !important;
+	color: #d9990e;
+}
+
+
+.sl-badge-danger {
+	background-color: #eb445a !important;
+	color: #fff;
+}
+
+a.sl-badge.sl-badge-danger:hover, 
+a.sl-badge.sl-badge-danger:focus {
+	background-color: #eb445a !important;
+	color: #fff;
+}
+
+
+.sl-badge-danger-light {
+	background-color: rgba(235,68,90,0.18) !important;
+	color: #EB445A;
+}
+
+a.sl-badge.sl-badge-danger-light:hover,
+a.sl-badge.sl-badge-danger-light :focus {
+	background-color: rgba(235,68,90,0.18) !important;
+	color: #EB445A;
+}
+
+
+.sl-badge-default {
+	background-color: #999 !important;
+	color: #fff;
+}
+
+a.sl-badge.sl-badge-default:hover,
+a.sl-badge.sl-badge-default:focus {
+	background-color: #999 !important;
+	color: #fff;
+}
+
+
+.sl-badge-default-light {
+	background-color: rgba(0,0,0,0.06) !important;
+	color: #666;
+}
+
+a.sl-badge.sl-badge-default-light:hover,
+a.sl-badge.sl-badge-default-light:focus {
+	background-color: rgba(0,0,0,0.06) !important;
+	color: #666;
+}
+
+
+.sl-badge-muted {
+	background-color: #eee !important;
+	color: #999;
+}
+
+a.sl-badge.sl-badge-muted:hover, 
+a.sl-badge.sl-badge-muted:focus {
+	background-color: #eee !important;
+	color: #999;
+}
+
+
+.sl-badge-muted-light {
+	background-color: rgba(0,0,0,0.06) !important;
+	color: #999;
+}
+
+a.sl-badge.sl-badge-muted-light:hover,
+a.sl-badge.sl-badge-muted-light:focus {
+	background-color: rgba(0,0,0,0.06) !important;
+	color: #999;
+}
+
+
+.sl-badge-secondary {
+	background-color: #ffebac !important;
+	color: #b5772b;
+}
+
+a.sl-badge.sl-badge-secondary:hover,
+a.sl-badge.sl-badge-secondary:focus {
+	background-color: #ffebac !important;
+	color: #b5772b;
+}
+
+
+
+
+
+.sl-badge {
+	height: 21px;
+	display: inline-block;
+	line-height: 21px;
+	font-weight: 600;
+	font-size: 10.5px;
+	padding: 0 8px;
+	border-radius: 3px;
+}
+
+.sl-badge-sm {
+	height: 18px;
+	line-height: 18px;
+	font-size: 10.5px;
+}
+
+.sl-badge-md {
+	height: 21px;
+	line-height: 21px;
+	font-size: 10.5px;
+}
+
+.sl-badge-lg {
+	height: 24px;
+	line-height: 24px;
+	font-size: 11px;
+}
+
+.sl-badge-xl {
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+}
+
+.sl-badge.rounded {
+	border-radius: 100px;
+}
+
+
+
+/* LABELS, duplicate of sl-badge. Remove when all labels are removed from HTML */
+.label-primary {
+	background-color: #298ccd !important;
+	color: #fff;
+}
+
+a.label.label-primary:hover,
+a.label.label-primary:focus {
+	background-color: #298ccd !important;
+	color: #fff;
+}
+
+
+.label-primary-light {
+	background-color: rgba(62,165,235,0.18) !important;
+	color: #4b8bb6;
+}
+
+a.label.label-primary-light:hover,
+a.label.label-primary-light:focus {
+	color: #4b8bb6;
+}
+
+
+.label-success {
+	background-color: #41bd7f !important;
+	color: #fff;
+}
+
+a.label.label-success:hover,
+a.label.label-success:focus {
+	background-color: #41bd7f !important;
+	color: #fff;
+}
+
+
+.label-success-light {
+	background-color: rgba(86,189,125,0.18) !important;
+	color: #56bd7d;
+}
+
+a.label.label-success-light:hover,
+a.label.label-success-light:focus {
+	background-color: rgba(86,189,125,0.18) !important;
+	color: #56bd7d;
+}
+
+
+.label-warning {
+	background-color: #f2b736 !important;
+	color: #fff;
+}
+
+a.label.label-warning:hover,
+a.label.label-warning:focus {
+	background-color: #f2b736 !important;
+	color: #fff;
+}
+
+
+.label-warning-light {
+	background-color: rgba(255,190,47,0.18) !important;
+	color: #d9990e;
+}
+
+a.label.label-warning-light:hover,
+a.label.label-warning-light:focus {
+	background-color: rgba(255,190,47,0.18) !important;
+	color: #d9990e;
+}
+
+
+.label-danger {
+	background-color: #eb445a !important;
+	color: #fff;
+}
+
+a.label.label-danger:hover,
+a.label.label-danger:focus {
+	background-color: #eb445a !important;
+	color: #fff;
+}
+
+
+.label-danger-light {
+	background-color: rgba(235,68,90,0.18) !important;
+	color: #EB445A;
+}
+
+a.label.label-danger-light:hover,
+a.label.label-danger-light :focus {
+	background-color: rgba(235,68,90,0.18) !important;
+	color: #EB445A;
+}
+
+
+.label-default {
+	background-color: #999 !important;
+	color: #fff;
+}
+
+a.label.label-default:hover,
+a.label.label-default:focus {
+	background-color: #999 !important;
+	color: #fff;
+}
+
+
+.label-default-light {
+	background-color: rgba(0,0,0,0.06) !important;
+	color: #666;
+}
+
+a.label.label-default-light:hover,
+a.label.label-default-light:focus {
+	background-color: rgba(0,0,0,0.06) !important;
+	color: #666;
+}
+
+
+.label-muted {
+	background-color: #eee !important;
+	color: #999;
+}
+
+a.label.label-muted:hover,
+a.label.label-muted:focus {
+	background-color: #eee !important;
+	color: #999;
+}
+
+
+.label-muted-light {
+	background-color: rgba(0,0,0,0.06) !important;
+	color: #999;
+}
+
+a.label.label-muted-light:hover,
+a.label.label-muted-light:focus {
+	background-color: rgba(0,0,0,0.06) !important;
+	color: #999;
+}
+
+
+.label-secondary {
+	background-color: #ffebac !important;
+	color: #b5772b;
+}
+
+a.label.label-secondary:hover,
+a.label.label-secondary:focus {
+	background-color: #ffebac !important;
+	color: #b5772b;
+}

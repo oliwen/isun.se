@@ -1,0 +1,71 @@
+﻿
+.footer-custom-sponsors {
+    padding: 20px;
+}
+
+    .footer-custom-sponsors.border-top {
+        border-top: 1px solid #DDD;
+    }
+
+    .footer-custom-sponsors p {
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .footer-custom-sponsors div img {
+        max-width: 100%;
+    }
+
+    .footer-custom-sponsors .sponsors {
+        display: table;
+        width: 100%;
+        table-layout:fixed;
+    }
+
+    .footer-custom-sponsors .sponsors a {
+        display: table-cell;
+        height: auto;
+    }
+    .footer-custom-sponsors .sponsors img {
+        margin: 10px 0px;
+    }
+    .footer-custom-sponsors .sponsors.two a {
+        width: 50%;
+        padding: 0px 85px
+    }
+    .footer-custom-sponsors .sponsors.three a {
+        width: 33.3%;
+    }
+    .footer-custom-sponsors .sponsors.four a {
+        width: 25%;
+    }
+    .footer-custom-sponsors .sponsors.five a {
+        width: 20%;
+    }
+    .footer-custom-sponsors .sponsors.six a {
+        width: 16.6%;
+    }
+
+
+@media (max-width: 888px) {
+    .footer-custom-sponsors {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .footer-custom-sponsors .sponsors a {
+        display: inline-block;
+        margin: auto;
+    }
+    .footer-custom-sponsors .sponsors img {
+        margin: 13px 0px;
+    }
+    .footer-custom-sponsors .sponsors.two a,
+    .footer-custom-sponsors .sponsors.three a,
+    .footer-custom-sponsors .sponsors.four a,
+    .footer-custom-sponsors .sponsors.five a,
+    .footer-custom-sponsors .sponsors.six a {
+        width: 49%;
+        padding: 0px
+    }
+}

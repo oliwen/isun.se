@@ -1,0 +1,36 @@
+a.text-facebook {
+    color: #3B5998;
+}
+
+a.text-instagram {
+    color: #A31CAE;
+}
+
+a.text-linkedin {
+    color: #0A66C2;
+}
+
+a.text-youtube {
+    color: #E01414;
+}
+
+a.text-snapchat {
+    color: #333;
+}
+
+a.text-tiktok {
+    color: #333;
+}
+
+a.text-x {
+    color: #333;
+}
+
+a.text-twitch {
+    color: #A544FF;
+}
+
+
+.start-social-media a:hover {
+    opacity:0.6;
+}

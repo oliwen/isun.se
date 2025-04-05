@@ -1,0 +1,64 @@
+/***************************
+Tjäna pengar
+***************************/
+#page-income .client-info {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+    #page-income .client-info iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+#page-income .text-left .dl-horizontal dt {
+    min-width: 100px;
+    text-align: left;
+}
+
+#page-income .text-left .dl-horizontal dd {
+    margin-bottom: 5px;
+}
+
+#page-income .text-left .dl-horizontal dt, #page-income .text-left .dl-horizontal dd {
+    width: auto;
+    margin-left: auto;
+}
+
+
+
+
+
+/* Thumbnails */
+.thumbnail-wrap {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+    .thumbnail-wrap .thumbnail {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+        .thumbnail-wrap .thumbnail img {
+            max-height: 100px;
+            width: auto;
+            max-width: 100%;
+        }
+
+a.thumbnail-wrap:hover .thumbnail {
+    border-color: #298ccd;
+}
+
+.thumb-group .thumbnail {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+    .thumb-group .thumbnail img {
+        max-height: 80%;
+        max-width: 80%;
+    }

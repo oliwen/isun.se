@@ -1,0 +1,138 @@
+﻿    #alert {
+        width: 100%;
+        left: 0px;
+        bottom: 0px;
+        margin-bottom: 25px;
+        position: fixed;
+        display: none;
+        z-index: 10000;
+        text-align: center;
+    }
+
+    #alert .msg {
+        width: 650px;
+        height: 50px;
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0px 1px 8px rgba(0,0,0,0.3);
+        text-align: left;
+    }
+
+    #alert .msg p {
+        font-family: Roboto, Helvetica, Arial;
+        line-height: 50px;
+        font-size: 16px;
+        color: #FFF;
+        margin: 0px;
+        padding: 0 25px 0 40px;
+    }
+
+
+    /* Colors */
+    #alert .msg.green {
+        background-color: #41bd67;
+    }
+    #alert .msg.red {
+        background-color: #ea4f51;
+    }
+    #alert .msg.yellow {
+        background-color: #f0b516;
+    }
+    #alert .msg.blue {
+        background-color: #3f8dcf;
+    }
+            
+            
+
+
+    /* Icon and Font Awesome */
+    #alert .msg .icon:before,
+    #alert .msg .cancel-icon:before {
+        display: block;
+        font: normal normal normal 18px/1 FontAwesome;
+        color: #FFF;
+    }
+
+    /* Message icon */
+    #alert .msg .icon {
+        position: absolute;
+        top: 16px;
+        left: 15px;
+    }
+
+    /* Close icon */
+    #alert .msg .cancel-icon {
+        position: absolute;
+        top: 16px;
+        right: 15px;
+        text-decoration: none !important;
+    }
+
+    #alert .msg .cancel-icon:before {
+        content: '\f057';
+    }
+
+
+
+
+    /* Icons */
+    #alert .msg.green .icon:before {
+        content: '\f058'; /* OK = f058 (check) */
+    }
+
+    #alert .msg.yellow .icon:before {
+        content: '\f071'; /* (i) = f071 */
+    }
+
+    #alert .msg.blue .icon:before {
+        content: '\f05a'; /* (!) = f06a */
+    }
+
+    #alert .msg.red .icon:before {
+        content: '\f05e'; /* (/) = f05e */
+    }
+
+
+
+
+
+/* --- SMALL SCREEN VERSION -------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+
+
+
+}
+
+
+/* --- MOBILE VERSION - NO LEFT ICONS -------------------------------------------------------------------- */
+@media (max-width: 888px) {
+
+
+
+    #alert {
+        left: 0;
+        margin: 0;
+    }
+
+        #alert .msg {
+            border-radius: 0;
+            width: 100%;
+            height: auto;
+        }
+            #alert .msg p {
+                padding: 15px 34px 15px 15px;
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+        /* Icons */
+        #alert .msg .cancel-icon {
+            top: 15px;
+        }
+        #alert .msg .icon {
+            display:none;
+        }
+}

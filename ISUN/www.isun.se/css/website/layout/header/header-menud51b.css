@@ -1,0 +1,603 @@
+﻿/* --- TOPPMENY -------------------------------------------------------------------- */
+
+
+/* Menyn */
+.navbar {
+    min-height: 0;
+    border: 0;
+    margin: 0;
+    position: relative;
+    font-size: 14px;
+    border-radius:4px 4px 0px 0px;
+}
+
+.nav.navbar-nav .dropdown .dropdown-menu {
+    padding: 0px;
+    border-radius: 0;
+    min-width: 240px;
+}
+
+
+.navbar-nav li.bold a {
+    font-weight: bold;
+}
+
+.navbar #navigation {
+    float: left;
+}
+
+#navigation .navigation-head {
+    display: none;
+}
+
+.navbar .navbar-collapse, .navbar-nav {
+    padding: 0;
+    margin: 0;
+}
+
+/* Small device toggle meny */
+.navbar .navbar-header {
+    width: 50%;
+    float: left;
+    text-align: center;
+    line-height: 38px;
+}
+
+    .navbar .navbar-header button {
+        position: relative;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        max-height: 36px;
+        width: 100%;
+    }
+
+        .navbar .navbar-header button span {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 80%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .navbar .navbar-header button .fa {
+            opacity: 0.6;
+        }
+
+#logged-in-menu li.dropdown {
+    float: right;
+}
+
+#logged-in-menu .dropdown-menu .submenu {
+    display: none
+}
+
+    #logged-in-menu .dropdown-menu .submenu.open {
+        display: block
+    }
+
+
+.navbar .navbar-nav > li > a {
+    font-weight: bold;
+    line-height: 38px;
+    padding: 1px 14px;
+}
+
+.navbar.navbar-sm .navbar-nav > li > a {
+    padding: 1px 12px;
+}
+.navbar.navbar-xs .navbar-nav > li > a {
+    padding: 1px 10px;
+}
+
+
+/* Icons */
+.navbar .navbar-nav i.fa-cog {
+    font-size: 16px;
+    top: 1px;
+    position: relative;
+}
+
+.navbar .navbar-nav i.fa-external-link {
+    font-size: 11px;
+    opacity: 0.7;
+    margin-left: 4px;
+}
+
+.navbar a .caret {
+    opacity: 0.6;
+    margin-right: -2px;
+    margin-left: 0px;
+}
+
+.navbar .navbar-nav i.fa-external-link, .navbar .navbar-nav a .fa-angle-down {
+    width: 12px;
+    text-align: right;
+}
+
+.navbar .navbar-nav a:active .caret,
+.navbar .navbar-nav .open .caret {
+    top: -1px;
+}
+
+
+/*Remove dividers from submenu*/
+.navbar .navbar-nav li li {
+    box-shadow: none;
+    border-right: 0;
+}
+
+    /* Secret links in submenu */
+    .navbar .navbar-nav li li.hidden a,
+    .navbar .navbar-nav li li.hidden i {
+        /*opacity:0.5;*/
+        color: #afafaf;
+    }
+    /* Secret links in submenu */
+    .navbar .navbar-nav li li.active.hidden a,
+    .navbar .navbar-nav li li.active.hidden i {
+        /*opacity:0.5;*/
+        color: #fff;
+    }
+
+/*Render up-arrows on right dropdowns. */
+.navbar-right .open .dropdown-toggle {
+    position: relative;
+}
+
+    .navbar-right .open .dropdown-toggle:before {
+        position: absolute;
+        bottom: 0px;
+        right: 45%;
+        display: inline-block;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #ccc;
+        border-left: 6px solid transparent;
+        border-bottom-color: rgba(0, 0, 0, 0.2);
+        content: '';
+        z-index: 1001;
+    }
+
+    .navbar-right .open .dropdown-toggle:after {
+        position: absolute;
+        bottom: -1px;
+        right: 45%; /* +1px mot :before */
+        display: inline-block;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #ffffff;
+        border-left: 6px solid transparent;
+        content: '';
+        z-index: 1001;
+    }
+
+
+
+
+/* Multi col navbar dropdown. */
+.dropdown-menu.columns-2 {
+    width: 480px;
+}
+
+.dropdown-menu.columns-3 {
+    width: 580px;
+}
+
+.dropdown-menu .col {
+    padding: 0;
+    border-right: 1px solid #eee;
+}
+
+.dropdown-menu .col {
+    border-left: 1px solid #eee;
+    margin-left: -1px;
+}
+
+    .dropdown-menu .col:first-child {
+        border-left: 0;
+        margin-left: 0px;
+    }
+
+    .dropdown-menu .col:last-child {
+        border-right: 0;
+    }
+
+.navbar .dropdown-menu .row {
+    margin: 0;
+}
+
+.multi-column-dropdown {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar .dropdown-menu li a {
+    font-weight: normal;
+    padding: 10px 14px 10px 14px;
+    display: block;
+    clear: both;
+    line-height: 1.428571429;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+
+/* Dropdown alignment logged in menu */
+
+/*.profile-menu .user {
+    display: block;
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    background-size: 100%;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+    .profile-menu .user img {
+        width: 38px;
+    }*/
+
+
+
+#logged-in-menu {
+    position: relative;
+}
+
+    #logged-in-menu .dropdown {
+        position: static;
+    }
+
+.login-dropdown {
+    width: 300px !important;
+    padding: 20px !important;
+}
+
+    .login-dropdown .form-group {
+        margin-bottom: 12px;
+    }
+
+/*.profile-menu .links .notification {
+        float: right;
+        margin: -2px 0px 0px 0px;
+    }*/
+
+/*.profile-menu {
+        width: 220px;
+        padding: 0px;
+    }*/
+
+/*.profile-menu .top {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            background-color: #f7f7f7;
+        }
+
+            .profile-menu .top a {
+                line-height: 24px;
+                font-weight: normal;
+                color: #555;
+            }*/
+
+/*.profile-menu .photo {
+            display: block;
+            float: left;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            background-size: 100%;
+            border-radius: 100px;
+        }*/
+
+/*.profile-menu .top p {
+            line-height: 1;
+        }
+
+        .profile-menu ul {
+            margin: 10px 0px;
+        }
+
+        .profile-menu .footer {
+            padding: 10px 15px;
+            border-top: 1px solid #eee;
+        }*/
+
+
+
+
+
+/* Controlpanel and profile menu */
+.navbar .controlpanel-menu {
+    min-width: 280px;
+    z-index: 1000;
+    border: 1px #ccc solid;
+}
+
+    .navbar .controlpanel-menu.profile-menu {
+        min-width: 220px;
+    }
+
+
+    /* reset nav */
+    .navbar .controlpanel-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .navbar .controlpanel-menu li {
+        margin: 0;
+        padding: 0;
+    }
+
+        .navbar .controlpanel-menu li i {
+            position: absolute;
+            left: 20px;
+            top: 12px;
+            font-size: 17px;
+        }
+
+        .navbar .controlpanel-menu li a {
+            margin: 0px;
+            background-color:#FFF;
+            padding: 12px 20px 11px 44px;
+            border-bottom: 1px solid #e5e5e5;
+            color: #555;
+            vertical-align: middle;
+            position: relative;
+            font-size:15px;
+        }
+
+
+            .navbar .controlpanel-menu li a:hover {
+                background-color: #fafafa;
+                /*color: #1176a5;*/
+            }
+
+
+
+
+    /* Dropdown Header */
+    .navbar .controlpanel-menu .dropdown-header, .navbar .controlpanel-menu .dropdown-section {
+        padding: 17px 0 8px 20px;
+        background: #f5f5f5;
+        border-bottom: 1px solid #e5e5e5 !important;
+        font-size: 13px;
+        overflow: hidden;
+    }
+
+        .navbar .controlpanel-menu .dropdown-header p {
+            font-size: 14px;
+            color: #555;
+        }
+
+
+        .navbar .controlpanel-menu .dropdown-header.dropdown-header-photo img {
+            display: block;
+            float: left;
+            width: 38px;
+            height: 38px;
+            margin-right: 10px;
+            background-size: 100%;
+            border-radius: 100px;
+            overflow: hidden;
+            margin-top: -1px;
+        }
+
+
+
+
+    /* Selected  */
+    .navbar .controlpanel-menu li a.current {
+        font-weight: bold;
+        color: #FFF;
+        background-color: #1176a5;
+    }
+
+
+
+
+    /* Submenu */
+    .navbar .controlpanel-menu .submenu {
+        background: #fafafa;
+        border-bottom: 1px solid #e5e5e5;
+        padding-left: 40px;
+    }
+
+
+        .navbar .controlpanel-menu .submenu li a {
+            font-size: 13px;
+            padding: 8px 0 8px 0;
+        }
+
+        .navbar .controlpanel-menu .submenu li:last-child a {
+            border: 0;
+        }
+
+        .navbar .controlpanel-menu .submenu li a.current {
+            font-weight: bold;
+            color: #1176a5;
+            background-color: transparent;
+        }
+
+
+
+    /* icons */
+    .navbar .controlpanel-menu .dropdown-submenu .caret {
+        float: right;
+        margin-top: 8px;
+    }
+
+    .navbar .controlpanel-menu .fa.fa-fw {
+        margin-right: 2px;
+    }
+
+    .navbar .controlpanel-menu a img {
+        float: right;
+        margin-top: 5px;
+    }
+
+
+
+#navigation li a {
+    font-weight: bold;
+}
+
+
+
+/******************************************
+# Grouped teams nav
+******************************************/
+.grouped-teams {
+    min-width: 490px;
+    max-width: 100%;
+}
+
+    /* Reset default list style */
+    .grouped-teams,
+    .grouped-teams ul,
+    .grouped-teams li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        /* Reset dropdown position */
+        .grouped-teams ul.dropdown-menu {
+            box-shadow: none;
+            position: static;
+            border: 0;
+        }
+
+
+
+
+/* Extra padding and border on all items */
+#navigation .grouped-teams li a {
+    padding: 12px 14px !important;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+
+
+/* Toggle dropdown arrow  */
+.grouped-teams .caret {
+    float: right;
+    margin-top: 7px;
+    margin-right: 0px !important;
+}
+/* Flip arrow when menu is open */
+.submenu-open > .dropdown-toggle > .caret {
+    transform: rotate(180deg);
+}
+
+/* Team count in group  */
+.grouped-teams .badge {
+    background: rgba(0,0,0,0.05);
+    color: rgba(0,0,0,0.6);
+    margin-left: 5px;
+}
+
+.grouped-teams .active .badge {
+    background-color: rgba(255,255,255,0.4);
+    color: rgba(0,0,0,0.5);
+}
+
+
+/* Chevron-right */
+.grouped-teams .fa-chevron-right {
+    float: right;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #d9d9d9;
+    color: rgba(0,0,0,0.3);
+}
+
+.grouped-teams .active .fa-chevron-right {
+    color: #fff;
+    color: rgba(255,255,255,0.9);
+}
+
+
+
+
+/*
+    * Grouped sub menu - three column */
+.nav.navbar-nav .grouped-teams .dropdown-submenu .dropdown-menu {
+    background-color: #f9f9f9;
+    padding: 0;
+    overflow: auto; /*clear float*/
+    width: 100%;
+    border-radius: 0;
+    box-shadow: inset 0 -1px #eee;
+    margin-left: 0px;
+}
+/* Team cell */
+.grouped-teams .dropdown-submenu .dropdown-menu li {
+    width: 33.333%;
+    float: left;
+    background-color: #f9f9f9;
+}
+    /* Team cell link / border */
+    .grouped-teams .dropdown-submenu .dropdown-menu li a {
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        font-weight: normal !important;
+        font-size: 13px;
+        padding-right: 13px !important;
+    }
+
+
+
+
+
+/* divider fix: remove extra borders  */
+#navigation .navbar-nav > li:first-child > a {
+    border-left: 0;
+    border-radius:4px 0px 0px 0px;
+}
+
+.navbar-nav.navbar-right > li:first-child > a {
+    box-shadow: none;
+    border-radius: 0px 4px 0px 0px;
+}
+
+
+
+
+
+
+
+@media (max-width: 888px) {
+    .grouped-teams {
+        min-width: 100%;
+    }
+    /* Remove background from last sub menu */
+    #navigation ul ul ul li.dropdown-submenu.submenu-open ul {
+        border-left: 0;
+    }
+    /* Remove background from last sub menu */
+    #navigation ul ul ul li.dropdown-submenu.submenu-open li a {
+        background: none;
+        font-size: 12px;
+    }
+    /* bring back borders on last sub menu*/
+    #navigation ul ul ul li.dropdown-submenu.submenu-open li {
+        border-right: 1px solid #eee;
+    }
+        /* Remove arrow from last sub menu*/
+        #navigation ul ul ul li.dropdown-submenu.submenu-open li i {
+            display: none;
+        }
+}

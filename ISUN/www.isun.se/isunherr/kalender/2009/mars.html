@@ -1,0 +1,1906 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="sv-SE">
+
+<!-- Mirrored from www.isun.se/isunherr/kalender/2009/mars by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Feb 2025 10:07:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<script>
+		if (top !== self) {
+			top.location.href = self.location.href;
+		}
+	</script>
+	
+
+	<title>Kalender / ISUN - Herrar</title>
+
+	<script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "ISUN"
+    }
+	</script>
+
+	<!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+<script type="text/javascript" async=true>
+	(function () {
+		var host = window.location.hostname;
+		var element = document.createElement('script');
+		var firstScript = document.getElementsByTagName('script')[0];
+		var url = 'https://cmp.inmobi.com/'
+			.concat('https://www.isun.se/choice/', 'Pwx1bh3_RcucT', 'https://www.isun.se/', host, '../../../choice1ed7.html?tag_version=V3');
+		var uspTries = 0;
+		var uspTriesLimit = 3;
+		element.async = true;
+		element.type = 'text/javascript';
+		element.src = url;
+
+		firstScript.parentNode.insertBefore(element, firstScript);
+
+		function makeStub() {
+			var TCF_LOCATOR_NAME = '__tcfapiLocator';
+			var queue = [];
+			var win = window;
+			var cmpFrame;
+
+			function addFrame() {
+				var doc = win.document;
+				var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+				if (!otherCMP) {
+					if (doc.body) {
+						var iframe = doc.createElement('iframe');
+
+						iframe.style.cssText = 'display:none';
+						iframe.name = TCF_LOCATOR_NAME;
+						doc.body.appendChild(iframe);
+					} else {
+						setTimeout(addFrame, 5);
+					}
+				}
+				return !otherCMP;
+			}
+
+			function tcfAPIHandler() {
+				var gdprApplies;
+				var args = arguments;
+
+				if (!args.length) {
+					return queue;
+				} else if (args[0] === 'setGdprApplies') {
+					if (
+						args.length > 3 &&
+						args[2] === 2 &&
+						typeof args[3] === 'boolean'
+					) {
+						gdprApplies = args[3];
+						if (typeof args[2] === 'function') {
+							args[2]('set', true);
+						}
+					}
+				} else if (args[0] === 'ping') {
+					var retr = {
+						gdprApplies: gdprApplies,
+						cmpLoaded: false,
+						cmpStatus: 'stub'
+					};
+
+					if (typeof args[2] === 'function') {
+						args[2](retr);
+					}
+				} else {
+					if (args[0] === 'init' && typeof args[3] === 'object') {
+						args[3] = Object.assign(args[3], { tag_version: 'V3' });
+					}
+					queue.push(args);
+				}
+			}
+
+			function postMessageEventHandler(event) {
+				var msgIsString = typeof event.data === 'string';
+				var json = {};
+
+				try {
+					if (msgIsString) {
+						json = JSON.parse(event.data);
+					} else {
+						json = event.data;
+					}
+				} catch (ignore) { }
+
+				var payload = json.__tcfapiCall;
+
+				if (payload) {
+					window.__tcfapi(
+						payload.command,
+						payload.version,
+						function (retValue, success) {
+							var returnMsg = {
+								__tcfapiReturn: {
+									returnValue: retValue,
+									success: success,
+									callId: payload.callId
+								}
+							};
+							if (msgIsString) {
+								returnMsg = JSON.stringify(returnMsg);
+							}
+							if (event && event.source && event.source.postMessage) {
+								event.source.postMessage(returnMsg, '*');
+							}
+						},
+						payload.parameter
+					);
+				}
+			}
+
+			while (win) {
+				try {
+					if (win.frames[TCF_LOCATOR_NAME]) {
+						cmpFrame = win;
+						break;
+					}
+				} catch (ignore) { }
+
+				if (win === window.top) {
+					break;
+				}
+				win = win.parent;
+			}
+			if (!cmpFrame) {
+				addFrame();
+				win.__tcfapi = tcfAPIHandler;
+				win.addEventListener('message', postMessageEventHandler, false);
+			}
+		};
+
+		makeStub();
+
+		function makeGppStub() {
+			const CMP_ID = 10;
+			const SUPPORTED_APIS = [
+				'2:tcfeuv2',
+				'6:uspv1',
+				'7:usnatv1',
+				'8:usca',
+				'9:usvav1',
+				'10:uscov1',
+				'11:usutv1',
+				'12:usctv1'
+			];
+
+			window.__gpp_addFrame = function (n) {
+				if (!window.frames[n]) {
+					if (document.body) {
+						var i = document.createElement("iframe");
+						i.style.cssText = "display:none";
+						i.name = n;
+						document.body.appendChild(i);
+					} else {
+						window.setTimeout(window.__gpp_addFrame, 10, n);
+					}
+				}
+			};
+			window.__gpp_stub = function () {
+				var b = arguments;
+				__gpp.queue = __gpp.queue || [];
+				__gpp.events = __gpp.events || [];
+
+				if (!b.length || (b.length == 1 && b[0] == "queue")) {
+					return __gpp.queue;
+				}
+
+				if (b.length == 1 && b[0] == "events") {
+					return __gpp.events;
+				}
+
+				var cmd = b[0];
+				var clb = b.length > 1 ? b[1] : null;
+				var par = b.length > 2 ? b[2] : null;
+				if (cmd === "ping") {
+					clb(
+						{
+							gppVersion: "1.1", // must be “Version.Subversion”, current: “1.1”
+							cmpStatus: "stub", // possible values: stub, loading, loaded, error
+							cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+							signalStatus: "not ready", // possible values: not ready, ready
+							supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+							cmpId: CMP_ID, // IAB assigned CMP ID, may be 0 during stub/loading
+							sectionList: [],
+							applicableSections: [-1],
+							gppString: "",
+							parsedSections: {},
+						},
+						true
+					);
+				} else if (cmd === "addEventListener") {
+					if (!("lastId" in __gpp)) {
+						__gpp.lastId = 0;
+					}
+					__gpp.lastId++;
+					var lnr = __gpp.lastId;
+					__gpp.events.push({
+						id: lnr,
+						callback: clb,
+						parameter: par,
+					});
+					clb(
+						{
+							eventName: "listenerRegistered",
+							listenerId: lnr, // Registered ID of the listener
+							data: true, // positive signal
+							pingData: {
+								gppVersion: "1.1", // must be “Version.Subversion”, current: “1.1”
+								cmpStatus: "stub", // possible values: stub, loading, loaded, error
+								cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+								signalStatus: "not ready", // possible values: not ready, ready
+								supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+								cmpId: CMP_ID, // list of supported APIs
+								sectionList: [],
+								applicableSections: [-1],
+								gppString: "",
+								parsedSections: {},
+							},
+						},
+						true
+					);
+				} else if (cmd === "removeEventListener") {
+					var success = false;
+					for (var i = 0; i < __gpp.events.length; i++) {
+						if (__gpp.events[i].id == par) {
+							__gpp.events.splice(i, 1);
+							success = true;
+							break;
+						}
+					}
+					clb(
+						{
+							eventName: "listenerRemoved",
+							listenerId: par, // Registered ID of the listener
+							data: success, // status info
+							pingData: {
+								gppVersion: "1.1", // must be “Version.Subversion”, current: “1.1”
+								cmpStatus: "stub", // possible values: stub, loading, loaded, error
+								cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+								signalStatus: "not ready", // possible values: not ready, ready
+								supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+								cmpId: CMP_ID, // CMP ID
+								sectionList: [],
+								applicableSections: [-1],
+								gppString: "",
+								parsedSections: {},
+							},
+						},
+						true
+					);
+				} else if (cmd === "hasSection") {
+					clb(false, true);
+				} else if (cmd === "getSection" || cmd === "getField") {
+					clb(null, true);
+				}
+				//queue all other commands
+				else {
+					__gpp.queue.push([].slice.apply(b));
+				}
+			};
+			window.__gpp_msghandler = function (event) {
+				var msgIsString = typeof event.data === "string";
+				try {
+					var json = msgIsString ? JSON.parse(event.data) : event.data;
+				} catch (e) {
+					var json = null;
+				}
+				if (typeof json === "object" && json !== null && "__gppCall" in json) {
+					var i = json.__gppCall;
+					window.__gpp(
+						i.command,
+						function (retValue, success) {
+							var returnMsg = {
+								__gppReturn: {
+									returnValue: retValue,
+									success: success,
+									callId: i.callId,
+								},
+							};
+							event.source.postMessage(msgIsString ? JSON.stringify(returnMsg) : returnMsg, "*");
+						},
+						"parameter" in i ? i.parameter : null,
+						"version" in i ? i.version : "1.1"
+					);
+				}
+			};
+			if (!("__gpp" in window) || typeof window.__gpp !== "function") {
+				window.__gpp = window.__gpp_stub;
+				window.addEventListener("message", window.__gpp_msghandler, false);
+				window.__gpp_addFrame("__gppLocator");
+			}
+		};
+
+		makeGppStub();
+
+		var uspStubFunction = function () {
+			var arg = arguments;
+			if (typeof window.__uspapi !== uspStubFunction) {
+				setTimeout(function () {
+					if (typeof window.__uspapi !== 'undefined') {
+						window.__uspapi.apply(window.__uspapi, arg);
+					}
+				}, 500);
+			}
+		};
+
+		var checkIfUspIsReady = function () {
+			uspTries++;
+			if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+				console.warn('USP is not accessible');
+			} else {
+				clearInterval(uspInterval);
+			}
+		};
+
+		if (typeof window.__uspapi === 'undefined') {
+			window.__uspapi = uspStubFunction;
+			var uspInterval = setInterval(checkIfUspIsReady, 6000);
+		}
+	})();
+</script>
+<!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="sv">
+
+<meta property="og:title" content="Kalender / ISUN - Herrar" />
+<meta property="og:site_name" content="ISUN" />
+        <link rel="og:image" href="https://cdn.svenskalag.se/img/clubmarks/png/27039?w=150&amp;h=150&amp;scale=canvas&amp;bgcolor=ffffff&amp;ext=_w&amp;v=1" />
+            <meta property="og:image" content="https://cdn.svenskalag.se/img/clubmarks/mcard/27039.png?w=400&h=200&scale=canvas&bgcolor=437e14&margin=0,100,0,100&v=1" />
+            <meta property="og:image:secure_url" content="https://cdn.svenskalag.se/img/clubmarks/mcard/27039.png?w=400&h=200&scale=canvas&bgcolor=437e14&margin=0,100,0,100&v=1" />
+            <meta property="og:image:width" content="400" />
+            <meta property="og:image:height" content="400" />
+
+<meta name="medium" content="news" />
+    
+    
+<meta name="keywords" content="" />
+<meta name="description" content="V&#228;lkommen till ISUN." />
+    
+
+<meta name="theme-color" content="#437e14" />
+
+<link href="https://www.svenskalag.se/isunherr/kalender/2009/mars" rel="canonical">
+
+	
+<link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,700,700i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i" rel="stylesheet">
+<style>
+        .text-primary-color { color:#437e14;}
+        .bg-primary-color { background-color:#437e14;}
+        .border-primary-color { border-color:#437e14;}
+        .link-primary-color:link,.link-primary-color:visited { color:#437e14;}
+</style>
+
+
+
+
+
+    <link rel="stylesheet" href="../../../../www.svenskalag.se/libs/bootstrap/bootstrap1a18.css?2.3" />
+    <link rel="stylesheet" href="../../../../www.svenskalag.se/libs/bootstrap/bootstrap-toggleSwitchc4ca.css?1" />
+
+    <link rel="stylesheet" href="../../../../www.svenskalag.se/css/website/bootstrap-disable-responsive0531.css?1338" />
+
+
+
+
+<link rel="stylesheet" type="text/css" href="../../../css/global_ver2.602c06.css?33294393f2991a4888dee388201c3969"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/layout/header/header18b0.css?fa92f7fa49d4a418b02f58abf8ab6e83"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/layout/header/header-alert3b79.css?1e8f976c74fdfe7c14e7d336695b8d4e"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/layout/header/header-menud51b.css?3a3145f9a9bdf3f0c528815184c5a91a"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/layout/menu/menu46e9.css?a1e2733ae91242108d63da99f4b61c0b"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/layout/sponsor-column/sponsor-column1f55.css?c20fe5f8f044c0ead0b9bd2987b2fdef"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/layout/footer/footer827c.css?3df27c106a8c3eaa689765398cc5d089"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/layout/footer/footer-ads44e9.css?00f95ccb81e16bd7e5b230baaa4f630a"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/layout/footer/footer-print97e9.css?298ca3e70b8e7eb3bb71e3465d3c77cf"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/layout/website-wideeb55.css?8f5de7e9c210c17e394f04e6affebc92"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/components/pagination7a13.css?9bcc0e664de7216124d12b58131ed42e"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/components/forms933f.css?7fb2ecf6a2311729c124240a4532c092"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/components/member-photo32ae.css?ca8f3373f033067117ace34541921909"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/components/commentsa19d.css?6ea58885fb0b725671e0dbbfc07145f3"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/components/share-linksd525.css?f0d320f5027c1f86bd2ffc71db78525b"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/components/edit-section-tools5909.css?6a707462a149f44f1e39954edbd0c34b"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/components/admin-panel0571.css?1336e2efce7552190df6e1171bc547c1"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/components/article-button48c7.css?518ea37fe4b6d8d4c977ca267c557612"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/shared25b3.css?4528c487a7e38984cc48f98f933813e2"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/svlag-forms744c.css?7bd5eb1bcf5e412915b3183b7aab8eda"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/tip-holderd1d0.css?978f7f357e48664c31e5d1f8de598932"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/popup-box4652.css?7b84516cebbf4deb4a46cd1176ef3f25"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/footer-signup-ad54fa.css?289769397d41b899cdfd51698e916871"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/stylec2f2.css?6e6acf1524f926992906a80b8b187e3f"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/loading-overlay5256.css?44eb504199400659e2b88fba24ac5b61"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/file-upload-containerd86a.css?ed4931f3d716ebea213cce7efc7bd418"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/typography3483.css?fc7dea0df115cf9bb54539c35fa6eeb6"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/buttons9ea4.css?469262dedb3e4ce21be7113cc96fda2b"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/margin-padding5d00.css?fb2aba2fcce98e196746856146eefa9d"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/alertsff26.css?b07daf5392ec7895f362525e707fc927"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/alerts-floating2d6b.css?e2b8b8692792afc5d00e27dfad3b9887"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/colors-text690c.css?eb9eb1772b8a5c8d284768112d52f99f"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/colors-labelsfe02.css?135ad0f882cefb189125885c40026897"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/hovercardc838.css?419d7becd4d07048563f59ffb349d5a4"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/member-searche927.css?f895ff1d36dc950b9f0705f8799618e5"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/ajaxloaderf70c.css?ce1ef30961781c07c3028947b9f99d53"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/svelag-datepicker9ce2.css?530fca529445a53979593fed54225bf1"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/links2917.css?e07cbc1478a1136ed6310e9de29b832a"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/hr59a9.css?eabb6351c68d5238598b80041081e3c6"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/member-typesabe2.css?184ec8e8d9485779822c9f8cd1f406fa"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/list-group-news30c5.css?befeb66e22c12b81c620439f41b6d0e6"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/utilities5aa1.css?28aba0d3871839cc467e7eff5f81142a"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/profile-photo4678.css?9180efc6006099160e5acc783b842a06"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/form-blocks9b2a.css?7cdfd68f992721bcdc3679a0c853edc7"/>
+<link rel="stylesheet" type="text/css" href="../../../css/administration/shared/filtersa724.css?a49f20ee46ed8499702991fea003f703"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/flexboxe55a.css?959f95a82682d646fbb9a8c8a3c8a46b"/>
+<link rel="stylesheet" type="text/css" href="../../../css/shared/sl-badgeba88.css?3b6fc9b800a581718731828d0193a871"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/infobox034c.css?af66497c660c18c3637d5f73b7165865"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/file-type-icons4f63.css?c98cb3e7a5417a47493a61cc2503860e"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/mobile-helpers69ca.css?87e49e4fc68b9838513d14008ee26497"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/templates789d.css?b841a6be55b46c50a47bd0b5c0120d35"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/dropdownfb8d.css?a6999cfeed4285672ff0c4f7d999e9b0"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/modala744.css?5ebeabdc6a0b19b242b24c3988181a08"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/modal-clubpage-adc4fd.css?32f114063aba4e979ff39ddff1712b06"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/table6158.css?676928eaa534d13324f829cb6c306f0a"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/table-standings9b61.css?211ff7e7d034674cbba379485b2cd718"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/table-schedule05e1.css?5b6e209b8c1d6d2c6af82af8dbbb22ee"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/bootstrap-customizede076.css?c4095da4ec0ff63d2f7ab210267d3458"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/mobile-ads9970.css?2d385c321074555ae96aa19be5c2e269"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/print1dac.css?6f4019e659abbf5c48aec78af7cb512b"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/pages/contact/contactcca1.css?5728c51d415a1425cf9321354c8acae8"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/pages/gallery/galleryf05a.css?799414f93dc3a7c57fd7a49486fbdcaa"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/pages/teams/teams8540.css?5233704e2ad692929db8591ef7942e28"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/pages/news/newsf32c.css?536626190790915932f5aaf872a58302"/>
+<link rel="stylesheet" type="text/css" href="../../../css/website/pages/income/incomee617.css?7d1b6c76dd4ddb57d108cf80214a4ded"/>
+<link rel="stylesheet" type="text/css" href="../../../css/administration/popup/popup-success296e.css?fc562d6416b6f56fa430a66746b0a650"/>
+
+<link rel="stylesheet" type="text/css" href="../../../libs/ui/jquery-ui-1.11.4-autocomplete35b7.css?2708dfae670753c7c3d705a6abb1412b"/>
+<link rel="stylesheet" type="text/css" href="../../../libs/jquery.jcarousel.lite/jquery.jcarousel.lite31f3.css?5cf85379377e850a08d1a4e77e321410"/>
+<link rel="stylesheet" type="text/css" href="../../../libs/font-awesome-4.7.0/css/font-awesome538f.css?94a04ef75ddc219dbc6e43a55c5bf69b"/>
+<link rel="stylesheet" type="text/css" href="../../../libs/glyphicons/css/glyphicons6583.css?b6a60f5b3aa5fd40033f94754dcd304a"/>
+
+
+
+<!-- bgimage -->
+
+        <style>
+                    body {
+                        background-color: black; 
+background-attachment: fixed;
+
+                             background-image: url('../../../../cdn03.svenskalag.se/img/backgrounds/86a19166-8fab-4fb3-9277-6b6d3ba5d00f.jpg');
+                }
+        </style>
+
+
+<!-- color-theme -->
+
+<link rel="stylesheet" href="../../../../www.svenskalag.se/css/website/teamsettings/typeheadline/open_sans_bold0531.css?1338">
+
+    <link rel="stylesheet" href="../../../../www.svenskalag.se/css/website/teamsettings/embedded-fonts/open_sans_bold0531.css?1338">
+
+
+<!-- cp -->
+
+<link rel="stylesheet" href="../../../../www.svenskalag.se/css/shared/scrollup0531.css?1338" />
+
+
+<style type="text/css">
+/* --- LINKS ---------------------------------------------------------------- */
+
+a {
+    text-decoration: underline;
+    color: #c4358f;
+}
+    a:hover, a:focus {
+        text-decoration: none;
+        color: #c4358f;
+    }
+
+
+a.ListLink {
+    text-decoration: none;
+}
+	a.ListLink:hover {
+		text-decoration: underline;
+	}
+
+
+a.ListLinkGrey {
+    text-decoration: none;
+    color: #333;
+}
+
+a.HeadLink,
+.hColor {
+    text-decoration: none;
+}
+    a.HeadLink:hover,
+    a.HeadLink:hover h1 {
+        opacity: 0.8;
+    }
+
+
+/* --- INFOBOX ---------------------------------------------------------------- */
+.infobox-bar {
+    background: #437e14;
+    background-image: linear-gradient(to bottom, #437e14 0%, #366510 120%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+    .infobox-bar:before,
+    .infobox-bar:after {
+        content: '';
+        display: block;
+        width: 0px;
+        height: 0px;
+        border: solid 2px #366510;
+        position: absolute;
+        bottom: -4px;
+    }
+        .infobox-bar:before {
+            border-color: #366510 #366510 transparent transparent;
+            left:0;
+        }
+        .infobox-bar:after {
+            border-color: #366510 transparent transparent #366510;
+            right:0;
+        }
+
+
+
+/* --- TOPPNYHETER  --- */
+.sliderBanner {
+    background-image:url("../../../img/themes/slider-top-news-668b3.png?ver=1");/* Todo */
+}
+
+
+.bg-theme {
+    background: #CD53A0;
+    color: #fff;
+}
+
+
+
+
+/* --- HEADMENU -------------------------------------------------------- */
+/* Active Links */
+.navbar .navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+    color:#fff;
+    background:#CD53A0;
+}
+/* Active Submenu Link */
+.navbar .dropdown-menu .active > a,
+.navbar .dropdown-menu .active > a:hover,
+.navbar .dropdown-menu .active > a:focus {
+    color:#fff;
+    background:#CD53A0;
+}
+
+    /* Active Links */
+    .navbar.alt1.navbar-color-1 .navbar-nav > .active > a {
+
+        
+        color:#CD53A0
+        /*"*/
+    }
+
+    /* color-1 + Alt2,3,4 Active Links */
+    .navbar.alt2.navbar-color-1 .navbar-nav > .active > a,
+    .navbar.alt3.navbar-color-1 .navbar-nav > .active > a,
+    .navbar.alt4.navbar-color-1 .navbar-nav > .active > a {
+        color:#fff;
+    }
+
+
+    /* Alt2 : Top->Bottom Gradient Light->Dark */
+    .navbar.alt2 .navbar-nav > .active > a,
+    .navbar.alt2 .navbar-nav > .active > a:hover,
+    .navbar.alt2 .navbar-nav > .active > a:focus {
+        background:#CD53A0;
+        background: -moz-linear-gradient(top,  #CD53A0 0%, #c4358f 100%);
+        background: -webkit-linear-gradient(top,  #CD53A0 0%, #c4358f 100%);
+        background: linear-gradient(to bottom,  #CD53A0 0%,#c4358f 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CD53A0', endColorstr='#c4358f',GradientType=0 );
+        }
+
+    /* Alt3 : Bottom->Top Gradient Dark->Light */
+    .navbar.alt3 .navbar-nav > .active > a,
+    .navbar.alt3 .navbar-nav > .active > a:hover,
+    .navbar.alt3 .navbar-nav > .active > a:focus {
+        background: -moz-linear-gradient(top,  #c4358f 0%, #CD53A0 100%);
+        background: -webkit-linear-gradient(top,  #c4358f 0%,#CD53A0 100%);
+        background: linear-gradient(to bottom,  #c4358f 0%,#CD53A0 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4358f', endColorstr='#CD53A0',GradientType=0 );
+        }
+
+    /* Alt4 : Left->Right Gradient Solid->Darker color */
+    .navbar.alt4 .navbar-nav > .active > a,
+    .navbar.alt4 .navbar-nav > .active > a:hover,
+    .navbar.alt4 .navbar-nav > .active > a:focus {
+        background: -moz-linear-gradient(left,  #CD53A0 0%, #c4358f 100%);
+        background: -webkit-linear-gradient(left,  #CD53A0 0%,#c4358f 100%);
+        background: linear-gradient(to right,  #CD53A0 0%,#c4358f 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CD53A0', endColorstr='#c4358f',GradientType=1 );
+        }
+
+    /* Alt5 : Solid */
+    .navbar.alt5 .navbar-nav > .active > a,
+    .navbar.alt5 .navbar-nav > .active > a:hover,
+    .navbar.alt5 .navbar-nav > .active > a:focus {
+        background: #CD53A0;
+        }
+
+</style>
+
+<style type="text/css">
+
+.LinkColor {
+    color: #c4358f;
+}
+
+a.ListLink, a.list-link {
+    color: #c4358f;
+}
+
+    a.ListLinkGrey:hover {
+        color: #c4358f;
+    }
+
+a.HeadLink, .hColor {
+    color: #333;
+}
+
+</style>
+
+<style type="text/css">
+
+    .navbar {
+        background: #437e14;
+    }
+
+
+    /* Link text color */
+    .navbar .navbar-nav > li > a {
+        color: #fff;
+    }
+
+
+    /* Hover Links */
+    .navbar .navbar-nav > li > a:hover,
+    .navbar .navbar-nav > li > a:focus {
+        background: #CD53A0;
+    }
+
+
+    /* Drop down open */
+    .navbar .navbar-nav .open > a,
+    .navbar-nav .open > a:hover,
+    .navbar .navbar-nav .open > a:focus {
+        background-color: #CD53A0;
+    }
+
+
+    /* Alt1 : Light */
+    .navbar.alt1 .navbar-nav > .active > a,
+    .navbar.alt1 .navbar-nav > .active > a:hover,
+    .navbar.alt1 .navbar-nav > .active > a:focus {
+        color:#fff;
+        background: #c4358f;
+    }
+
+
+
+    /* Alt2 : Gradient Light->Dark */
+    .navbar.alt2 .navbar-nav > .active > a,
+    .navbar.alt2 .navbar-nav > .active > a:focus {
+        color: #fff;
+        background: #c4358f;
+        /*
+        background: -moz-linear-gradient(top, #CD53A0 20%, #c4358f 100%);
+        background: -webkit-linear-gradient(top, #CD53A0 20%, #c4358f 100%);
+        background: linear-gradient(to bottom, #CD53A0 20%, #c4358f 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CD53A0', endColorstr='#c4358f',GradientType=0 );
+        */
+    }
+        .navbar.alt2 .navbar-nav .open > a,
+        .navbar.alt2 .navbar-nav > li > a:hover,
+        .navbar.alt2 .navbar-nav > li > a:focus {
+            background: #366510;
+        }
+
+    /* Alt3 : Gradient Dark->Light */
+    .navbar.alt3 .navbar-nav > .active > a,
+    .navbar.alt3 .navbar-nav > .active > a:focus {
+        color: #fff;
+        background: #c4358f;
+        /*
+        background: -moz-linear-gradient(top, #c4358f 20%, #CD53A0 100%);
+        background: -webkit-linear-gradient(top, #c4358f 20%, #CD53A0 100%);
+        background: linear-gradient(to bottom, #c4358f 20%, #CD53A0 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4358f', endColorstr='#CD53A0',GradientType=0 );
+        */
+    }
+        .navbar.alt3 .navbar-nav .open > a,
+        .navbar.alt3 .navbar-nav > li > a:hover,
+        .navbar.alt3 .navbar-nav > li > a:focus {
+            background: #366510;
+        }
+
+/* DIVIDER 3D */
+.navbar .navbar-nav > li > a { box-shadow: inset -1px 0 0 rgba(0,0,0,0.2); }
+.navbar .navbar-nav > li > a { border-left: 1px solid rgba(255,255,255,0.1); }
+    /* divider fix: remove extra borders  */
+    #navigation { border-right: 1px solid rgba(255,255,255,0.1); }
+    .navbar-nav.navbar-right { border-left: 1px solid rgba(0,0,0,0.2); }
+
+
+    .navbar-nav > li > a:focus {
+        background: none;
+    }
+
+
+    /* Bootstrap border color reset */
+    .nav .open > a, .nav .open > a:hover,
+    .nav .open > a:focus {
+        border-color:rgba(255,255,255,0.1);
+    }
+
+
+
+</style>
+
+	<link rel="shortcut icon" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-48x48eccb.png?3">
+<link rel="icon" sizes="16x16" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-16x16eccb.png?3">
+<link rel="icon" sizes="32x32" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-32x32eccb.png?3">
+<link rel="icon" sizes="48x48" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-48x48eccb.png?3">
+<link rel="icon" sizes="76x76" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-76x76eccb.png?3">
+<link rel="icon" sizes="96x96" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-96x96eccb.png?3">
+<link rel="icon" sizes="120x120" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-120x120eccb.png?3">
+<link rel="icon" sizes="128x128" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-128x128eccb.png?3">
+<link rel="icon" sizes="144x144" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-144x144eccb.png?3">
+<link rel="icon" sizes="152x152" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-152x152eccb.png?3">
+<link rel="icon" sizes="167x167" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-167x167eccb.png?3">
+<link rel="icon" sizes="180x180" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-180x180eccb.png?3">
+<link rel="icon" sizes="192x192" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-192x192eccb.png?3">
+<link rel="icon" sizes="196x196" href="../../../../cdn.svenskalag.se/img/clubmarks/27039-196x196eccb.png?3">
+		<link rel="apple-touch-icon" href="../../../../cdn.svenskalag.se/img/clubmarks/mcard/27039fe6d.png?w=512&amp;h=512&amp;scale=canvas&amp;bgcolor=437e14&amp;v=3">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../../cdn.svenskalag.se/img/clubmarks/mcard/270391e7f.png?w=72&amp;h=72&amp;scale=canvas&amp;bgcolor=437e14&amp;v=3">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../../cdn.svenskalag.se/img/clubmarks/mcard/270399bac.png?w=114&amp;h=114&amp;scale=canvas&amp;bgcolor=437e14&amp;v=3">
+	<link rel="image_src" href="https://cdn.svenskalag.se/img/clubmarks/png/27039?w=200&amp;h=200&amp;scale=canvas&amp;bgcolor=ffffff&amp;v=3" />
+
+
+	<script type="text/javascript">
+        var teamName = "isunherr";
+        var teamId = 14820;
+	</script>
+
+	
+
+<script type="text/javascript" src="../../../libs/jquery-1.10.2.min9953.js?1a47ce29d153b0db54a7b2b18eda77fe"></script>
+<script type="text/javascript" src="../../../libs/jquery-ui-1.11.1/jquery-uic870.js?fc97c2a692e6e0c9f567284d79081a8f"></script>
+<script type="text/javascript" src="../../../js/shared/global_ver1.2d796.js?b127662b2d2ddca4a8e814e96542163b"></script>
+<script type="text/javascript" src="../../../js/shared/global1251.js?dc05ec596ae24e684f59cc1dfd69a4dd"></script>
+<script type="text/javascript" src="../../../js/website/shared/alertc1b3.js?5611022234ef2bf55b31134629921218"></script>
+<script type="text/javascript" src="../../../js/shared/decoder0e17.js?24dc3d08fcb18ab12c58724cbca8ba73"></script>
+<script type="text/javascript" src="../../../libs/jquery.autoresize/autoresize.jquery.min5583.js?9c740d57388bc4a358e37a0afb1c8e89"></script>
+<script type="text/javascript" src="../../../libs/jquery.jcarousel.lite/jcarousel.lite5ac6.js?d286cd82e33f9c6fc81351d3b95704ed"></script>
+<script type="text/javascript" src="../../../libs/jquery.ui.datepicker-sv/jquery.ui.datepicker-sv64cf.js?26783d8a29c3122ff8867cc4c1b4abb8"></script>
+<script type="text/javascript" src="../../../libs/jquery.svenskalag.srcf57a.js?34c223d0af9cc9d929891c6a0115da95"></script>
+<script type="text/javascript" src="../../../libs/jquery.numerice9bc.js?57ea3d3b8b0d06a1529bdfdc9be90576"></script>
+<script type="text/javascript" src="../../../libs/jquery-deparam3822.js?c97cfe25409048323dbf422e4aa32622"></script>
+<script type="text/javascript" src="../../../libs/jquery.number/jquery.number.min6f80.js?547b0cb12206c8f0844efb06b09d805d"></script>
+<script type="text/javascript" src="../../../libs/autosizeb88b.js?050d6e56eda31a3e450636f8212fa618"></script>
+<script type="text/javascript" src="../../../libs/hammer.minf628.js?7b27441e38840ced7f9fb33aef5ea54e"></script>
+<script type="text/javascript" src="../../../libs/bootstrap3cf1.js?728e3df64727ec0eb93abddc2d0f7d68"></script>
+<script type="text/javascript" src="../../../libs/underscorejs/1.5.1/underscore-minc78a.js?2d293b3cf4f2ce909d6eb78753f24530"></script>
+
+
+<script src="../../../libs/vue/2.6.14/vue.min.js"></script>
+
+
+
+
+<script src="../../../libs/vue-resource/1.5.0/vue-resource.js"></script>
+<script src="../../../libs/sortablejs/1.8.4/sortable.min.js"></script>
+<script src="../../../libs/vue-draggable/2.20.0/vuedraggable.umd.min.js"></script>
+
+<script src="../../../libs/axios/0.18.0/axios.min.js"></script>
+<script>
+	var vHttp = axios.create({
+		baseURL: '/' + teamName,
+		headers: {
+			'Cache-Control': 'no-cache',
+			'Pragma': 'no-cache',
+			'Expires': 'Sat, 01 Jan 2000 00:00:00 GMT',
+		}
+	});
+	var vHttpApi = axios.create({
+		baseURL: '',
+		headers: {
+			'Cache-Control': 'no-cache',
+			'Pragma': 'no-cache',
+			'Expires': 'Sat, 01 Jan 2000 00:00:00 GMT',
+		}
+	});
+</script>
+
+
+<script type="text/javascript" src="../../../js/shared/crm-campaign-handler.js"></script>
+<script type="text/javascript" src="../../../js/shared/scrollup.js"></script>
+<script type="text/javascript" src="../../../js/shared/date-formatting.js"></script>
+<script type="text/javascript" src="../../../js/administration/membership/keepalivec4ca.js?1"></script>
+
+
+	<script async='async' src='https://lwadm.com/lw/pbjs?pid=f8132ce3-b5aa-4446-bcbd-1ccd9729631e'></script>
+<script type='text/javascript'>
+    var lwhb = lwhb || { cmd: [] };
+</script>
+
+        <script>
+		var lwhb_svelag = {
+			getAdCode: function (tagId) {
+				return {
+					tagId: tagId,
+					keywords: {
+						'LoggedOn': 'False',
+						'Sport': 'Fotboll',
+						'TeamID': '14820',
+						'ClubTeamID': '14819',
+						'Clubname': 'ISUN',
+						'County': 'Uppsala_lan',
+						'TeamType': 'Senior_Herrar',
+						'ClubID': '27039',
+						'Clubmark': 'True',
+						'BetBlock': 'False',
+						'TeamYear': '1996'
+					}
+				};
+			}
+		};
+        </script>
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+            '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type='text/javascript'>
+		googletag.cmd.push(function () {
+
+			var ads = googletag.pubads()
+			.setTargeting("LoggedOn", "False")
+			.setTargeting("Sport", "Fotboll")
+			.setTargeting("TeamID", "14820")
+			.setTargeting("ClubTeamID", "14819")
+			.setTargeting("Clubname", "ISUN")
+			.setTargeting("County", "Uppsala_lan")
+			.setTargeting("TeamType", "Senior_Herrar")
+			.setTargeting("ClubID", "27039")
+			.setTargeting("Clubmark", "True")
+			.setTargeting("BetBlock", "False")
+			.setTargeting("TeamYear", "1996");
+
+
+			
+			//googletag.defineSlot('/2542645/Mittenspalt', [[300, 250], [440, 247], [468, 240], [320, 320], [425, 329], [480, 280], [440, 220], [440, 250]], 'div-gpt-ad-1463481120504-2').addService(googletag.pubads());
+			//googletag.defineSlot('/2542645/Panorama', [[980, 240]], 'div-gpt-ad-1463481120504-3').addService(googletag.pubads());
+			//googletag.defineSlot('/2542645/Rektangel1', [[300, 250], [300, 600], [300, 480]], 'div-gpt-ad-1463481120504-4').addService(googletag.pubads());
+			//googletag.defineSlot('/2542645/Rektangel2', [[300, 250], [300, 600], [300, 480]], 'div-gpt-ad-1463481120504-5').addService(googletag.pubads());
+            googletag.defineSlot('/2542645/TP', [[300, 140]], 'div-gpt-ad-1463481120504-7').addService(googletag.pubads());
+			
+
+			googletag.pubads().collapseEmptyDivs();
+			googletag.enableServices();
+		});
+</script>
+
+
+<script async='async' src='../../../../macro.adnami.io/macro/spec/adsm.macro.da301b65-c556-4c9d-8b05-13c315f2a4c0.js'></script>
+<script>
+    var adsmtag = adsmtag || {};
+    adsmtag.cmd = adsmtag.cmd || [];
+</script>
+
+</head>
+
+<body class="rightCol-visible device-desktop">
+
+    
+        <div style="display: none;">
+        <img src="../../../../cdn.svenskalag.se/img/clubmarks/27039eccb.png?3" />
+    </div>
+
+
+
+    
+
+
+    <div id="container" class="">
+        <div id="siteCol">
+                <div class="ad-panorama" style="height:240px; padding:0px; margin-bottom:10px;">
+            <div id='svenskalag_panorama'></div>
+            <script>
+                lwhb.cmd.push(function () {
+                    lwhb.loadAd(lwhb_svelag.getAdCode('svenskalag_panorama'));
+                });
+            </script>
+    </div>
+<div id="tip-holder">
+    <span></span>
+    <div class="arrow"></div>
+</div>
+
+
+
+<div id="site-overlay"></div>
+
+<div id="svlag-top" class="custom-text">
+        <nav class="navbar alt3 navbar-color-5 navbar-md">
+
+            
+            <div id="navigation" class=few-teams>
+
+                <div class="navigation-wrapper">
+                    <div class="navigation-head bg-primary-color">
+                            <img src="https://cdn.svenskalag.se/img/clubmarks/png/27039?v=3&amp;ext=_w" height="36" width="33" />
+                        <h2 style="font-family: Open Sans; color: #FFFFFF;">ISUN</h2>
+                        <button style="color: #FFFFFF;" type="button" class="pull-right" onclick="$('body').removeClass('teamnav-open');"><i class="fa fa-angle-right"></i></button>
+                    </div>
+
+                    <ul class="nav navbar-nav">
+                        <li class="">
+        <a href="https://www.isun.se/isun">
+ISUN        </a>
+</li>
+
+
+			<li class="active"><a href="https://www.isun.se/isunherr">Herrar</a></li>
+			<li class=""><a href="https://www.isun.se/isundam">Damer</a></li>
+			<li class=""><a href="https://www.isun.se/isunflames">Flames</a></li>
+
+
+
+<script>
+	$(".link-force").on("click", function () {
+		$(this).click();
+	});
+	$(".link-force").on("mouseover", function (event) {
+		var element = event.target;
+		if (!element.title && element.scrollWidth > element.clientWidth)
+			element.title = element.text;
+	});
+
+	//Close all submenus where a menu is closed
+	$('.grouped-teams').closest(".dropdown").on('hidden.bs.dropdown', function (event) {
+		var submenus = $(event.target).find('.dropdown-menu');
+		submenus.hide();
+		submenus.parent().removeClass('submenu-open');
+	});
+
+	//open the submenu where the current team is selected
+
+	$('.grouped-teams').closest(".dropdown").on('show.bs.dropdown', function (event) {
+		var activeTeam = $(event.target).find('li.active');
+		var submenu = activeTeam.parent();
+		if (!submenu.hasClass('dropdown-menu'))
+			return;
+
+		submenu.show();
+		submenu.parent().addClass('submenu-open');
+	});
+</script>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="grouped-navigation" class="bg-primary-color">
+
+                <a href="#sideMenu" id="toggle-sideMenu" data-toggle="dropdown" class="mobile-menu mobile-nav">
+                    <div class="mobile-menu-button">
+                        <span id="menuTitle" class=" text-narrow"></span><i class="caret"></i>
+                    </div>
+                </a>
+
+
+
+                        <ul class="nav navbar-nav navbar-right" id="user-login-dropdown">
+                            <li>
+                                <a href="#" data-toggle="modal" data-target="#login-modal">Logga in</a>
+                            </li>
+                        </ul>
+                    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal">
+                        <div class="modal-dialog" role="document">
+                            <link rel="stylesheet" href="../../../css/website/loginbea6.css?v=7" />
+<link rel="stylesheet" href="../../../css/shared/floating-labels7626.css?v=1261" />
+
+<div class="login-wrapper bg-primary-color">
+    
+    <a href="javascript:;" class="login-icon close" data-dismiss="modal" aria-label="Close">
+        <svg version="1.0" id="close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 35 35" enable-background="new 0 0 35 35" xml:space="preserve">
+        <rect x="16.349" y="6.109" transform="matrix(0.7069 -0.7073 0.7073 0.7069 -7.2487 17.5074)" fill-rule="evenodd" clip-rule="evenodd" width="2.302" height="22.783" />
+        <rect x="16.349" y="6.109" transform="matrix(-0.7069 -0.7073 0.7073 -0.7069 17.4926 42.2487)" fill-rule="evenodd" clip-rule="evenodd" width="2.302" height="22.783" />
+        </svg>
+    </a>
+
+
+
+    <div class="login-content">
+        <div class="club">
+                <img src="https://cdn.svenskalag.se/img/clubmarks/png/27039?v=3&amp;ext=_w" class="" />
+            <strong>ISUN</strong>
+        </div>
+
+
+
+        <!-- SIGN IN -->
+        <div class="form sign-in">
+            <div class="error-msg login-error"></div>
+
+            <form method="post" id="login-form" action="https://www.isun.se/isunherr/logga-in">
+                <div class="svlag-floating-label">
+                    <!--fixed-label-->
+                    <label for="username" autofocus="autofocus">Anv&#228;ndarnamn</label>
+                    <input type="text" name="UserName" autocomplete="username" id="login-username" maxlength="100" />
+                    <input type="hidden" value="" name="userNameSite" />
+                </div>
+                <div class="svlag-floating-label ">
+                    <!--fixed-label-->
+                    <label for="password">L&#246;senord</label>
+                    <input type="password" name="UserPass" autocomplete="current-password" id="login-password" />
+                </div>
+                <button type="submit" class="button text-primary-color" id="login-submit"><span class="login-submit-text">Logga in</span> <i class="fa fa-spinner fa-pulse fa-fw" style="display:none;"></i></button>
+                <div class="svlag-form-group">
+                    <p class="toggle">
+                        <input type="checkbox" name="cbautologin" id="remember" checked="checked" /><label for="remember" style="color:#FFF;">Kom ih&#229;g mig</label>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+
+
+        <!-- GLÖMT LÖSENORD :: STEG 1 -->
+        <div class="form forgot-password-step1" style="display:none">
+            
+            <p>Fyll i din e-post så skickar vi ett mejl med en länk där du kan sätta ett nytt lösenord.</p>
+
+            <div class="svlag-floating-label">
+                <label for="password">Din e-postadress</label>
+                <input type="email" id="forgot-password-email" maxlength="60" />
+            </div>
+            <button type="submit" class="button" id="send-password" data-loading-text="Skickar" data-default-text="Skicka"><span>Skicka</span> <i class="fa fa-spinner fa-pulse fa-fw" style="display:none;"></i></button>
+
+            <div class="error-msg forgot-password-error"></div>
+
+        </div>
+
+
+
+        <!-- GLÖMT LÖSENORD :: STEG 2 -->
+        <div class="form forgot-password-step2" style="display:none">
+            <h3>Mejl skickat!</h3>
+            <p>Vi har skickat ett mejl till din e-postadress med en länk där du kan sätta ett nytt lösenord.</p>
+        </div>
+
+
+
+        <!-- NYTT LÖSENORD :: STEG 3 -->
+        <div class="form forgot-password-step3" style="display:none">
+            <div class="new-password-container">
+                <h3>Sätt ett <span class="is-first-login-new">nytt</span> lösenord för <span class="new-password-username"></span></h3>
+                <form id="set-new-password">
+                    <input type="text" style="display:none;" name="username" /><!-- only used for browser password autocompletion -->
+                    <div class="svlag-floating-label">
+                        <label for="password">Lösenord</label>
+                        <input type="password" name="password" autocomplete="new-password" maxlength="100" />
+                    </div>
+                    <div class="svlag-floating-label">
+                        <label for="password2">Repetera lösenord</label>
+                        <input type="password" name="password2" autocomplete="new-password" maxlength="100" />
+                    </div>
+                    <button type="submit" class="button set-new-password-btn" data-loading-text="Sparar" data-default-text="Spara"><span>Spara</span> <i class="fa fa-spinner fa-pulse fa-fw" style="display:none;"></i></button>
+                </form>
+            </div>
+
+            <div class="error-msg new-password-error"></div>
+            <div style="display: none" class="error-msg link-already-used">
+                <span>Länken har redan använts för att sätta ett lösenord.</span>
+                <button type="submit" class="button resend-password-key-btn" data-loading-text="Skickar ny länk" data-default-text="Skicka ny länk"><span>Skicka ny länk</span> <i class="fa fa-spinner fa-pulse fa-fw" style="display:none;"></i></button>
+            </div>
+            <div style="display: none" class="error-msg link-expired">
+                <span>Länken är endast giltig i 7 dygn.</span>
+                <button type="submit" class="button resend-password-key-btn" data-loading-text="Skickar ny länk" data-default-text="Skicka ny länk"><span>Skicka ny länk</span> <i class="fa fa-spinner fa-pulse fa-fw" style="display:none;"></i></button>
+            </div>
+            <div style="display: none" class="error-msg link-invalid">
+                <span>Oj då, du har klickat på en gammal eller bruten länk.</span>
+            </div>
+        </div>
+
+        <!-- NYTT LÖSENORD :: STEG 4 -->
+        <div class="form forgot-password-step4" style="display:none; margin-bottom:0px;">
+            <h3 style="text-align:center">Lösenord sparat!</h3>
+                <button class="button goto-signin goto-signin-use-new-login">Logga in här</button>
+        </div>
+    </div><!-- login-content -->
+
+        <a href="javascript:;" class="text-link bottom-link login-signin goto-signin" style="display:none;">Logga in</a>
+    <a href="javascript:;" class="text-link bottom-link login-back goto-signin" style="display:none;">Tillbaka till inloggning</a>
+    <a href="javascript:;" class="text-link bottom-link forgot-password-btn">Gl&#246;mt l&#246;senordet?</a>
+
+</div>
+<script type="text/javascript">
+    var newPasswordKey = '';
+    var isAuthenticated = false
+</script>
+<script type="text/javascript" src="../../../js/shared/login1ff1.js?24"></script>
+
+    <script>
+        $(function () {
+            $('.open-login-modal').click(function () {
+                $('#login-modal').modal();
+            });
+        });
+    </script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
+<link href="../../../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<script type="text/javascript" src="../../../js/website/shared/svenskalag.floating-labelsae24.js?v=14"></script>
+
+
+<script type="text/javascript">
+
+    //Webkit Auto-fill fix
+    function AnimationListener() {
+        $("#login-username").parent().addClass("floating");
+        $("#login-password").parent().addClass("floating");
+    }
+
+    var username = document.getElementById("login-username");
+    var password = document.getElementById("login-password");
+
+    username.addEventListener("webkitAnimationEnd", AnimationListener, false);
+    username.addEventListener("MozAnimationEnd", AnimationListener, false);
+    username.addEventListener("OAnimationEnd", AnimationListener, false);
+    username.addEventListener("animationEnd", AnimationListener, false);
+
+    password.addEventListener("webkitAnimationEnd", AnimationListener, false);
+    password.addEventListener("MozAnimationEnd", AnimationListener, false);
+    password.addEventListener("OAnimationEnd", AnimationListener, false);
+    password.addEventListener("animationEnd", AnimationListener, false);
+</script>
+                        </div>
+                    </div>
+                    <script>
+                        $(function () {
+                            $('.open-login-modal').click(function () {
+                                $('#login-modal').modal();
+                            });
+                        });
+                    </script>
+            </div>
+        </nav>
+                <div class="header header-desktop bg-primary-color">
+                    <figure class="header-background">
+                        <img id="header-image" src="../../../../cdn03.svenskalag.se/img/headers/userimg14819_694769c4ca.jpg?1" />
+                    </figure>
+
+
+                    <div style="padding-top: 44px; padding-left:190px;padding-right:20px; position:absolute;top:0;left:0;" class="desktop-header-text">
+                        <div style="width:770px;" class="header-text ">
+                            <h4 style="margin-top: 4px; line-height: 110%; font-family: Open Sans;  font-size: 46px; color: #FFFFFF; text-align:left; letter-spacing: -1px;">&nbsp;</h4>
+                            <h5 style="font-family: Open Sans;  font-size: 18px; color: #FFFFFF; text-align:left; letter-spacing: 0px;">
+Herrar                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+
+</div>
+
+
+            <a name="menuAnchor"></a>
+            <div class="menu-bg">
+                <div class="menu">
+                    <div id="sideMenu" class="dropdown">
+	<div class="dropdown-menu">
+		<div class="menu-group">
+				<a href="https://www.isun.se/isunherr" class="">Hem </a>
+				<a href="../../nyheter/1509412/infor-isun-fantasy-2020.html" class="">Nyheter </a>
+				<a href="../../truppen.html" class="">Truppen </a>
+				<a href="../../matcher.html" class="">Matcher </a>
+				<a href="../../statistik.html" class="">Statistik </a>
+				<a href="../../kalender.html" class="current">Kalender </a>
+				<a href="../../kontakt.html" class="">Kontakt </a>
+							<a href="../../sida/36510/hitta-oss-aven-pa.html" class="">
+					Hitta oss &#228;ven p&#229;... 
+				</a>
+		</div>
+	</div>
+</div>
+<script>
+	var menuTitle = $(".menu-group .current").text();
+
+	if (menuTitle != "") {
+		$("#menuTitle").text(menuTitle);
+	}
+	else {
+		$("#menuTitle").text("Till hemsidan");
+	}
+</script>
+
+<div style="height:100%;"></div>
+
+                </div>
+
+                <div id="contentContainer" class="content">
+                    
+                    <style>
+    #alert p a {
+        color: #fff;
+        text-decoration: underline;
+    }
+</style>
+
+<div id="alert">
+	<div class="msg">
+    	<div class="icon"></div>
+		<p></p>
+		<a href="javascript:;" class="cancel-icon"></a>
+	</div>
+</div>
+
+<script>
+	responseMessageLoaded = function (responseMessage, errorMessage) {
+		if (responseMessage) {
+			cssAlert(responseMessage, "green");
+		}
+		else if (errorMessage) {
+			cssAlert(errorMessage, "red");
+		}
+	}
+</script>
+<iframe id="alertIframe" src="https://www.isun.se/api/alerts/getresponsemessagehtml" style="position: absolute; width: 0; height: 0; border: 0;"></iframe>
+
+<script type="text/javascript">
+    function loadCssAlertFromHash() {
+        var hash = location.hash;
+        if (!hash || hash.length == 0)
+            return;
+        hash = hash.slice(1);
+        var params = $.deparam(hash, true);
+        var cssAlertMessage = params.cssAlertMessage;
+        if (cssAlertMessage) {
+            cssAlert(cssAlertMessage, params.cssAlertColor);
+            delete params.cssAlertColor
+            delete params.cssAlertMessage
+            location.hash = $.param(params);
+        }
+    }
+    loadCssAlertFromHash();
+</script>
+
+
+                    
+                    
+<link rel="stylesheet" href="../../../css/shared/ajaxloader.css" media="screen" />
+<link rel="stylesheet" href="../../../css/website/pages/schedule/schedulea87f.css?4" />
+<script type="text/javascript" src="../../../libs/jquery.selectall.js"></script>
+
+
+
+<div class="content-padding">
+
+
+
+
+        <div class="form-group right">
+            <form name="filterForm" method="get">
+                
+                
+                <select class="form-control inline-block" id="EventTypeId" name="EventTypeId" onchange="location.hash = location.hash.replace(&#39;date-today&#39;, &#39;&#39;); document.filterForm.submit();" style="width: auto;"><option value="">Alla aktiviteter</option>
+<option value="9">Arbetspass</option>
+<option value="6">Cuper</option>
+<option value="10">L&#228;ger</option>
+<option value="7">Matcher</option>
+<option value="75">Matcher (Hemma)</option>
+<option value="76">Matcher (Borta)</option>
+<option value="2">M&#246;ten</option>
+<option value="1">Tr&#228;ningar</option>
+<option value="5">T&#228;vlingar</option>
+<option value="8">Utbildningar</option>
+<option value="4">&#214;vrigt</option>
+</select>
+            </form>
+        </div>
+
+    <h1 class="hColor">Kalender</h1>
+    <div class="p-t-5 p-b-10"><a href="../../kalender.html#date-today" class="ListLink">Gå till idag</a> &nbsp;|&nbsp; <a href="#subscribeModal" data-toggle="modal" class="ListLink">Prenumerera</a></div>
+
+
+    
+    
+
+    
+
+
+    <div class="form-group">
+        <div class="btn-group btn-group-justified btn-group-lg">
+                <a href="februari.html" class="btn btn-default" style="width: 44px;"><i class="fa fa-chevron-left"></i></a>
+            <a href="#monthDropdown" class="btn btn-default" data-toggle="dropdown" style="width: 100%; background: none;" aria-expanded="false"><b>Mars 2009</b> <i class="fa fa-angle-down"></i></a>
+                <a href="april.html" class="btn btn-default" style="width: 44px;"><i class="fa fa-chevron-right"></i></a>
+        </div>
+
+        <div id="monthDropdown" class="dropdown" style="z-index: 1000;">
+            <div class="dropdown-menu dropdown-arrow-center dropdown-calendar">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <select class="form-control" data-val="true" data-val-number="The field Year must be a number." data-val-required="The Year field is required." id="ShowDate_Year" name="ShowDate.Year" onclick="event.stopPropagation();"><option value="2028">2028</option>
+<option value="2027">2027</option>
+<option value="2026">2026</option>
+<option value="2025">2025</option>
+<option value="2024">2024</option>
+<option value="2023">2023</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+<option value="2016">2016</option>
+<option value="2015">2015</option>
+<option value="2014">2014</option>
+<option value="2013">2013</option>
+<option value="2012">2012</option>
+</select>
+                        <script>
+                            var year = 2009;
+                            var currentYear = 2009;
+                            $("#ShowDate_Year").change(function () {
+                                var value = $("#ShowDate_Year option:selected").text();
+
+                                if (year != value) {
+                                    $(".dropdown-calendar a.bg-theme").removeClass("bg-theme").addClass("current");
+                                }
+                                else {
+                                    $(".dropdown-calendar a.current").removeClass("current").addClass("bg-theme");
+                                }
+
+                                $(".dropdown-calendar a").each(function () {
+                                    $(this).attr("href", $(this).attr("href").replace("/" + currentYear + "/", "/" + value + "/"));
+                                });
+
+                                currentYear = parseInt(value);
+                            });
+                        </script>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="row row-spaceless small">
+                            <div class="col-sm-3">
+                                <a href="januari.html" class="">Jan</a>
+                                <a href="februari.html" class="">Feb</a>
+                                <a href="mars.html" class="bg-theme">Mar</a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="april.html" class="">Apr</a>
+                                <a href="maj.html" class="">Maj</a>
+                                <a href="juni.html" class="">Jun</a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="juli.html" class="">Jul</a>
+                                <a href="augusti.html" class="">Aug</a>
+                                <a href="september.html" class="">Sep</a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="oktober.html" class="">Okt</a>
+                                <a href="november.html" class="">Nov</a>
+                                <a href="december.html" class="">Dec</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="table table-default table-border-bottom" id="table-schedule">
+			<tr id="" class="  danger">
+				<td width="46" align="center">
+					<span class="date">
+						<b>1</b><br />
+						<span class="text-muted small">S&#246;n</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr>
+				<td colspan="100" class="text-muted small week-row">v.10</td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>2</b><br />
+						<span class="text-muted small">M&#229;n</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>3</b><br />
+						<span class="text-muted small">Tis</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>4</b><br />
+						<span class="text-muted small">Ons</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>5</b><br />
+						<span class="text-muted small">Tor</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>6</b><br />
+						<span class="text-muted small">Fre</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class=" active ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>7</b><br />
+						<span class="text-muted small">L&#246;r</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  danger">
+				<td width="46" align="center">
+					<span class="date">
+						<b>8</b><br />
+						<span class="text-muted small">S&#246;n</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr>
+				<td colspan="100" class="text-muted small week-row">v.11</td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>9</b><br />
+						<span class="text-muted small">M&#229;n</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>10</b><br />
+						<span class="text-muted small">Tis</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>11</b><br />
+						<span class="text-muted small">Ons</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>12</b><br />
+						<span class="text-muted small">Tor</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>13</b><br />
+						<span class="text-muted small">Fre</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class=" active ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>14</b><br />
+						<span class="text-muted small">L&#246;r</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  danger">
+				<td width="46" align="center">
+					<span class="date">
+						<b>15</b><br />
+						<span class="text-muted small">S&#246;n</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr>
+				<td colspan="100" class="text-muted small week-row">v.12</td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>16</b><br />
+						<span class="text-muted small">M&#229;n</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>17</b><br />
+						<span class="text-muted small">Tis</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>18</b><br />
+						<span class="text-muted small">Ons</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>19</b><br />
+						<span class="text-muted small">Tor</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>20</b><br />
+						<span class="text-muted small">Fre</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class=" active ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>21</b><br />
+						<span class="text-muted small">L&#246;r</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  danger">
+				<td width="46" align="center">
+					<span class="date">
+						<b>22</b><br />
+						<span class="text-muted small">S&#246;n</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr>
+				<td colspan="100" class="text-muted small week-row">v.13</td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>23</b><br />
+						<span class="text-muted small">M&#229;n</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>24</b><br />
+						<span class="text-muted small">Tis</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>25</b><br />
+						<span class="text-muted small">Ons</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>26</b><br />
+						<span class="text-muted small">Tor</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>27</b><br />
+						<span class="text-muted small">Fre</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class=" active ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>28</b><br />
+						<span class="text-muted small">L&#246;r</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  danger">
+				<td width="46" align="center">
+					<span class="date">
+						<b>29</b><br />
+						<span class="text-muted small">S&#246;n</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr>
+				<td colspan="100" class="text-muted small week-row">v.14</td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>30</b><br />
+						<span class="text-muted small">M&#229;n</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+			<tr id="" class="  ">
+				<td width="46" align="center">
+					<span class="date">
+						<b>31</b><br />
+						<span class="text-muted small">Tis</span>
+					</span>
+				</td>
+				<td colspan="3"></td>
+			</tr>
+</table>
+
+<div class="content-padding text-right m-t-20">
+	<a href="#" data-action="scroll" data-direction="up" class="ListLink hidden-print">Tillbaka till toppen <i class="fa fa-angle-up"></i></a>
+</div>
+
+<script type="text/javascript" src="../../../js/website/schedule/scheduled67d.js?39"></script>
+
+<!-- TA BORT AKTIVITETER -->
+
+<div id="subscribeModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Prenumerera på kalendern i datorn eller mobilen!</h4>
+			</div>
+			<div class="modal-body">
+				Nu kan du automatiskt få lagets aktiviteter direkt i kalendern på din dator eller i mobilen!<br /><br />
+				<h3 class="m-b-20">Så här gör du:</h3>
+				<div class="container-fluid row-divider m-b-20">
+					<div class="row no-gutter">
+						<div class="col-md-2 col-xs-3">
+							<a href="webcal://cal.svenskalag.se/14820" title="Klicka för att synka med Outlook" alt="">
+								<img src="../../../img/icons/cal/outlook.png" class="img-responsive">
+							</a>
+						</div>
+						<div class="text-responsive col-md-10 col-xs-9">
+							<strong>Outlook</strong><br />
+							Klicka på <a class="admin" href="webcal://cal.svenskalag.se/14820">webcal://cal.svenskalag.se/14820</a>. I dialogen som kommer fram klickar du på "Tillåt", välj sedan Ja till att prenumerera.
+						</div>
+					</div>
+					<div class="row no-gutter">
+						<div class="col-md-2 col-xs-3">
+							<a href="webcal://cal.svenskalag.se/14820" title="Klicka för att synka med iPhone" alt="">
+								<img src="../../../img/icons/cal/iphone.png" class="img-responsive">
+							</a>
+						</div>
+						<div class="text-responsive col-md-10 col-xs-9">
+							<strong>iPhone</strong><br />
+							&Ouml;ppna mobilens webbl&auml;sare och ange adressen <a class="admin" href="webcal://cal.svenskalag.se/14820">webcal://cal.svenskalag.se/14820</a>. Klicka sedan på "Prenumerera" i den ruta som kommer upp.
+						</div>
+					</div>
+					<div class="row no-gutter">
+						<div class="col-md-2 col-xs-3">
+							<a href="webcal://cal.svenskalag.se/14820" title="Klicka för att synka med Android" alt="">
+								<img src="../../../img/icons/cal/android.png" class="img-responsive">
+							</a>
+						</div>
+						<div class="text-responsive col-md-10 col-xs-9">
+							<strong>Android</strong><br />
+							Prenumeration i din Android-mobil sker via Google Kalender. Se avsnittet nedan.
+						</div>
+					</div>
+					<div class="row no-gutter">
+						<div class="col-md-2 col-xs-3">
+							<a href="webcal://cal.svenskalag.se/14820" title="Klicka för att synka med Google" alt="">
+								<img src="../../../img/icons/cal/google.png" class="img-responsive">
+							</a>
+						</div>
+						<div class="text-responsive col-md-10 col-xs-9">
+							<strong>Google</strong><br />
+							Öppna <a class="admin" target="_blank" href="http://www.google.com/calendar">Google Kalender</a> och klicka på "Lägg till" under rubriken "Andra kalendrar", välj "Lägg till webbadress". Ange <a class="admin" href="webcal://cal.svenskalag.se/14820">webcal://cal.svenskalag.se/14820</a> och välj "Lägg till kalender".
+						</div>
+					</div>
+					<div class="row no-gutter">
+						<div class="col-md-2 col-xs-3">
+							<a href="webcal://cal.svenskalag.se/14820" title="Klicka för att synka med iCal" alt="">
+								<img src="../../../img/icons/cal/ical.png" class="img-responsive">
+							</a>
+						</div>
+						<div class="text-responsive col-md-10 col-xs-9">
+							<strong>iCal</strong>
+							Klicka på <a class="admin" href="webcal://cal.svenskalag.se/14820">webcal://cal.svenskalag.se/14820</a>.
+							I dialogen som kommer fram klickar du på "Tillåt", välj sedan Ja till att prenumerera.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Stäng</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+                    <script type="text/javascript" src="../../../../www.svenskalag.se/js/shared/dropdown-menuc9f0.js?8"></script>
+                    <script type="text/javascript" src="../../../js/shared/decodeemails5ce5.js?c1dc989d5e045041863da3161231fea0"></script>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+                <div id="print-button">
+                        <a href="javascript:window.print()" class="ListLink"><i class="fa fa-print"></i> Utskriftsv&#228;nlig version</a>                </div>
+            <div class="footer">
+            <style>
+                .footer-footer {
+                    border: none;
+                }
+            </style>
+            <div class="footer-footer">
+                <div class="row">
+                        <div class="col-sm-6">
+                            <a href="https://www.svenskalag.se/tjana-pengar" target="_blank" class="add" style="line-height: 30px;"><img src="../../../img/icons/money.gif" style="margin-right: 5px; margin-top:-2px;" />Tjäna pengar till laget</a>
+                        </div>
+                    <div class="col-sm-6 pull-right powered-by">
+                        <a href="https://www.svenskalag.se/" target="_blank" title="Gratis lagsida, medlemsregister och faktureringssystem till föreningen">
+                            <span class="text-muted">Levererat av</span>
+                            <img src="https://www.isun.se/img/logo.svg" onerror="this.src='../../../img/logo.png'; this.onerror=null;" alt="Gratis lagsida, medlemsregister och faktureringssystem till föreningen" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+        </div>
+        	<div id="rightCol">
+<!-- Rectangle_1_300x250 -->
+<div class="banner">
+		<div id='svenskalag_rektangel1'></div>
+		<script>
+			lwhb.cmd.push(function () {
+				lwhb.loadAd(lwhb_svelag.getAdCode('svenskalag_rektangel1'));
+			});
+		</script>
+</div>
+
+
+<!-- TP_300x130 -->
+<div class="banner">
+	<!-- /2542645/TP -->
+	<div id='div-gpt-ad-1463481120504-7'>
+		<script type='text/javascript'>
+			googletag.cmd.push(function () { googletag.display('div-gpt-ad-1463481120504-7'); });
+		</script>
+	</div>
+</div>
+
+<!-- Rectangle_2_300x250 -->
+<div class="banner">
+		<div id='svenskalag_rektangel2'></div>
+		<script>
+			lwhb.cmd.push(function () {
+				lwhb.loadAd(lwhb_svelag.getAdCode('svenskalag_rektangel2'));
+			});
+		</script>
+</div>
+
+
+
+
+<script>
+	function resizeInstagramAds() {
+		var iframes = $('iframe[height="340"]').toArray().filter(function (x) { return $(x).prop("src").indexOf("https://www.instagram/") > -1 || $(x).prop("src").indexOf("https://instagram/") > -1 });
+		for (var i = 0; i < iframes.length; i++) {
+			$(iframes[i]).prop("height", "355");
+		}
+	}
+	resizeInstagramAds();
+</script>	</div>
+
+
+        <div class="clear"></div>
+    </div>
+    <div id="ajaxDialogs"></div>
+    
+
+    <img src="../../../../sa.svenskalag.se/14820/__tm.gif" alt="" style="display:none;" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GXH28M3LQL"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('event', 'page_view', {
+		"idrott": "{'Fotboll'}",
+		"subscription_level": "{'Bas'}"
+	});
+
+	gtag('config', 'G-GXH28M3LQL');
+
+</script>
+
+
+    <link rel="stylesheet" type="text/css" href="../../../../www.svenskalag.se/css/website/teamsettings/ettan-topbar/ettan-topbar.css" />
+</body>
+
+<!-- Mirrored from www.isun.se/isunherr/kalender/2009/mars by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Feb 2025 10:07:00 GMT -->
+</html>

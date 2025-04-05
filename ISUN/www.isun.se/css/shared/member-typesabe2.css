@@ -1,0 +1,174 @@
+﻿
+.mt-1-header,
+.mt-2-header,
+.mt-3-header,
+.mt-4-header,
+.mt-5-header,
+.mt-6-header,
+.mt-7-header,
+.mt-8-header,
+.mt-9-header {
+    font-weight:500;
+}
+
+
+
+/* MemberType1 ***************************************/
+.mt-1-header {
+    background: #e1effa;
+    color: #335e80;
+}
+    .mt-1-header:hover {background: #d6e9f8;}
+    .mt-1-row {background: #f2f8fd;}
+    .mt-1-row:hover {background: #e8f3fb;}
+
+
+/* MemberType2 ***************************************/
+.mt-2-header {
+    background: #fef2e2;
+    color: #6d512b;
+}
+    .mt-2-header:hover{background:#fdedd8;}
+    .mt-2-row {background: #fef9f2;}
+    .mt-2-row:hover{background:#fef5e9;}
+
+
+/* MemberType3 ***************************************/
+.mt-3-header {
+    background: #efe6fe;
+    color: #60448e;
+}
+    .mt-3-header:hover {background: #e9ddfd;}
+    .mt-3-row {background: #f8f4fe;}
+    .mt-3-row:hover {background: #f3ecfe;}
+
+
+/* MemberType4 ***************************************/
+.mt-4-header {
+    background: #f7f0fd;
+    color: #604975;
+}
+    .mt-4-header:hover {background: #f4eafd;}
+    .mt-4-row {background: #fbf8fe;}
+    .mt-4-row:hover {background: #f9f3fe;}
+
+
+/* MemberType5***************************************/
+.mt-5-header {
+    background: #e9e9e9;
+    color: #555555;
+}
+.mt-5-header:hover {background: #e1e1e1;}
+.mt-5-row {background: #f5f5f5;}
+.mt-5-row:hover {background: #eeeeee;}
+
+
+/* MemberType6 ***************************************/
+.mt-6-header {
+    background: #fcf6de;
+    color: #61572b;
+}
+    .mt-6-header:hover {background: #fbf3d2;}
+    .mt-6-row {background: #fefbf0;}
+    .mt-6-row:hover {background: #fdf9e6;}
+
+
+/* MemberType7 ***************************************/
+.mt-7-header {
+    background: #e7f6e6;
+    color: #3a6835;
+}
+    .mt-7-header:hover {background: #dff3dd;}
+    .mt-7-row {background: #f5fbf4;}
+    .mt-7-row:hover {background: #edf8ec;}
+
+
+/* MemberType8 ***************************************/
+.mt-8-header {
+    background: #fee5fa;
+    color: #833779;
+}
+    .mt-8-header:hover {background: #fddcf9;}
+    .mt-8-row {background: #fef4fd;}
+    .mt-8-row:hover {background: #feecfb;}
+
+
+/* MemberType9 ***************************************/
+.mt-9-header {
+    background: #fde8e8;
+    color: #844141;
+}
+    .mt-9-header:hover {background: #fddfe0;}
+    .mt-9-row {background: #fef5f5;}
+    .mt-9-row:hover {background: #feedee;}
+
+
+
+
+
+/* Member Colors  *****************************************************************************************************************/
+.membertype-colors {}
+.text-membertype-1 {color: #269ADE;} /*Utövare*/
+.text-membertype-2 {color: #FDAE47;} /*Ledare*/
+.text-membertype-3 {color: #5A35EC;} /*Styrelse*/
+.text-membertype-4 {color: #CF9EF5;} /*Målsman*/
+.text-membertype-5 {color: #777777;} /*Organisation*/
+.text-membertype-6 {color: #F3CA27;} /*Stödmedlem*/
+.text-membertype-7 {color: #5DC8B5;} /*Volontär*/
+.text-membertype-8 {color: #FF5CE2;} /*Personal*/
+.text-membertype-9 {color: #FF7981;} /*Supporter*/
+
+
+.bg-membertype-1, .bg-membertype-1:hover,
+.bg-membertype-1:active, .bg-membertype-1:focus {
+    background: #269ade;
+    border-color: #269ade;
+}
+
+.bg-membertype-2, .bg-membertype-2:hover,
+.bg-membertype-2:active, .bg-membertype-2:focus {
+    background: #fdae47;
+    border-color: #fdae47;
+}
+
+.bg-membertype-3, .bg-membertype-3:hover,
+.bg-membertype-3:active, .bg-membertype-3:focus {
+    background: #9e63f7;
+    border-color: #9e63f7;
+}
+
+.bg-membertype-4, .bg-membertype-4:hover,
+.bg-membertype-4:active, .bg-membertype-4:focus {
+    background: #cf9ef5;
+    border-color: #cf9ef5;
+}
+
+.bg-membertype-5, .bg-membertype-5:hover,
+.bg-membertype-5:active, .bg-membertype-5:focus {
+    background: #777777;
+    border-color: #777777;
+}
+
+.bg-membertype-6, .bg-membertype-6:hover,
+.bg-membertype-6:active, .bg-membertype-6:focus {
+    background: #f3ca27;
+    border-color: #f3ca27;
+}
+
+.bg-membertype-7, .bg-membertype-7:hover,
+.bg-membertype-7:active, .bg-membertype-7:focus {
+    background: #5dc862;
+    border-color: #5dc862;
+}
+
+.bg-membertype-8, .bg-membertype-8:hover,
+.bg-membertype-8:active, .bg-membertype-8:focus {
+    background: #ff5ce2;
+    border-color: #ff5ce2;
+}
+
+.bg-membertype-9, .bg-membertype-9:hover,
+.bg-membertype-9:active, .bg-membertype-9:focus {
+    background: #fe6d6d;
+    border-color: #fe6d6d;
+}

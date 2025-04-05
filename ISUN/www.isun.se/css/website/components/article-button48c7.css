@@ -1,0 +1,137 @@
+﻿.template .article-button {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+    width: 100%;
+}
+
+    .template .article-button a:hover {
+        background-color: rgba(0,0,0,0.1);
+        box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.30);
+        /*border: 1px solid #c7d7e2;*/
+    }
+
+
+    .template .article-button a {
+        position: relative;
+        display: block;
+        padding: 8px 10px 9px 0px;
+        text-align: left;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 19px;
+        line-height: 1em;
+        color: #fff;
+    }
+
+    .template .article-button p {
+        margin: 0;
+        vertical-align: middle;
+        display: inline-block;
+        width: 81%; /* Prevent overflow */
+    }
+
+    .template .article-button strong,
+    .template .article-button span {
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    /* Text 1 */
+    .template .article-button strong {
+        line-height: 136%;
+    }
+
+    /* Text 2 */
+    .template .article-button span {
+        font-weight: 300;
+        opacity: 0.9;
+        margin-top: -2px;
+        font-size: 0.8em;
+        line-height: 132%;
+    }
+
+    /* Clubmark */
+    .template .article-button img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 6px;
+    }
+
+    /* Arrow */
+    .template .article-button p .fa {
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        margin-top: -0.5em;
+        padding-top: 1px;
+        font-size: 20px;
+    }
+
+    /* Text Color - Dark */
+    .template .article-button.text-dark a {
+        color: #111;
+    }
+
+/*    .template .article-button.text-dark p .fa {
+        text-shadow: 5px 0 0 #111;
+    }*/
+
+
+    /* Rounded */
+    .template .article-button.rounded {
+        border-radius: 100px;
+    }
+
+        .template .article-button.rounded a {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+
+    /* Utan logo */
+    .template .article-button.no-logo a {
+        padding: 10px 10px 10px 25px;
+    }
+
+    .template .article-button.no-logo p {
+        min-height: 2em;
+    }
+
+
+
+
+@media (max-width: 767px) {
+    .template .article-button a {
+        font-size: 16px;
+    }
+
+    .template .article-button img {
+        width: auto;
+        height: 43px;
+    }
+}
+
+@media (max-width: 400px) {
+    .template .article-button a {
+        font-size: 14px;
+    }
+
+    .template .article-button.rounded a {
+        padding: 9px 13px;
+    }
+
+    .template .article-button img {
+        width: auto;
+        height: 34px;
+    }
+
+    .template .article-button p .fa {
+        right: 20px;
+        font-size: 16px;
+    }
+}

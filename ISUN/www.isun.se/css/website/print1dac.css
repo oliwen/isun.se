@@ -1,0 +1,109 @@
+﻿@media print {
+
+    @page {
+        size: auto; /* auto is the current printer page size */
+        margin: 15mm 15mm 5mm 15mm; /* this affects the margin in the printer settings */
+    }
+
+    #siteCol {
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 800px !important;
+        box-shadow:none;
+        float:unset;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .content-layout #container,
+    .content-layout #siteCol {
+        width: 800px !important;
+    }
+
+    .content-layout .content {
+        margin: 0px !important;
+    }
+
+    .content-layout-header {
+        margin: 0px !important;
+    }
+
+
+    body {
+        background-image: none !important;
+        background-color: #fff !important;
+        /*font-size: 120% !important;*/
+    }
+
+    .menu, #adCol, .header, .admin-pnl, .ad-mittenspalt, .signup-footer-ad, #print-button, .footer, .footer-footer .add, .ad-panorama, .ettanfotboll-topbar, .footer-links, .footer-counter, .footer-custom-sponsors {
+        display: none !important;
+    }
+
+    .menu-bg {
+        background: #fff;
+    }
+
+
+    #rightCol {
+        display: none !important;
+    }
+
+    .footer {
+        display: none !important;
+    }
+
+    .system-nav {
+        display: none;
+    }
+
+
+
+    
+
+
+    
+    /*Aktivitet i kalendern //////////////////////////////////////////////////// */
+
+    .share-links {
+        display: none;
+    }
+
+    h1 {
+        font-size: 35px !important;
+    }
+
+    h2 {
+        font-size: 21px !important;
+    }
+
+    .content-block h3 {
+        font-size: 21px;
+    }
+    
+    .content-block-menu .menu-btn {
+        display: none;
+    }
+
+    .content-block-table td {
+        line-height: 18px !important;
+    }
+
+        .content-block-table td b {
+            font-size: 16px;
+        }
+
+        .content-block-table td .small {
+            font-size: 100%;
+        }
+
+    .p-r-15-print {
+        padding-right: 15px !important;
+    }
+
+    .hide-print {
+        display: none;
+    }  
+}

@@ -1,0 +1,65 @@
+
+/* Wide site ---------------------------- */
+#container.container-wide #siteCol {
+    width: 1080px;
+}
+
+#container.container-wide .content {
+    width: 775px;
+    margin-left:35px
+}
+
+.device-desktop.rightCol-visible .container-wide {
+    min-width: 1390px;
+}
+
+.device-desktop.rightCol-visible #container.container-wide {
+    width: 1390px;
+}
+
+/*no ads - center container&sitCol*/
+.device-desktop.rightCol-hidden #container.container-wide {
+    width: 1080px;
+}
+
+.device-desktop.rightCol-visible .container-wide .system-nav {
+    min-width: 1390px;
+}
+
+.device-desktop.rightCol-hidden .container-wide .system-nav {
+    min-width: 1080px;
+}
+
+.container-wide .colMid {
+    width: 530px;
+}
+
+.container-wide .colRight {
+    width: 245px;
+    padding-left: 35px;
+}
+
+.container-wide h3.infobox-bar {
+    width: 218px;
+}
+
+.container-wide .menu {
+    width: 230px;
+}
+
+.container-wide .menu-bg {
+    background-image: url(../../../img/menu/light-grey-1-wide3860.gif?v=1);
+}
+
+
+.container-wide .navbar .navbar-nav > li > a {
+    line-height: 40px;
+}
+
+.container-wide .template .image img {
+    border-radius: 6px;
+}
+
+.container-wide .template .template-video {
+    border-radius: 6px;
+}

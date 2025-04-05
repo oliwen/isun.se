@@ -1,0 +1,63 @@
+/* Indicate landscape reveals more content */
+.icon-rotate-phone {
+    width: 22px;
+    margin-bottom: 2px;
+    opacity: 0.6;
+}
+
+
+/* Display only in portrait */
+.only-mobile-portrait {
+    display: none;
+}
+
+@media (max-width: 767px) and (orientation : portrait) {
+    .only-mobile-portrait {
+        display: unset;
+    }
+}
+
+/* Hide elements in portrait */
+@media screen and (max-device-width: 544px) and (orientation:portrait) {
+    .hidden-xs-portrait {
+        display: none;
+    }
+}
+
+
+/* Hide in mobile */
+@media (max-width: 888px) {
+    .hidden-mobile {
+        display: none !important;
+    }
+}
+
+/* Show only in mobile */
+@media (min-width: 889px) {
+    .visible-mobile {
+        display: none !important;
+    }
+}
+
+
+
+
+/* --- choose mobil/desktop version ---------------------------- */
+@media (min-width: 889px) {
+    .choose-layout {
+        border-top: 1px solid #ddd;
+        margin-top: 20px;
+        padding: 20px 20px 10px;
+        text-align: center;
+        background: #fff;
+    }
+}
+
+@media (max-width: 888px) {
+    .choose-layout {
+        text-align: center;
+        padding: 20px 0px 25px;
+        background-color: #eee;
+        font-size: 14px;
+    }
+}

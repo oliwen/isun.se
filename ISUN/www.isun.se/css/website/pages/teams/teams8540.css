@@ -1,0 +1,48 @@
+﻿/* Våra Lag -> Lägg till nytt lag */
+.add-team {
+}
+
+.add-team .url {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.add-team {
+    background: #f4f8fd;
+    border-bottom: solid 1px #e5ebf3;
+    border-top: solid 1px #e5ebf3;
+    overflow: hidden;
+}
+
+    .add-team .control-label {
+        text-align: left;
+        font-weight: normal;
+    }
+
+    .add-team #newTeamOwnerForm {
+        display: none;
+    }
+
+    .add-team .form-footer {
+        display: none;
+    }
+
+
+/* Selected team owner */
+.add-team .selected-member p {
+    font-weight: bold;
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    margin-left: 10px;
+}
+    .add-team .selected-member .remove-member {
+        float: right;
+        text-decoration: none !important;
+        font-size: 24px;
+        color: #1176a5 !important;
+        margin: 5px 0px 0px 10px;
+    }
+

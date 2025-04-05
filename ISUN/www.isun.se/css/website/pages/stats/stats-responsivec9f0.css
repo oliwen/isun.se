@@ -1,0 +1,117 @@
+﻿@media (max-width: 888px) {
+    .content {
+        padding: 20px 0px;
+    }
+    .mobile-rect {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    
+    .table-stats {
+        margin-bottom:0px;
+    }
+    
+    .table-stats thead > tr > th {
+        padding: 26px 0px 7px 0px;
+        background-color: #eee;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-top: 1px solid #ddd !important;
+        border-bottom: 1px solid #ddd;
+        color: #666;
+        width: 36px;
+    }
+
+    .table-stats tbody > tr > td {
+        width: 36px;
+        padding: 6px 0;
+        font-size:14px;
+    }
+
+    .table-stats.team-stats tbody > tr > td,
+    .table-stats.team-stats thead > tr > th {
+        width: 44px;
+    }
+
+
+    .table-stats th:first-child,
+    .table-stats td:first-child {
+        padding-left: 15px !important;
+    }
+
+    .table-stats th:last-child,
+    .table-stats td:last-child {
+        padding-right: 15px !important;
+        width: 51px;
+    }
+
+
+    .table-stats img {
+        margin-bottom: 3px;
+    }
+
+
+    .stats-navigation .btn {
+        text-overflow: ellipsis; 
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .table-stats .player-name {
+        max-width: 200px;
+    }
+
+    .table-stats .member-photo {
+        width: 26px;
+        height: 26px;
+        line-height: 12px;
+    }
+        .table-stats .member-photo:before {
+            font-size: 10px;
+        }
+
+    @media screen and (orientation:portrait) {
+
+        /* Utespelartabellen */
+        #players .col-yellow,
+        #players .col-gula-kort,
+        #players .col-roda-kort,
+        #players .col-red,
+        #players .col-minutes,
+        #players .col-utvisningsminuter,
+        #players .col-2-minutersutvisningar {
+            display: none;
+        }
+
+        /*Målvaktstabellen */
+        #goaliesTable th {
+            border-top: 0 !important;
+        }
+
+        #goalies .col-puck,
+        #goalies .col-soccerball,
+        #goalies .col-bandyball,
+        #goalies .col-assist,
+        #goalies .col-minutes,
+        #goalies .col-points,
+        #goalies .col-red,
+        #goalies .col-yellow,
+        #goalies .mal,
+        #goalies .assists,
+        #goalies .utvisningsminuter,
+        #goalies .roda-kort,
+        #goalies .gula-kort,
+        #goalies .poang {
+            display: none;
+        }
+
+        #goalies .col-star,
+        #goalies .matchens-stjarna {
+            padding-right: 15px !important;
+            width: 51px;
+        }
+        
+    }
+
+}

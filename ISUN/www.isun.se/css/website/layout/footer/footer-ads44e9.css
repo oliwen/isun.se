@@ -1,0 +1,39 @@
+/***************************
+Footer text ads
+***************************/
+.footer-ads {
+    clear: both;
+    width: 100%;
+    overflow: hidden;
+}
+
+    .footer-ads .col-text-ad {
+        padding: 20px;
+        float: left;
+    }
+
+    .footer-ads .text-ad-1 {width: 100%}
+    .footer-ads .text-ad-2 {width: 50%}
+    .footer-ads .text-ad-3 {width: 33%}
+    .footer-ads .text-ad-4 {width: 25%}
+    .footer-ads .text-ad-5 {width: 20%}
+
+    .footer-ads a.ListLink {
+        z-index: 5;
+        display: block;
+    }
+
+        .footer-ads a.ListLink:link {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .footer-ads a.ListLink:visited {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .footer-ads a.ListLink:hover {
+            color: #000;
+            text-decoration: none;
+        }

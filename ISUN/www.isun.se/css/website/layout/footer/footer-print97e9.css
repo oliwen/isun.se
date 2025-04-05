@@ -1,0 +1,14 @@
+/* Footer: Print button ---------------------------- */
+#print-button {
+    float: right;
+    padding: 0px 20px;
+    margin-top: -40px;
+}
+
+
+@media (max-width: 888px) {
+    /* Footer: Print button ---------------------------- */
+    #print-button {
+        padding: 0px 15px;
+    }
+}

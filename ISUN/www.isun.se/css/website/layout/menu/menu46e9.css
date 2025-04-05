@@ -1,0 +1,83 @@
+
+.menu-bg {
+    border-bottom: 5px solid #fff;
+    padding-bottom: 50px;
+    background-image: url(../../../../img/menu/light-grey-13860.gif?v=1);
+    background-repeat: repeat-y;
+}
+
+.menu {
+    float: left;
+    width: 210px;
+    padding-top: 30px;
+}
+
+/* --- VÄNSTERMENY ----------------------------------------------------------------- */
+
+.menu-group, .menu-group + .menu-group a:first-child {
+    border-top: solid 1px #ddd;
+}
+
+    .menu-group + .menu-group {
+        padding-top: 30px;
+        border: none;
+    }
+
+    .menu-group a {
+        display: block;
+        padding: 0px 15px 0px 20px;
+        line-height: 36px;
+        border-bottom: solid 1px #ddd;
+        color: #555 !important;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size:14.5px;
+    }
+
+        .menu-group a:hover {
+            background-color: #f4f4f4;
+        }
+
+        .menu-group a .fa-angle-down {
+            margin-top: 9px;
+        }
+
+        .menu-group a .icon-external-link {
+            margin: 11px 0px 0px 10px;
+            opacity: 0.8;
+        }
+
+    .menu-group .current {
+        background-color: #fff;
+    }
+
+        .menu-group .current:hover {
+            background-color: #fff;
+        }
+
+
+.submenu-group {
+    border-bottom: solid 1px #ddd;
+}
+
+    .submenu-group .submenu {
+        padding-left: 30px;
+        border: none;
+        font-size: 13px;
+    }
+
+    .submenu2-group .submenu {
+        padding-left: 40px;
+        border: none;
+        font-size: 12px;
+        line-height:32px;
+    }
+
+
+
+
+.mobile-menu {
+    display: none;
+}

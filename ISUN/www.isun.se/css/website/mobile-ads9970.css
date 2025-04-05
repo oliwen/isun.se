@@ -1,0 +1,43 @@
+/* Mobile ads -------------------------------------------------------------------- */
+@media (max-width: 888px) {
+
+.mobile-rect {
+    display: block !important;
+    margin: 0 -12px 12px -12px;
+    background: #eee;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0 15px 0;
+    overflow: hidden;
+    text-align: center !important;
+}
+
+    .mobile-rect.top {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    .mobile-rect .mobile-rect-content:before {
+        content: 'Annons';
+        text-transform: uppercase;
+        font-size: 9px;
+        color: #888;
+        position: relative;
+        top: -2px;
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-rect iframe {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Mittspalt-annons */
+    .ad-mittenspalt {
+        overflow: hidden;
+        margin-left: -20px;
+        margin-right: -20px;
+        text-align: center;
+    }
+}

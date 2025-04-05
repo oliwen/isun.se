@@ -1,0 +1,22 @@
+/* Gallery upload */
+#file-upload-container {
+	margin-top:20px;
+	margin-bottom:25px;
+}
+#file-upload-container .buttons {
+	padding-bottom:15px;
+}
+#file-upload-container .buttons a {
+	margin-left:18px;
+}
+#file-upload-container p {
+	margin:0;
+	padding:0 0 10px 0;
+}
+#file-upload-container .queue {
+	border:1px solid #ddd;
+	width:100%;
+	padding:5px 5px 10px 5px;
+	min-height:170px;
+	background-color:#fefefe;
+}

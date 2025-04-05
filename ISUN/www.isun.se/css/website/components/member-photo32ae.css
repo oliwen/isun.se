@@ -1,0 +1,87 @@
+/* Member Photo *****************************************************************************************************************/
+/* No Photo: <figure class="member-photo member-photo-blank"></figure> */
+/* Photo: <figure class="member-photo"><img src="https://cdn.svenskalag.se/teamdata/photos/d93/d934560f-f9e2-4341-8a6c-c16ca882b52e_thumb.jpg"></figure>*/
+
+/*.member-photo.member-photo-round {
+        border-radius: 100px;
+    }*/
+
+.team-photo {
+	width: auto;
+	height: auto;
+	line-height: 28px;
+	font-weight: bold;
+	display: block;
+	border-radius: 4px;
+	background: #eee;
+	color: #bbb;
+	text-align: center;
+	font-size: 16px;
+	height: 150px;
+	padding-top: 40px;
+}
+
+	.team-photo > span > .fa {
+		font-size: 38px;
+	}
+
+.member-photo {
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	border-radius: 200px;
+	font-size: 18px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	color: #cbcbcb;
+	vertical-align: middle;
+}
+
+	.member-photo .no-photo {
+		background-color: #298ccd;
+		text-align: center;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 600;
+		letter-spacing: -0.02em;
+		text-indent: -0.05em;
+	}
+
+.member-photo-sm {
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+}
+
+.member-photo img {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+.member-photo-big {
+	min-width: 100%;
+	height: 170px;
+	line-height: 170px;
+	font-size: 5em;
+	display: block;
+	border-radius: 4px;
+}
+
+.member-photo-dark {
+	background: #dddddd;
+	color: #9a9a9a;
+}
+
+.member-photo-blank {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: rgba(0,0,0,0.05)
+}
+
+	.member-photo-blank img {
+		width: 19px;
+		height: 15px;
+		margin-top: 10px;
+		opacity: 0.3;
+	}

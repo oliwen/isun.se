@@ -1,0 +1,116 @@
+/* News list 
+ * - Startpage, news. shows a list of items with image to the left.
+<div class="list-group news-list-group">
+	<div class="list-group-item ">
+	    <span class="admin">
+	        <button class="btn btn-default btn-xs"><i class="fa fa-pencil text-warning"></i></button>
+	        <button class="btn btn-default btn-xs"><i class="fa fa-minus-circle text-danger"></i></button>
+	    </span>
+        <a href="#" class="news-item-inner">
+            <div class="photo  text-center">
+                <img src="photo.jpg?width=60&amp;height=60&amp;mode=crop&amp;anchor=topcenter">
+            </div>
+            <p>
+                <b>Rubrik</b>
+            </p>
+            <span class="text-muted small text-narrow">
+                <i class="fa fa-clock-o"></i> 3 nov 2017
+                <i class="fa fa-comment-o"></i> 2
+			</span>
+        </a>
+    </div>
+</div>
+***************************/
+
+
+.list-group-news {
+    clear: both;
+}
+    .list-group-news .list-group-item {
+        padding: 0;
+    }
+        .list-group-news .list-group-item .news-item-inner {
+            padding: 10px;
+            display: block;
+        }
+            .list-group-news .list-group-item .news-item-inner:hover {
+                background-color: #f9f9f9;
+            }
+
+        /* Active item */
+        .list-group-news .list-group-item.active {
+            border-color: #ddd;
+            z-index:unset;
+        }
+            .list-group-news .list-group-item.active .news-item-inner {
+                background-color: #f2f2f2;
+            }
+                .list-group-news .list-group-item.active .news-item-inner:hover {
+                    background-color: #f2f2f2;
+                }
+
+        /* Headline links */
+        .list-group-news .list-group-item a {
+            color: #555;
+        }
+        .list-group-news .list-group-item p {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-weight: bold;
+            margin-top:2px;
+        }
+
+        /* Info icons */
+        .list-group-news .list-group-item span i {
+            margin-left: 10px;
+        }
+            .list-group-news .list-group-item span i:first-child {
+                margin: 0;
+            }
+
+    /* News photo */
+    .list-group-news .photo {
+        float: left;
+        width: 45px;
+        height: 45px;
+        background: #eee;
+        border-radius: 3px;
+        margin-right: 10px;
+        overflow: hidden;
+    }
+        .list-group-news .photo img {
+            max-width: 100%;
+            min-height: 100%;
+        }
+        .list-group-news .photo.logo {
+            line-height: 45px;
+        }
+            .list-group-news .photo.logo img {
+                margin-top: -2px;
+                width: 25px;
+                height: 27px;
+                min-height: auto;
+            }
+
+    /* Admin actions */
+    .list-group-news .admin {
+        float: right;
+        margin: 10px 10px 0 0;
+    }
+        .list-group-news .admin button {
+            border: 0;
+        }
+
+@media (max-width: 888px) {
+    .list-group-news .list-group-item {
+        border-radius: 0px;
+        border-left: none;
+        border-right: none;
+    }
+
+        .list-group-news .list-group-item .news-item-inner {
+            padding: 10px 12px;
+        }
+
+}

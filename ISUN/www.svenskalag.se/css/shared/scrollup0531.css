@@ -1,0 +1,93 @@
+﻿.scrollup {
+    position: fixed;
+    left:0;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    z-index: 10000;
+    visibility: hidden;
+}
+
+.scrollup-open.scrollup {
+    visibility: visible;
+    bottom: 0%;
+}
+
+.scrollup-modal {
+    position: fixed;
+    height: 80%;
+    width: 100%;
+    background-color: #fff;
+    bottom: -100%;
+    z-index: 10001;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.scrollup-open .scrollup-modal {
+    bottom: 0;
+}
+
+.scrollup-header {
+    float: left;
+    background-color: #298ccd;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 12px;
+    color: #fff;
+}
+.scrollup-header .fa-times{
+    cursor:pointer;
+}
+.scrollup-content {
+    overflow: auto;
+    flex-grow: 1;
+    background-color: #fff;
+}
+
+.scrollup-backdrop {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+.scrollup-open .scrollup-backdrop {
+    opacity: 0.4;
+}
+
+.scrollup-prevent-scroll {
+    overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .scrollup-modal {
+        left: calc(50% - 300px);
+        top: 10%;
+        width: 600px;
+        max-height: 600px;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    }
+    .scrollup-header {
+        border-radius: 3px 3px 0px 0px;
+    }
+    .scrollup-content {
+        border-radius: 0px 0px 3px 3px;
+    }
+    .scrollup-prevent-scroll {
+        padding-right: 17px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .scrollup {
+        transition: visibility ease-in-out 0.3s;
+    }
+    .scrollup-modal {
+        transition: bottom ease-in-out 0.3s;
+    }
+}

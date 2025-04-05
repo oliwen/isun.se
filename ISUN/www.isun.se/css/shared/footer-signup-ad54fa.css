@@ -1,0 +1,34 @@
+/* --- SIDFOT: "Bli Medlem/Anmäl dig här" knappen ---------------------------- */
+.signup-footer-ad {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.signup-footer-ad-preview {
+    padding: 10px 20px;
+    border: none;
+}
+
+.signup-footer-ad h1 {
+    font-size: 24px;
+    margin: 2px 0px 0px 0px;
+}
+
+    .signup-footer-ad h1 img {
+        vertical-align: middle;
+        position: relative;
+        margin-top: -3px;
+        margin-right: 10px;
+        max-height: 50px;
+    }
+
+.signup-footer-ad .btn {
+    margin-top: 3px;
+    min-width: 200px;
+    text-decoration: none;
+}
+
+.signup-footer-ad .col-sm-4 {
+    text-align: right;
+}
+

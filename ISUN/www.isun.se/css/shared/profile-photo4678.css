@@ -1,0 +1,33 @@
+/*
+<div class="profile-photo profile-photo-md">
+	<img ng-src="{{guardian.photoUrl}}&width=40&amp;height=40&amp;mode=crop&anchor=topcenter">
+</div>
+*/
+
+.profile-photo {
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+}
+	.profile-photo img {
+		max-width: 100%;
+	}
+
+
+	.profile-photo-sm,
+	.profile-photo-sm img {
+		width: 28px;
+		height: 28px;
+	}
+
+	.profile-photo-md,
+	.profile-photo-md img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.profile-photo-lg,
+	.profile-photo-lg img {
+		width: 100px;
+		height: 100px;
+	}

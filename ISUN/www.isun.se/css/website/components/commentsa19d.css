@@ -1,0 +1,113 @@
+
+/* --- Comments! --------------------------------------------------------------------*/
+/* dependencies: member-photo.css; */
+
+.comments-panel {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+    .comments-panel .nav-tabs {
+        display: table;
+        width: 100%;
+        margin-bottom: 8px;
+        background: linear-gradient(#fff,#f2f2f2);
+    }
+
+    .comments-panel h3 {
+        display: inline;
+    }
+
+    .comments-panel div.collapse-comments {
+        display: inline;
+    }
+
+
+
+
+/* Visa kommentarer */
+.comments {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size:14px;
+}
+
+    .comments li {
+        background: #f2f2f2;
+        padding: 12px;
+        margin-bottom: 4px;
+        position: relative;
+        border-radius: 4px;
+    }
+
+        .comments li td {
+            vertical-align: top;
+        }
+
+        .comments li img {
+            border-radius: 3px;
+        }
+
+        .comments li .delete {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            color: #999;
+        }
+
+            .comments li .delete:hover {
+                color: #dd0000;
+            }
+
+        .comments li:hover .delete {
+            display: block;
+        }
+
+
+
+/* Skriv ny kommentar */
+.new-comment {
+    padding: 12px 12px 7px 12px;
+    background: #f2f2f2;
+    border-radius: 4px;
+}
+
+    .new-comment .new-comment-message {
+        padding-left: 44px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+        .new-comment .new-comment-message figure {
+            position: absolute;
+            left: 0;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+    .new-comment .submit-comment-panel {
+        margin-left: 44px;
+        font-size: 0;
+    }
+
+        .new-comment .submit-comment-panel .captcha.image {
+            font-size: 13px;
+        }
+
+        .new-comment .submit-comment-panel .btn {
+            width: 28%;
+            vertical-align: top;
+        }
+
+    .new-comment .comment-author {
+        width: 72%;
+        display: inline-block;
+        margin-bottom: 5px;
+        padding-right: 5px;
+    }
+
+    .new-comment table {
+        width: 100%;
+    }

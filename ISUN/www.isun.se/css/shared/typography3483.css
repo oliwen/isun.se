@@ -1,0 +1,74 @@
+/* Typography *******************************************/
+h1, h2, h3, h4, h5 {font-weight: bold;}
+h1 {margin-bottom:10px;}
+h3 {
+    font-family: Arial, Helvetica;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 130%;
+    margin: 25px 0px 5px 0px;
+    color: #333;
+}
+h4, h5, h6 {
+    margin: 0px;
+    line-height: 120%;
+}
+
+
+/* Utility: Typography ********************************/
+.font-default {font-family: inherit;}
+.lg {font-size: 16px;}
+.lh1 {line-height: 1;}
+.left-align {text-align: left;}
+.center-align {text-align: center;}
+.right-align {text-align: right;}
+.text-normal {font-weight: normal;}
+.nowrap {white-space: nowrap;}
+
+
+/* ellipsis ... */
+.text-narrow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.break-long-words {
+
+    -ms-word-break: break-all;
+    word-break: break-word;
+
+    /* hyphen*/
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+    /* Firefox only */
+    @supports (-moz-appearance:none) {
+        .break-long-words {
+            word-wrap: break-word;
+            word-break: break-word !important;
+        }
+    }
+
+
+
+
+
+/* Text Size */
+.sz11 {font-size: 11px !important;}
+.sz12 {font-size: 12px !important;}
+.sz13 {font-size: 13px !important;}
+.sz14 {font-size: 14px !important;}
+.sz15 {font-size: 15px !important;}
+
+.xsmall {font-size: 80%;}
+.lead {font-size: 20px;}
+
+
+@media (max-width: 888px) {
+    /* Typography */
+    .text-responsive {font-size: 85%;}
+}

@@ -1,0 +1,156 @@
+
+/* Modal  *****************************************************************************************************************/
+.modal {
+    z-index: 2000;
+    padding-right: 0px !important;
+}
+
+.modal-open {
+    padding-right: 0px;
+    overflow: visible;
+    overflow-y: scroll;
+}
+
+.modal-header .close,
+.modal-body .close {
+    margin-top: -2px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+.modal-title {
+    font-size: 21px;
+    letter-spacing:-0.4px;
+}
+
+
+.modal-body {
+    padding: 20px;
+}
+
+    .modal-body p {
+        margin-bottom: 5px;
+    }
+
+    .modal-body legend {
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .modal-body .checkbox-group .btn {
+        padding: 5px 8px 3px 8px;
+    }
+
+    .modal-body .checkbox-group .btn {
+        font-size: 13px;
+    }
+
+.modal-footer, .modal-header {
+    padding: 15px 20px;
+}
+
+
+.modal-alert.alert {
+    border-width: 0px;
+    border-radius: 0px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+}
+
+.modal .modal-toolbar {
+    border-width: 1px 0px 1px;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+    /* Invite modal :: Dropdown filters */
+        .modal .modal-toolbar.dropdown-filters > div {
+            padding-left: 10px;
+            white-space: nowrap;
+        }
+
+            .modal .modal-toolbar.dropdown-filters > div:first-child {
+                padding-left: 0;
+            }
+
+            .modal .modal-toolbar.dropdown-filters > div .form-control {
+                min-width: 160px;
+            }
+
+
+
+    .modal .modal-toolbar p {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .modal .modal-toolbar a {
+        text-decoration: none;
+    }
+
+.modal.modal-small .modal-dialog {
+    width: 400px;
+}
+
+    .modal.modal-small .modal-dialog .modal-header {
+        border-bottom: 1px solid #ddd;
+    }
+
+
+@media (max-width: 768px) {
+    .modal .modal-toolbar.dropdown-filters {
+        flex-wrap: wrap;
+    }
+
+        .modal .modal-toolbar.dropdown-filters > div {
+            width: 100%;
+            padding-left: 0;
+        }
+
+    .modal .invite-filter {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.modal.vocation fieldset {
+    border-top: 1px solid #eee;
+    font-size: inherit;
+    width: 100%;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+    .modal.vocation fieldset legend {
+        margin: 0px;
+        padding: 0px 10px 0px 0px;
+        border-width: 0px;
+        font-size: inherit;
+        width: auto;
+    }
+
+        .modal.vocation fieldset legend .pull-right {
+            position: absolute;
+            right: 0px;
+            padding-left: 10px;
+            background: #fff;
+        }
+        */

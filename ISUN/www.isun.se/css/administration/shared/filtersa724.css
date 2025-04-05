@@ -1,0 +1,215 @@
+.btn-divider {
+    background: #eee;
+    width: 1px;
+    height:34px;
+    margin: 0px 16px;
+    float: left;
+}
+
+.btn-divider-sm {
+    background: #eee;
+    width: 1px;
+    height: 34px;
+    margin: 0px 10px;
+    float: left;
+}
+
+/* badge-filter (Används under Periodrapport)
+**********************************************/
+
+.badge-filter {
+    cursor: pointer;
+    letter-spacing: 0px;
+    padding: 5px 6px 3px;
+    margin: 3px 0px 0px 10px;
+    position: absolute;
+    border: 1px solid #bcd5eb;
+    background: #e5f3ff;
+    font-size: 12px;
+    font-family: 'Roboto';
+    color: #2d6796;
+    font-weight: 400;
+    line-height: 1;
+    border-radius:3px;
+}
+
+    .badge-filter:hover {
+        border: 1px solid #a6c4de;
+        background-color: #d4ebfe;
+    }
+
+.badge-filter > span {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.badge-filter .fa {
+    top: -1px;
+    position: relative;
+    font-size: 14px;
+}
+
+
+
+/* list-top
+    set of actions in content area 
+**********************************************/
+.list-top {
+    margin-bottom: 15px;
+    height: 36px;
+}
+
+    .list-top .alert {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .list-top .filter {
+        margin-top: 2px;
+    }
+
+    .list-top .link {
+        float: left;
+        margin: 7px 10px 0px 10px;
+    }
+
+        .list-top .link:hover {
+            text-decoration: underline;
+        }
+
+
+
+
+
+/* Colors */
+
+
+.color-filter .text-warning {
+    color: #fff399 !important;
+}
+
+.color-filter .warning .text-warning {
+    color: #ec971f !important;
+}
+
+.color-filter .text-danger {
+    color: #d77370;
+}
+
+.color-filter .text-danger-light {
+    color: #f4c0c0;
+}
+
+.color-filter .text-success {
+    color: #79d17d;
+}
+
+.color-filter .text-success-light {
+    color: #bfddb3;
+}
+
+
+.color-filter .warning:active,
+.color-filter .warning.active {
+    background: #ffffd2;
+    color: #fff000;
+    border-color: #e7cca6;
+}
+
+.color-filter .primary:active,
+.color-filter .primary.active {
+    background: #daf0ff;
+    border-color: #a7cfe9;
+}
+
+.color-filter .danger-light:active,
+.color-filter .danger-light.active {
+    background: #ffebeb;
+}
+
+.color-filter .danger:active,
+.color-filter .danger.active {
+    background: #ffebeb;
+    border-color: #e8bbc1;
+}
+
+.color-filter .success:active,
+.color-filter .success.active {
+    background: #dffacd;
+    border-color: #abcdbc;
+}
+
+.color-filter .success-light:active,
+.color-filter .success-light.active {
+    background: #dffacd;
+}
+
+
+
+/*
+status-filters was removed:
+https://github.com/armborst/Svenskalag-Web/commit/85dc5c8bd05c837482eb185676811de312484ce6#diff-3ae46599a899a4c76d61b300a87f2e67
+************
+
+.list-top .status-filter {
+    overflow: hidden;
+}
+
+    .list-top .status-filter a {
+        display: block;
+        float: left;
+        border: 1px solid #ccc;
+        border-left: none;
+        color: #555;
+    }
+
+.invoices-title a.first,
+.status-filter a.first {
+    border-left: 1px solid #ccc;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.invoices-title a.last,
+.status-filter a.last {
+    border-radius: 0px 3px 3px 0px;
+}
+
+
+.invoices-title .status-filter a:active,
+.list-top .status-filter a:active {
+    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.invoices-title .status-filter a .text,
+.list-top .status-filter a .text {
+    padding: 5px 12px 4px 12px;
+    float: left;
+}
+
+
+.status-filter a .text { border-bottom: 3px solid transparent;}
+.status-filter a.first .text { border-bottom: 3px solid #f2f2f2;}
+.status-filter a.green .text { border-bottom: 3px solid #b7f3a3; }
+.status-filter a.green2 .text { border-bottom: 3px solid #d6eecd; }
+.status-filter a.white .text { border-bottom: 3px solid #fee7e7; }
+.status-filter a.grey .text { border-bottom: 3px solid #dbdbdb; }
+.status-filter a.red .text { border-bottom: 3px solid #f3b2b2; }
+.status-filter a.yellow .text { border-bottom: 3px solid #fafa99;}
+.status-filter a.selected .text { border-bottom: 2px solid transparent;padding: 6px 12px 4px 12px; }
+
+
+.status-filter a.selected {
+    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.status-filter a.selected { background: #f2f2f2; }
+.status-filter a.green.selected { background: #b7f3a3; }
+.status-filter a.green2.selected { background: #d6eecd; }
+.status-filter a.white.selected { background: #fee7e7; }
+.status-filter a.grey.selected { background: #dbdbdb; }
+.status-filter a.red.selected { background: #f3b2b2; }
+.status-filter a.yellow.selected { background: #fafa99; }
+*/
+
+

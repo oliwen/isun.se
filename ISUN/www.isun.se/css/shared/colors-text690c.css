@@ -1,0 +1,188 @@
+﻿.text-default,
+a.text-default:focus {
+    color: #444 !important;
+}
+
+a.text-default:hover {
+    color: #1176a5 !important;
+}
+
+
+.text-muted,
+a.text-muted:hover,
+a.text-muted:focus {
+    color: #999 !important;
+}
+
+.text-xmuted,
+a.text-xmuted:hover,
+a.text-xmuted:focus {
+    color: #ddd !important;
+}
+
+.text-primary,
+a.text-primary:hover,
+a.text-primary:focus {
+    color: #298ccd !important;
+}
+
+.text-secondary,
+a.text-secondary:hover,
+a.text-secondary:focus {
+    color: #b5772b !important;
+}
+
+
+.text-success-active.active,
+.text-success-active.active:focus,
+.text-success-active.active:hover,
+.text-success,
+a.text-success:hover,
+a.text-success:focus {
+    color: #41bd7f !important;
+}
+
+.text-success-light,
+a.text-success-light:hover,
+a.text-success-light:focus {
+    color: #bfddb3 !important;
+}
+
+.text-warning-active.active,
+.text-warning-active.active:focus,
+.text-warning-active.active:hover,
+.text-warning,
+a.text-warning:hover,
+a.text-warning:focus {
+    color: #f2b736 !important;
+}
+
+.text-danger-active.active,
+.text-danger-active.active:focus,
+.text-danger-active.active:hover,
+.text-danger,
+a.text-danger:hover,
+a.text-danger:focus {
+    color: #eb445a !important;
+}
+
+.text-male-active.active,
+.text-male-active.active:focus,
+.text-male-active.active:hover,
+.text-male,
+a.text-male:hover,
+a.text-male:focus {
+    color: #03a9f4 !important;
+}
+
+.text-female-active.active,
+.text-female-active.active:focus,
+.text-female-active.active:hover,
+.text-female,
+a.text-female:hover,
+a.text-female:focus {
+    color: #ff7fae !important;
+}
+
+.text-nogender-active.active,
+.text-nogender-active.active:focus,
+.text-nogender-active.active:hover,
+.text-nogender,
+a.text-nogender:hover,
+a.text-nogender:focus {
+    color: #2ad3a4 !important;
+}
+
+
+.text-note,
+a.text-note:hover,
+a.text-note:focus {
+    color: #f3cb50 !important;
+}
+
+.text-white,
+a.text-white:hover,
+a.text-white:focus {
+    color: #FFF !important;
+}
+
+.text-cp,
+a.text-cp:hover,
+a.text-cp:focus {
+    color: #1176a5 !important;
+}
+
+
+
+
+.grey {
+    color: #666;
+}
+
+.dimmed {
+    color: #999;
+}
+
+.no, .red {
+    color: #DD0000;
+}
+
+.yes, .green {
+    color: #328c07;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+
+
+
+.bg-primary {
+    background-color: #298ccd !important;
+    color: #fff;
+}
+
+.bg-primary-light {
+    background-color: rgba(62,165,235,0.15) !important;
+    color: #4b8bb6;
+}
+
+.bg-secondary {
+    background-color: #ffebac !important;
+    color: #b5772b;
+}
+
+.bg-success {
+    background-color: #41bd7f !important;
+    color: #fff;
+}
+
+.bg-success-light {
+    background-color: #dcffd0 !important;
+    color: inherit;
+}
+
+.bg-danger {
+    background-color: #eb445a !important;
+    color: #fff;
+}
+
+.bg-warning {
+    background-color: #f2b736 !important;
+    color: #fff;
+}
+
+.bg-warning-light {
+    background-color: #ffffd2 !important;
+}
+
+.bg-muted {
+    background: #f9f9f9;
+}
+
+
+.bg-default {
+    background-color: #999 !important;
+    color: #fff;
+}

@@ -1,0 +1,320 @@
+﻿/*Large sized forms - Start*/
+.form-control {
+    height: 40px;
+    font-size: 16px;
+}
+/*Large sized forms - End */
+
+
+body {
+    font-family: Roboto, Arial sans-serif;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+* {
+    font-size: inherit;
+}
+
+h3 {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 130%;
+    margin: 30px 0px 5px 0px;
+    color: #444;
+    letter-spacing: -0.2px;
+}
+
+p {
+    margin: 0;
+}
+
+label {
+    font-weight: normal;
+    display: inline;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.payment-method label {
+    display: block;
+}
+
+
+#guardians {
+    overflow: hidden;
+}
+
+.clubmark {
+    vertical-align: middle;
+    width: 50px;
+}
+
+
+.validation-error {
+    border: 1px solid #ff8d8a;
+}
+
+.radio-block.validation-error {
+    border: 1px solid #ff8d8a;
+}
+
+.input-validation-error, input[type=text].input-validation-error {
+    border: 1px solid #ff8d8a;
+}
+
+
+.form-signup h1 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+
+.entry-form h1 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.entry-form h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0px 10px 0px;
+}
+
+.entry-form .form {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.entry-form td {
+    line-height: 40px;
+}
+
+
+/* --- RADIO BLOCK --- */
+
+.radio-block {
+    list-style: none;
+    padding: 0px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 10px 0px 30px 0px;
+}
+
+.radio-block li:last-child {
+    border-bottom: none!important;
+}
+
+    .radio-block table td {
+        vertical-align: middle;
+        padding: 0px 0px;
+        height: 50px;
+    }
+
+.radio-block-item input[type=radio] {
+    position: relative;
+    top: 2px;
+}
+
+.radio-block hr {
+    margin: 5px 0px;
+}
+
+.radio-block-item {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.radio-block-sm .radio-block-item {
+    padding: 12px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+    .radio-block-sm .radio-block-item input[type=radio]:disabled + span {
+        text-decoration: line-through;
+        color: #999;
+    }
+
+    .radio-block-sm .radio-block-item .counter {
+        font-weight: normal;
+    }
+
+.radio-block-item:hover {
+    background: #fff;
+}
+
+.radio-block-item:active {
+    background: #eee;
+}
+
+
+.radio-block li:last-child .radio-block-item {
+    border: none;
+}
+
+.radio-block-info {
+    list-style: none;
+    padding: 0px 15px 0px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+    .radio-block-info select {
+        margin: 0px 0px;
+        width: 100%;
+    }
+
+    .radio-block-info li {
+        border-bottom: 1px solid #ddd;
+    }
+
+        .radio-block-info li:last-child {
+            border-bottom: none;
+        }
+
+        .radio-block-info li label {
+            line-height: 20px;
+            cursor: pointer;
+            margin: 0;
+        }
+
+.radio-block li:last-child .radio-block-info {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.radio-block-info label input[type=radio], .radio-block-info label input[type=checkbox] {
+    position: relative;
+    top: 1px;
+}
+
+.well a {
+    color: #888;
+    text-decoration: none;
+}
+
+    .well a:hover {
+        color: #111;
+    }
+
+.btn-primary {
+    background: #298ccd;
+    border-color: #298ccd;
+}
+
+[data-toggle=collapse][aria-expanded=false] .less, [data-toggle=collapse][aria-expanded=true] .more {
+    display: none;
+}
+
+.form-footer {
+    text-align: center;
+    padding: 50px 0;
+    color: #555;
+}
+
+    .form-footer .logo {
+        width: 160px;
+        margin-bottom:10px;
+    }
+
+.validation-summary-errors {
+    display: none;
+}
+
+
+
+body.signup-popup {
+    background: #f7f7f7;
+}
+
+    body.signup-popup .panel {
+        width: 100%;
+        max-width: 642px;
+        margin: 50px auto 0 auto;
+        box-shadow: 0px 0px 25px 5px rgb(0 0 0 / 8%);
+    }
+
+    body.signup-popup .panel-body {
+        padding: 20px 40px 45px;
+    }
+
+
+
+.form-group p {
+    margin-bottom: 5px;
+}
+
+.form-container {
+    position: relative;
+    overflow: hidden;
+    min-height: 410px;
+}
+
+.form-control.small {
+    font-size: 85%;
+}
+
+.form-disabled {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,.8);
+}
+
+body.signup-popup .panel.form-alert {
+    position: absolute;
+    z-index: 100;
+    width: 360px;
+    top: 80px;
+    left: 50%;
+    margin-left: -180px;
+    box-shadow: 0px 1px 50px rgba(0,0,0,0.2);
+    border-color: #ccc;
+    text-align: center;
+}
+
+.form-alert .btn {
+    margin-top: 15px;
+}
+
+.form-extra-info-field {
+    display: none;
+}
+
+/* Bli medlem form */
+/* .form-signup {} */
+/* .form-signup .team-select { display: inline-block;} */
+.form-control-inline {
+    min-width: 0;
+    width: auto;
+    display: inline;
+}
+
+
+
+.payment-logos {
+    padding-top: 20px;
+    text-align: center;
+}
+
+    .payment-logos div {
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+    }
+
+        .payment-logos div img {
+            max-width: 100px;
+        }

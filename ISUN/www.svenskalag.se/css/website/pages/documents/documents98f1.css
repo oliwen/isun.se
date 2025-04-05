@@ -1,0 +1,267 @@
+h3 {
+    margin-bottom: 7px;
+    margin-top:20px;
+}
+
+
+/***************************
+File list
+***************************/
+.file-list {
+    margin-bottom: 20px;
+}
+    .file-list.folders,
+    .file-list.border-bottom {
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Each file/folder row */
+    .file-list-item {
+        padding:6px 0;
+        border-top: 1px solid #ddd;
+        vertical-align: middle;
+        position: relative;
+        padding-right: 80px;
+        white-space: nowrap;
+    }
+        .file-list-item:hover {
+            background: #f5f5f5;
+        }
+
+
+    .folder-content.folder-empty .file-list-item {
+        padding: 15px 0px 15px 40px !important;
+    }
+
+    .folder-content.folder-empty.child-folder-empty .file-list-item{
+        padding-left: 50px !important;
+    }
+
+    /* Files in folders */
+    .folder-content .file-list-item,
+    .child-folder-btn .file-list-item{
+        padding-left: 10px !important;
+    }
+    .folder-content.child-folder-content .file-list-item {
+        padding-left: 20px !important;
+    }
+        /* File link */
+        .file-list-item a {
+            text-decoration: none;
+            color: #444;
+        }
+
+
+    /* Icon */
+    .file-list figure {
+        margin-right: 10px;
+        vertical-align: middle;
+        display: inline-block;
+    }
+        /* Folded corner */
+        .file-list figure:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 1px;
+            border-bottom: 8px solid rgba(0,0,0,0.3);
+            border-right: 8px solid #fff;
+            border-left: 0;
+            border-top: 0;
+        }
+        /*File type icon */
+        .file-list figure img {
+            max-width: 75%;
+        }
+
+
+    /* Folder/File name */
+    .file-list-item label {
+        display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
+        padding-right:30px;
+    }
+    .folder-open label{
+        font-weight:bold;
+    }
+        .folder-content .file-list-item, 
+        .folder-open .file-list-item,
+        .child-folder-btn .file-list-item,
+        .folder-btn  .file-list-item:hover {
+            background-color: #f5f5f5;
+        }
+        .folder-content .file-list-item:hover, 
+        .child-folder-btn .file-list-item:hover,
+        .folder-btn.folder-open .file-list-item:hover {
+            background-color: #eeeeee;
+        }
+    .folder-content .file-list-item label {
+        padding-right:0;
+    }
+    .file-list-item.admin-tools-visible label {
+        padding-right:60px;/* space for admin buttons */
+    }
+        .file-list-item label .title {
+            display: inline-block;
+            line-height: normal;
+            vertical-align: middle;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .file-list-item label .count {
+            vertical-align: middle;
+        }
+
+
+
+    /* File details description, size and access */
+    .file-list .file-info {
+        display: inline-block;
+        line-height: 34px;
+    }
+        /* Only member access lock */
+        .file-list .members-only {
+            margin-left:10px;
+            margin-top:1px;
+            float:right;
+        }
+        /* Access level icon dot */
+        .file-list .shared-document-access {
+            display: inline-block;
+            float:right;
+            line-height: 37px;
+        }
+        .file-list .shared-document-access small {
+            font-size: 60%;
+            position: relative;
+            top: -2px;
+        }
+
+
+
+    /* Admin tools: user-rights, edit & delete  */
+    .file-list .admin-tools {
+        vertical-align: middle;
+        width: 80px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding:8px 0;
+    }
+        .file-list .admin-tools .dropdown {
+            margin-left:10px;
+        }
+        .file-list .admin-tools .dropdown i {
+            font-size: 16px !important;
+        }
+        .file-list .admin-tools .dropdown a i {
+            position: relative;
+            top:1px;
+        }
+
+
+    /* Mouse cursor */
+    .folder-btn{
+        cursor:pointer;
+    }
+    .folder-btn .file-info {
+        cursor: default;
+    }
+
+
+    /* No files */
+    .file-list .no-files {
+        padding:100px 0;
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }
+
+
+@media (max-width: 888px) {
+
+    /* Remove side padding */
+    .content {
+        padding: 20px 0;
+    }
+
+    .mobile-rect {
+        margin-left: 0px;
+        margin-right:0px;
+    }
+
+
+    /* Full width section header */
+    h3 {
+        padding: 26px 15px 7px 15px;
+        background-color: #eee;
+        font-size: 13px;
+        text-transform: uppercase;
+        border-top: 1px solid #ddd;
+        color: #666;
+        border-bottom: none;
+        letter-spacing: normal;
+        margin:0;
+        line-height: 1.42857143;
+        font-family: 'Roboto', arial, sans-serif;
+    }
+
+
+    .file-list {
+        margin:0;
+    }
+
+    .file-list.folders {
+        margin-bottom: -1px;
+    }
+
+    /* File/folder padding */
+    .file-list .file-list-item {
+        padding-left:15px;
+    }
+    .folder-content.folder-empty .file-list-item {
+        padding-left: 55px !important;
+    }
+
+    .folder-content.folder-empty.child-folder-empty .file-list-item {
+        padding-left: 65px !important;
+    }
+        /* Folder Content */
+        .folder-content .file-list-item,
+        .child-folder-btn .file-list-item {
+            padding-left: 25px !important;
+        }
+
+    .folder-content.child-folder-content .file-list-item {
+        padding-left: 35px !important;
+    }
+
+
+    /* Shared document icons */
+    .file-list .shared-document-access {
+        float: none;
+        display: block;
+        width: 100%;
+        padding-left: 41px;
+    }
+        .file-list .shared-document-access {
+            line-height: normal;
+        }
+
+
+    .file-list .admin-tools {
+        margin-right:15px;
+    }
+
+    .folder-content .file-list-item:hover,
+    .child-folder-btn .file-list-item:hover,
+    .folder-btn.folder-open .file-list-item:hover {
+        background-color: #f5f5f5;
+    }
+}

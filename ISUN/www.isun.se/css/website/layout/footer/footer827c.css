@@ -1,0 +1,100 @@
+
+.footer {
+    border-top: 1px solid #ddd;
+}
+
+    .footer a.ListLinkGrey {
+    }
+
+.footer-footer {
+    border-top: 1px solid #ddd;
+    padding: 15px 20px 5px 20px;
+}
+
+    .footer-footer .powered-by a {
+        text-decoration: none;
+    }
+
+        .footer-footer .powered-by a span {
+            margin-right: 5px;
+            line-height: 30px;
+        }
+
+        .footer-footer .powered-by a img {
+            width: 130px;
+            margin-top: -2px;
+        }
+
+.footer .clubmarks img {
+    margin: 2px 10px 10px 0px;
+    width: 30px;
+    float: left;
+}
+
+
+/* --- FOOTER -------------------------------------------------------------------- */
+.footer .link-group {
+    border-left: 1px solid #ddd;
+    padding: 0px 0px 8px 30px;
+}
+
+.footer-footer .col-sm-6:last-child {
+    text-align: right;
+}
+
+
+.footer-partners {
+    padding: 20px 0px 30px 0px;
+    background: #fff;
+}
+
+    .footer-partners .partners-title {
+        position: relative;
+        overflow: hidden;
+        height: 18px;
+        margin: 0px 0px 15px 0px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+        .footer-partners .partners-title:before {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            display: block;
+            margin-top: 9px;
+            height: 18px;
+            border: 1px solid #eee;
+        }
+
+    .footer-partners h4 {
+        font-size: 14px;
+        display: inline-block;
+        padding: 0px 20px;
+        margin: 0px;
+        color: #444;
+        background: #fff;
+        position: relative;
+        z-index: 1;
+    }
+
+    .footer-partners .table {
+        margin: 0px;
+        table-layout: fixed;
+    }
+
+        .footer-partners .table > tbody > tr > td {
+            padding: 0px;
+        }
+
+    .footer-partners table td a {
+        display: block;
+        background: #fff;
+        padding: 8px;
+    }
+
+    .footer-partners table img {
+        max-width: 100%;
+    }
+

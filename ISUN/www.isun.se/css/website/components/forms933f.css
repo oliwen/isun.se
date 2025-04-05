@@ -1,0 +1,339 @@
+﻿
+.form-control {
+	height: 35px;
+	font-size: 14px;
+	padding: 6px 8px;
+	font-weight: normal;
+}
+
+	select.form-control  {
+		padding-left: 4px !important;
+	}
+
+.has-error .form-control {
+	border-color: #e74c3c;
+}
+
+.radio-block .form-control {
+	height: 34px;
+	font-size: 14px;
+}
+
+.form-control.small {
+	height: 30px;
+	font-size: 12px;
+	padding: 6px 8px;
+	font-weight: normal;
+}
+
+.radio-block .form-control.small {
+	height: 30px;
+	font-size: 12px;
+}
+
+
+
+
+input [type=text], input [type=password] {
+	margin: 0px;
+	padding: 6px 8px !important;
+}
+
+select {
+	margin: 0px;
+	padding: 0px 4px;
+}
+
+textarea {
+	margin: 0px;
+	resize: vertical;
+	max-height: 200px;
+}
+
+
+
+/* Checkbox  & Radio buttons*/
+
+.form-container .checkbox label:before {
+	content: '\f096';
+	display: inline-block;
+	font-family: "Fontawesome";
+	font-size: 18px;
+	color: #777;
+	margin-right: 3px;
+	color: #ccc;
+	vertical-align: bottom;
+	width:16px;
+}
+
+.form-container .checkbox label.field-validation-error:before {
+	color: #ff8d8a;
+}
+
+.form-container .checkbox label {
+	padding-left: 1px;
+}
+
+.form-container .checkbox.active label:before {
+	content: '\f14a';
+	color: #3faf61;
+}
+
+.form-container .checkbox input[type="checkbox"] {
+	display: none;
+}
+
+
+input[type="radio"], input[type="checkbox"] {
+	margin: 0px;
+	/*position: relative;
+	top: 2px;*/
+	cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+	margin: 4px 0 0;
+	margin-left: -20px;
+	top: auto;
+}
+
+.checkbox input[type=checkbox]:not(:checked) + span,
+.checkbox input[type=checkbox]:not(:checked) + input[type=hidden] + span {
+	color: #999;
+}
+
+input[type=checkbox].checkbox {
+	display: inline-block;
+	margin: 0px 3px 1px 0px;
+}
+
+.checkbox-group {
+	margin-bottom: 15px;
+}
+
+	.checkbox-group.row {
+		margin-left: -3px;
+		margin-right: -3px;
+	}
+
+		.checkbox-group.row [class^=col-] {
+			padding-left: 3px;
+			padding-right: 3px;
+		}
+
+	.checkbox-group .btn {
+		padding: 3px 8px;
+		text-align: left;
+		border-width: 0px;
+		background: #f9f9f9;
+		margin-bottom: 6px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+		.checkbox-group .btn:hover {
+			background: #f2f2f2;
+		}
+
+		.checkbox-group .btn:active {
+			box-shadow: none;
+		}
+
+		.checkbox-group .btn.selected {
+			background: #ebf5fb;
+		}
+
+/* Radio buttons */
+.radio {
+	display: inline-block;
+}
+
+/* File inputs */
+.file {
+	font-family: Arial;
+	color: #444;
+	height: 21px;
+	line-height: 15px;
+}
+
+
+
+
+
+
+
+
+
+/* Form style *****************************************************************************************************************/
+
+
+.filter-select {
+	position: relative;
+	top: -5px;
+}
+
+input:focus, select:focus, textarea:focus, button:focus, *:focus {
+	outline: none !important;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+	color: #ddd;
+}
+
+.form-control:focus::-moz-placeholder {
+	color: #ddd;
+}
+
+.form-control:focus:-ms-input-placeholder {
+	color: #ddd;
+}
+
+.form-control:focus:-moz-placeholder {
+	color: #ddd;
+}
+
+
+
+
+
+
+/* Validation */
+.has-warning .control-label {
+	color: #ff8d8a;
+}
+
+input.input-validation-error, select.input-validation-error, .has-warning.form-control, .has-warning .form-control {
+	border-color: #ff8d8a;
+}
+
+	.form-control.has-warning:focus, .has-warning .form-control:focus {
+		box-shadow: 0 0 6px #ffc444;
+	}
+
+label.validation-error, .cp label.validation-error, .cp label.control-label.validation-error {
+	color: #ff8d8a;
+}
+
+
+/* Tooltip */
+.tooltip-inner {
+	white-space: normal;
+	text-overflow: clip;
+	max-width: 300px;
+	padding: 6px 10px;
+	font-size: 12px !important;
+	text-align: left;
+}
+
+.tooltip-no-line-break .tooltip-inner {
+	white-space: nowrap;
+	max-width: none;
+}
+
+
+
+/* Disabled form */
+.form-disabled .form-control, .form-disabled input[type=checkbox], .form-disabled input[type=radio] {
+	cursor: not-allowed;
+	background-color: #eee;
+	pointer-events: none;
+}
+
+.form-disabled .checkbox label {
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+
+/* Bootsrap form-group */
+
+.form-group {
+	margin-bottom: 10px;
+}
+
+
+	.form-group .control-label {
+		font-weight: normal;
+		padding-top: 4px;
+		margin-bottom: 0px;
+		text-align: left;
+		/*text-transform: uppercase;*/
+		color: #777;
+		font-size: 13px;
+	}
+
+	.form-group p {
+		margin: 0px 0px 10px 0px;
+	}
+
+
+
+
+
+/* Other form styles */
+.form-group-slim {
+	margin-bottom: 10px;
+}
+
+.form-group-sm {
+	margin-bottom: 10px;
+}
+
+.form-group-lg {
+	margin-bottom: 20px;
+}
+
+.form-group .row:not(.row-spaceless) {
+	margin-left: -7px;
+	margin-right: -7px;
+}
+
+	.form-group .row:not(.row-spaceless) [class^=col-] {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+
+.form-group-slim .form-group {
+	margin-bottom: 10px;
+}
+
+	.form-group-slim .form-group .row {
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+
+		.form-group-slim .form-group .row [class^=col-] {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+.form-group p {
+	margin: 0px 0px 10px;
+}
+
+
+
+.form-group .row {
+	margin-left: -7px;
+	margin-right: -7px;
+}
+
+	.form-group .row [class^=col-] {
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+
+.form-group-slim.form-group {
+	margin-bottom: 8px;
+}
+
+
+
+.form-group-slim hr:last-child {
+	margin-top: 30px;
+}
+
+.form-group-slim .form-group .checkbox:last-child label {
+	margin-bottom: 5px;
+}

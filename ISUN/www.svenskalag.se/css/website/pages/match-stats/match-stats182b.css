@@ -1,0 +1,124 @@
+#event-match-details {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+    #event-match-details .clubmark {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+        #event-match-details .clubmark h2 {
+            margin-bottom: 10px;
+        }
+
+        #event-match-details .clubmark img {
+            max-width: 50px;
+            max-height: 54px;
+        }
+
+    #event-match-details .game-info {
+        padding: 20px 0;
+    }
+
+    #event-match-details .game-info a {
+        text-decoration:none;
+    }
+
+        #event-match-details .game-info a.seasonname {
+            display: block;
+        }
+
+    #event-match-details h1 {
+        font-size: 29px;
+    }
+
+        #event-match-details h1.score {
+            font-size: 40px;
+        }
+
+    #event-match-details .game-more-info {
+        background: #f8f8f8;
+        border-top: 1px solid #ddd;
+        padding: 20px 15px;
+        text-align: center;
+        border-radius: 0px 0px 4px 4px;
+    }
+
+        #event-match-details .game-more-info div {
+            margin-bottom: 5px
+        }
+
+            #event-match-details .game-more-info div:last-child {
+                margin-bottom: 0px
+            }
+
+    #event-match-details .attendance-limits {
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+
+
+/* Tabell */
+#standings {
+    padding-top: 15px;
+}
+
+
+
+/* Laguppställning */
+#game-lineup .no-result {
+    border-top: 2px solid #ddd;
+    padding: 30px 0 !important;
+    margin-top: 10px;
+}
+
+
+#game-lineup a {
+    text-decoration: none;
+}
+
+#game-lineup .stats-icon {
+    height: 16px;
+    margin-bottom: 2px;
+}
+
+#game-lineup .stats-icon-badge {
+    display: inline-block;
+    position: relative;
+    height: 16px;
+    margin-right: 5px;
+    padding: 1px 6px 0 3px;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: #777;
+    color: #efefef;
+    line-height: 16px;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+    #game-lineup .stats-icon-badge:before {
+        position: absolute;
+        top: 0px;
+        left: -14px;
+        display: inline-block;
+        border-right: 6px solid #777;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid transparent;
+        border-top: 8px solid transparent;
+        content: '';
+    }
+
+
+#game-gallery content-block-content {
+    padding-left: 10px;
+}

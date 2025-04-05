@@ -1,0 +1,103 @@
+﻿.header {
+    position: relative;
+    margin-bottom: 5px;
+}
+.header.header-mobile {display: none;}
+
+    .header .header-background {
+        z-index: 1;
+        margin-top: 4px;
+        min-height: 150px;
+        overflow: hidden;
+    }
+
+        .header .header-background img {
+            min-height: 150px;
+            max-width:980px;
+        }
+
+    .header .header-text {
+        z-index: 2;
+        position: absolute;
+    }
+
+        .header .header-text.text-shadow {
+            text-shadow: 2px 2px 0 rgba(0,0,0,0.45);
+        }
+
+        .header .header-text h4 {
+            margin-left: -2px;
+        }
+
+        .header .header-text h5 {
+            margin-top: -1px;
+        }
+
+    .header .header-emblem {
+        padding: 15px 18px;
+        overflow: auto;
+        color: #fff;
+    }
+
+        .header .header-emblem figure {
+            display: inline-block;
+            float: left;
+            margin-right: 5px;
+            min-width: 50px;
+            min-height: 54px;
+        }
+
+            .header .header-emblem figure img {
+                max-width: 50px;
+            }
+
+.header-emblem figure.white {
+    background: #fff;
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 20%;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+    .header-emblem figure.white img {
+        max-width: 80%;
+    }
+
+.header .header-emblem h1 {
+    font-size: 20px;
+    /*text-transform: uppercase;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 2px; /* ÅÄÖ fix*/
+    padding-right: 33px; /* space for hamburger*/
+    margin: 5px 0 0;
+}
+
+.header .header-emblem h2 {
+    font-size: 15px;
+    font-weight: bold;
+    /*opacity: 0.8;*/
+    letter-spacing: normal;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 33px; /* space for hamburger*/
+}
+
+.header .show-teammenu {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 84px; /*same as .header-emblem*/
+    width: 60px;
+    font-size: 22px;
+}

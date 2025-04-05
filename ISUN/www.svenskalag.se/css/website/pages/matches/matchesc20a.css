@@ -1,0 +1,73 @@
+﻿/* Matcher 
+***********************************************************************/
+#seasonTable {
+	font-size: 0px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+    #seasonTable th {
+        padding-top: 25px;
+        font-size: 14px;
+        
+    }
+    #seasonTable td {
+        position: relative;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #seasonTable .schedule-details {
+        width: 100%;
+        
+    }
+	#seasonTable div {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 14px;
+	}
+	#seasonTable a {
+		text-decoration: none;
+	}
+		#seasonTable .schedule-date {
+			text-align: center;
+			width: 60px;
+			white-space: nowrap;
+			border-right-style: solid;
+			border-right-width: 2px;
+			padding-right: 10px;
+			margin-right: 10px;
+		}
+		#seasonTable .schedule-season-color {
+			display: none;
+		}
+		#seasonTable .schedule-teams {
+			
+		}
+		#seasonTable .schedule-ticket {
+			float: right;
+			padding-top:10px;
+			margin-right:10px;
+		}
+		#seasonTable .schedule-result {
+			float:right;
+			padding-top:10px;
+			text-align: center;
+			width: 80px;
+		}
+		#seasonTable .schedule-admin {
+			float:right;
+		}
+		#seasonTable .schedule-actions {
+			float:right;
+			padding-top:10px;
+			min-width: 80px;
+			min-height: 20px;
+			text-align: right;
+		}
+			#seasonTable .schedule-actions a {
+				margin-left:5px;
+			}
+
+
+.schedule-result-divider {
+    margin: 0px 3px;
+}

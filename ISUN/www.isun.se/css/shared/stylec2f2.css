@@ -1,0 +1,19 @@
+﻿
+/* Popup */
+body.popup h1 {
+	margin-bottom:40px;
+}
+body.Popup { 
+	background-color:#FFF; 
+	margin:20px 40px 20px 40px; 
+	background-image: url("../../img/admin/popup_bg.jpg"); 
+	background-repeat:repeat-x; 
+	text-align:left;
+}
+
+div.center-div {
+	width: 100%;
+}
+div.center-div table.center, div.center-div-all table {
+	margin:auto;
+}

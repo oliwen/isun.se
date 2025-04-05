@@ -1,0 +1,24 @@
+/* Klubbar med Superettan, Ettanfotboll, Damallsvenskan *****************************************************************************************************************/
+#serie-topbar {
+	z-index:850 !important;
+    height: 40px;
+    visibility: hidden;
+}
+
+
+
+/* css bug fix */
+#serie-topbar #team-listing .border-left {
+	height: 100%;
+	top:0;
+}
+
+.title-wrapper {
+	background-color: transparent !important;
+}
+
+
+
+#serie-topbar > div {
+	z-index:810 !important;
+}

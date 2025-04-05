@@ -1,0 +1,13 @@
+﻿
+.schedule-info-container, .schedule-info-container div {
+    font-size: 17px;
+    line-height: 140%;
+}
+
+    .schedule-info-container .attendance-limits {
+        margin-top: 20px;
+    }
+
+.share-links {
+    margin-top: 20px;
+}

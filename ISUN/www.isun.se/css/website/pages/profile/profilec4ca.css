@@ -1,0 +1,73 @@
+﻿.profile-table {
+    border-bottom: 1px solid #ddd;
+}
+
+#profile-stats {
+    min-width: 580px;
+}
+
+    #profile-stats a.trigger {
+        display: block;
+        float: left;
+        border-right: 1px solid #ddd;
+        color: #444;
+        text-decoration: none;
+        padding-right: 10px;
+    }
+
+    #profile-stats:first-child a.trigger {
+        margin-right: 10px;
+    }
+
+
+    #profile-stats ul {
+        list-style: none;
+        padding: 0px;
+        float: left;
+        z-index: 10;
+    }
+
+    #profile-stats .stats-menu {
+        display: none;
+        min-width: 180px;
+        position: absolute;
+        margin-left: -11px;
+        margin-top: 25px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+    }
+
+        #profile-stats .stats-menu a {
+            display: block;
+            text-decoration: none !important;
+            padding: 6px 10px;
+            font-weight: normal;
+            text-transform: none;
+        }
+
+            #profile-stats .stats-menu a:hover, #profile-stats .stats-menu a.selected {
+                background: #ededed;
+            }
+
+    #profile-stats .season-row-item {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+
+.table-responsive {
+    border: none;
+}
+
+
+@media (max-width: 888px) {
+    #page-members-profile .content {
+        padding: 20px 0px;
+    }
+    #page-members-profile .mobile-rect {margin:-20px 0 20px 0;}
+
+}

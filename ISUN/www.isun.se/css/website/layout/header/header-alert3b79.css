@@ -1,0 +1,113 @@
+﻿/* --- Header alert ------*/
+
+.header-alert {
+	min-height: 40px;
+	line-height: 41px;
+	text-align: center;
+	box-shadow: 0px 3px 1px rgba(0,0,0,.1);
+	font-size: 14px;
+	font-family: arial, sans-serif;
+	}
+	
+    .header-alert a {
+	    text-decoration: none;
+	    }	
+
+    .header-alert a:hover {
+	    opacity: 0.7;
+	    filter: alpha(opacity=70);
+	    }
+	
+    .header-alert.yellow {
+	    background-color: #ffee9d;
+	    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+	    color: #846027;
+    }
+    .header-alert.yellow a {
+	    color: #846027;
+    }
+
+    .header-alert.red {
+	    background-color: #ff5d5d;
+	    text-shadow: 0px 1px 0px rgba(255,255,255,0.4);
+	    color: #530303;
+    }
+    .header-alert.red a {
+	    color: #530303;
+    }
+
+    .header-alert.blue {
+	    background-color: #c2d3f0;
+	    text-shadow: 0px 1px 0px rgba(255,255,255,0.4);
+	    color: #1e508e;
+    }
+
+    .header-alert-primary
+    {
+	    background: #298ccd;
+	    color: #fff;
+	    box-shadow: none;
+    }
+
+    .header-alert-primary a
+    {
+	    color: #fff;
+	    text-decoration: none;
+    }
+
+    .header-alert-primary a:hover
+    {
+	    color: #fff;
+	    text-decoration: none;
+    }
+
+    .header-alert-primary .btn
+    {
+	    text-decoration: none;
+	    border: none;
+    }
+
+    .header-alert-primary .btn:hover
+    {
+	    opacity: 1;
+    }
+
+    .header-alert.blue a {
+	    color: #1e508e;
+    }
+
+    .header-alert.green {
+	    background-position: 0px -120px;
+	    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+	    color: #23823f;
+    }
+    .header-alert.green a {
+	    color: #23823f;
+    }
+
+    .header-alert-btn 
+    {
+	    display: inline-block;
+	    border: 1px solid #dacc8c;
+	    border-radius: 3px;
+	    padding: 6px 10px;
+	    line-height: 1;
+	    margin-left: 20px;
+    }
+
+    .header-alert-btn:hover
+    {
+	    background: rgba(255,255,255,0.2);
+	    opacity: 1!important;
+    }
+
+    .header-alert-btn:active
+    {
+	    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .header-alert-btn img
+    {
+	    float: left;
+	    margin: 3px 5px 0px 0px;
+    }

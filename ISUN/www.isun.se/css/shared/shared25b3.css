@@ -1,0 +1,76 @@
+﻿.mail-preview-container {
+    padding: 14px 10px;
+    background-color: #efefef;
+    border: 1px solid #cecece;
+    color: #666;
+    font-size: 13px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+    .mail-preview-container a, .mail-preview-container a:hover {
+        color: #298ccd;
+    }
+
+.users-merged {
+    height:500px;
+    background: #fff;
+    padding: 150px 0px 0px 0px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+    .users-merged .fa {
+        font-size: 80px;
+    }
+
+    .users-merged h1 {
+        font-family: Roboto;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: -0.3px;
+        margin-top:5px;
+    }
+
+    .users-merged p {
+        font-size: 17px;
+    }
+
+    .users-merged .btn.merge-done {
+        width:200px;
+        margin-top:30px;
+    }
+
+
+
+
+
+/* Ekopost modal Administration */
+.ekopost-logo {
+    font-weight: bold;
+    color: #0097d7;
+}
+
+    .ekopost-logo span {
+        color: #2b53a0;
+    }
+    
+
+/* Remove transition on navigation items. */
+#navigation.collapsing {
+    -webkit-transition: none;
+    transition: none;
+}
+
+/**/
+.tooltip {
+    white-space:nowrap;
+}
+
+
+
+/* FontAwesome fixed with icon */
+.fa-fw {
+    margin-left: -2px;
+}
+

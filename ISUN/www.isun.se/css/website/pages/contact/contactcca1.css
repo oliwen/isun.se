@@ -1,0 +1,68 @@
+
+
+/*------------------ KONTAKT (Klubben) ---------------------*/
+.contact-details {
+}
+
+    .contact-details div {
+        border-bottom: 1px solid #eee;
+        margin-top: 7px;
+        padding-bottom: 7px;
+    }
+
+        .contact-details div span.small {
+            text-transform: uppercase;
+            font-size: 0.75em;
+            position: absolute;
+            line-height: 20px;
+        }
+
+        .contact-details div p {
+            width: 100%;
+            padding-left: 165px;
+            /*break long words*/
+            -ms-word-break: break-all;
+            word-break: break-all;
+            word-break: break-word;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            hyphens: auto;
+        }
+
+
+/*------------------ KONTAKT (Person) ---------------------*/
+.contacts .media {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.contacts .media-body {
+    width: 100%;
+}
+
+    .contacts .media-body strong {
+        display: block;
+        line-height: 0.9;
+        margin-top: 6px;
+    }
+
+    .contacts .media-body a {
+        text-decoration: none;
+    }
+
+    .contacts .media-body p {
+        margin-top: 10px;
+    }
+
+.contacts .media-object {
+    width: 100px;
+}
+
+.contact-person .member-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    /*line-height: 90px;
+    font-size: 30px;*/
+}

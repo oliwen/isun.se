@@ -1,0 +1,108 @@
+﻿/* Truppen 
+***********************************************************************/
+#page_squad .teamphoto-wrapper {
+	padding: 10px 0px 5px 0px;
+}
+
+	#page_squad .teamphoto-wrapper img {
+		border-radius: 4px;
+	}
+
+	#page_squad .teamphoto-wrapper .btn,
+	#page_squad .teamphoto-wrapper .btn:active {
+		background: #e0e0e0;
+		color: #8e8e8e;
+		box-shadow: unset;
+		-webkit-box-shadow: unset;
+		margin-top: 17px;
+	}
+
+		#page_squad .teamphoto-wrapper .btn:hover {
+			background: #d1d1d1;
+			color: #7a7a7a;
+		}
+
+
+		#page_squad .teamphoto-wrapper .btn.btn-teamphoto-over {
+			margin-top: -50px;
+			right: 15px;
+			position: relative;
+			float: right;
+			background: #ffffffba;
+			color: #222;
+		}
+
+			#page_squad .teamphoto-wrapper .btn.btn-teamphoto-over:hover {
+				background: #ffffffe0;
+			}
+
+
+.internal-groups {
+	padding: 10px 0 20px 0;
+}
+
+
+#page_squad .table-squad {
+	margin-bottom: 30px;
+}
+
+
+	#page_squad .table-squad thead th {
+		font-size: 18px;
+		padding: 20px 10px 10px;
+		background-color: #f2f2f2;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+	}
+
+
+	#page_squad .table-squad td {
+		vertical-align: middle;
+		padding: 8px 5px;
+		border-color: #ddd;
+		font-size: 15px;
+	}
+
+		#page_squad .table-squad td:first-child {
+			width: 45px;
+			padding-right: 0px;
+		}
+
+		#page_squad .table-squad td i {
+			width: 25px;
+			display: inline-block;
+		}
+
+
+.table-squad .popover-content a {
+	text-decoration: none;
+}
+
+
+#page_squad .member-photo {
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 45px;
+}
+
+.popover-content .ListLink {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	display: inline-block;
+	width: 100%;
+}
+
+
+#page_squad .squad-members table tbody td:nth-child(1) {
+	padding-left: 10px;
+}
+
+#page_squad .squad-members table tbody td:last-child {
+	padding-right: 10px;
+}
+
+#page_squad .squad-members table tbody td figure {
+	margin-right: 5px;
+}

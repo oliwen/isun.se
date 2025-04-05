@@ -1,0 +1,18 @@
+/* Horizontal line *****************************************************************************************************************/
+hr {
+    margin: 20px 0px;
+    border-color: #ddd;
+    clear: both;
+}
+
+    hr.md {
+        margin: 15px 0px;
+    }
+
+    hr.hr {
+        display: block;
+        margin: 10px 0px;
+        border: none;
+        height: 1px;
+        background: #ccc;
+    }

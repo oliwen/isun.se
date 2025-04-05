@@ -1,0 +1,47 @@
+/*
+
+
+<div class="edit-section-tools dropdown right">
+    <button class="btn btn-xs btn-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-pencil fa-fw"></i>
+    </button>
+
+    <ul class="dropdown-menu dropdown-menu-right">
+        <li><a href="#" onclick="doSomething()" class="edit"><i class="fa fa-pencil"></i> Edit</a></li>
+        <li><a href="#" onclick="doSomething()" class="edit"><i class="fa fa-pencil"></i> Edit</a></li>
+		<li role="separator" class="divider"></li>
+        <li><a href="#" data-confirm="Sure?" class="action-click" title="Ta bort stycke"><span class="text-danger"><i class="fa fa-trash"></i> Delete</span></a></li>
+    </ul>
+</div>
+
+
+
+*/
+
+/* Edit Section dropdown.*/
+.edit-section-tools {
+    float: none !important;
+    padding: 5px;
+    background: #fdf6d2;
+    border-top: 1px solid #fdebcc;
+    text-align: right;
+    margin: 10px 0 0;
+    box-shadow: inset 0 -14px 22px #fff;
+}
+
+.section-content.scheduled .edit-section-tools {
+    background-color: #ffeeee;
+    border-color: #ddaaaa;
+}
+
+.edit-section-tools:hover {
+    box-shadow: none;
+}
+
+    .edit-section-tools:hover + div {
+        background: #fdf6d2;
+    }
+
+.section-content.scheduled .edit-section-tools:hover + div {
+    background: #ffeeee;
+}

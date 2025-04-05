@@ -1,0 +1,241 @@
+/* --- LINKS 2  ---------------------------------------------------------------- */
+a.add.inactive:link {
+    color: #666;
+}
+
+a.add.inactive:hover {
+    color: #444;
+}
+
+a.add:link {
+    text-decoration: none;
+    color: #2d8900;
+}
+
+a.add:active {
+    text-decoration: none;
+    color: #2d8900;
+}
+
+a.add:visited {
+    text-decoration: none;
+    color: #2d8900;
+}
+
+a.add:hover {
+    text-decoration: none;
+    color: #81b866;
+}
+
+a.edit:link {
+    text-decoration: none;
+    color: #e26a00;
+}
+
+a.edit:active {
+    text-decoration: none;
+    color: #e26a00;
+}
+
+a.edit:visited {
+    text-decoration: none;
+    color: #e26a00;
+}
+
+a.edit:hover {
+    text-decoration: none;
+    color: #eea666;
+}
+
+a.delete:link {
+    text-decoration: none;
+    color: #dd0000;
+}
+
+a.delete:active {
+    text-decoration: none;
+    color: #dd0000;
+}
+
+a.delete:visited {
+    text-decoration: none;
+    color: #dd0000;
+}
+
+a.delete:hover {
+    text-decoration: none;
+    color: #eb6666;
+}
+
+a.info:link {
+    text-decoration: none;
+    color: #3068a0;
+}
+
+a.info:active {
+    text-decoration: none;
+    color: #3068a0;
+}
+
+a.info:visited {
+    text-decoration: none;
+    color: #3068a0;
+}
+
+a.info:hover {
+    text-decoration: none;
+    color: #97b3cf;
+}
+
+a.admin:link {
+    text-decoration: none;
+    color: #1176a5;
+}
+
+a.admin:active {
+    text-decoration: none;
+    color: #1176a5;
+}
+
+a.admin:visited {
+    text-decoration: none;
+    color: #1176a5;
+}
+
+a.admin:hover {
+    text-decoration: none;
+    color: #82b7d1;
+}
+
+a.admin.no-hover:hover {
+    text-decoration: none;
+    color: #1176a5;
+}
+
+a.grey:link {
+    text-decoration: none;
+    color: #666;
+}
+
+a.grey:active {
+    text-decoration: none;
+    color: #666;
+}
+
+a.grey:visited {
+    text-decoration: none;
+    color: #666;
+}
+
+a.grey:hover {
+    text-decoration: none;
+    color: #888;
+}
+
+a.notice:link {
+    text-decoration: none;
+    color: #d2235a;
+}
+
+a.notice:active {
+    text-decoration: none;
+    color: #d2235a;
+}
+
+a.notice:visited {
+    text-decoration: none;
+    color: #d2235a;
+}
+
+a.notice:hover {
+    text-decoration: none;
+    color: #e47b9c;
+}
+
+a.tip:link {
+    text-decoration: none;
+    color: #105f7d;
+}
+
+a.tip:active {
+    text-decoration: none;
+    color: #105f7d;
+}
+
+a.tip:visited {
+    text-decoration: none;
+    color: #105f7d;
+}
+
+a.tip:hover {
+    text-decoration: none;
+    color: #78a7b9;
+}
+
+a.white:link {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+a.white:active {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+a.white:visited {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+a.white:hover {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+a.sort:link {
+    text-decoration: none;
+    color: #444;
+}
+
+a.sort:active {
+    text-decoration: none;
+    color: #444;
+}
+
+a.sort:visited {
+    text-decoration: none;
+    color: #444;
+}
+
+a.sort:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+a.svelag:link {
+    color: #0080c9;
+    text-decoration: none;
+}
+
+a.svelag:visited {
+    color: #0080c9;
+    text-decoration: none;
+}
+
+a.svelag:active {
+    color: #0080c9;
+    text-decoration: none;
+}
+
+a.svelag:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+
+a.disabled {
+    color: #999 !important;
+    pointer-events: none;
+}
+
+

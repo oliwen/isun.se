@@ -1,0 +1,35 @@
+﻿@media (max-width: 499px) {
+
+    body.signup-popup {
+        background: #fff;;
+    }
+
+        body.signup-popup .panel {
+            margin-top: 0;
+            border: none;
+            border-radius: 0px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        body.signup-popup .panel-body {
+            padding: 15px 15px 30px 15px;
+        }
+
+        body.signup-popup .panel h1 {
+            font-size: 27px;
+        }
+
+        body.signup-popup .panel .clubmark {
+            width: 40px;
+        }
+
+    .form-control {
+        height: 40px;
+    }
+
+
+    .form-footer {
+        padding: 50px 15px 40px;
+        background-color: #f7f7f7;
+    }
+}

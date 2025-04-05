@@ -1,0 +1,12 @@
+
+.start-social-media a {
+    padding: 3px 0px;
+    text-decoration: none;
+    display:inline-block;
+}
+
+    .start-social-media a img {
+        width: 26px;
+        vertical-align: middle;
+        margin-right: 5px;
+    }

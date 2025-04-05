@@ -1,0 +1,97 @@
+/* Share links
+ * facebook, twistter, rss
+ * 
+ * Pages:
+ * http://localhost/testbk/nyheter/
+ * http://localhost/jibk04_test/aktivitet/3320792/traning
+ * http://localhost/jibk04_test/match/3320720/akersberga-ibf-b
+ * http://localhost/testbk-ib-a/profil/867521/stefan-aao-pettersson
+ ********************************/
+
+/*.share-links {
+    overflow: hidden;
+}*/
+
+.share-links a {
+    margin: 0;
+    display: inline-block;
+}
+    .share-links a:link, .share-links a:visited {
+        text-decoration: none;
+    }
+    
+    /* Hover parent, dim all options. Hover option dim all other options*/
+    /*.share-links a:hover {opacity:1;}*/
+    .share-links a:hover {opacity:0.7;}
+
+    .share-links .share i {
+        width: 24px;
+        text-align: center;
+        line-height: 24px;
+        border-radius: 2px;
+        display: inline-block;
+        margin-right: 5px;
+        color: #fff;
+        font-size:15px;
+    }
+
+    /* Colors */
+    .share-links .share.facebook {color: #3b5998;}
+    .share-links .share.facebook i {background: #3b5998;}
+    .share-links .share.twitter {color: #000;}
+    /*.share-links .share.twitter i {background: #55acee;}*/
+    .share-links .share.twitter i {line-height: 28px;}
+    .share-links .share.rss {color: #f26522;}
+    .share-links .share.rss i {background: #f26522;}
+    .share-links .share.google {color: #d34836;}
+    .share-links .share.google i {background: #d34836;}
+
+/*
+$socialColours:
+(
+        facebook: #3b5998,
+        twitter: #00aced,
+        google: #dd4b39,
+        linkedin: #007bb6,
+        youtube: #bb0000,
+        instagram: #517fa4,
+        pinterest: #cb2027,
+        flickr: #ff0084,
+        tumblr: #32506d,
+        forusquare: #0072b1,
+        dribbble: #ea4c89,
+        vine: #00bf8f
+);
+*/
+
+
+.fa-twitter:before, .fa-twitter-square:before {
+    content: '' !important;
+    display: inline-block !important;
+}
+
+.fa-twitter, .fa-twitter-square {
+    background-image: url(https://www.svenskalag.se/img/icons/brands/x-twitter.svg) !important;
+    background-size: 100% 100% !important;
+    display: inline-block !important;
+}
+
+.social-squares2 .fa-twitter:before, .social-squares2 .fa-twitter-square:before {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.social-squares3 .fa-twitter:before, .social-squares3 .fa-twitter-square:before {
+    width: 31px !important;
+    height: 31px !important;
+}
+
+.social-squares4 .fa-twitter:before, .social-squares4 .fa-twitter-square:before {
+    width: 26px !important;
+    height: 26px !important;
+}
+
+.socialmedia .fa-twitter:before, .socialmedia .fa-twitter-square:before {
+    width: 15px !important;
+    height: 15px !important;
+}

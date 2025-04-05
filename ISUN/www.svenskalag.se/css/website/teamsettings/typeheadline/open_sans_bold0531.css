@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
+
+
+h1, h2, h3, h6, .h1, .h2, .h3, .h6 {
+    font-family: 'Open Sans', arial;
+    font-weight: bold;
+    line-height: 120%;
+    letter-spacing: -1px;
+    margin: 0px 0px 2px 0px;
+}
+
+
+h1, .h1 {
+    font-size: 28px;
+    line-height: 115%;
+}
+
+h2, .h2 {
+    font-size: 20px;
+}
+
+h3, .h3 {
+    font-size: 17px;
+}
+
+h6, .h6 {
+    font-size: 16px;
+}
+
+
+h3.infobox-bar {
+
+}

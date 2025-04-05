@@ -1,0 +1,31 @@
+﻿/* Ajax */
+#ajax-container .loader, .ajax-container .loader {
+	background-image: url('../../img/spinner/ajax-loader.gif');
+	background-repeat: no-repeat;
+	background-position: center 40px;
+	color: #999;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	clear: both;
+}
+
+	#ajax-container .loader .content, .ajax-container .loader .content {
+	}
+
+#ajax-container .failed, .ajax-container .failed {
+	color: #ff0000;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: center;
+	display: none;
+}
+
+
+.controlpanel .loader, .ajax-spinner, .controlpanel .loader,.ajax-spinner {
+	background-image: url('../../img/spinner/ajax-loader.gif');
+	background-repeat: no-repeat;
+	background-position: center 70px;
+	text-align: center;
+	padding-top: 140px;
+}

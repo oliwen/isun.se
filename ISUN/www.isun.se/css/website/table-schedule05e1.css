@@ -1,0 +1,37 @@
+/* .table-schedule
+ * Tables on the startpage under tabs |Match|Resultat
+ * http://localhost/testbk 
+****/
+.table-schedule {
+    border: 0;
+    border-color: #ddd;
+    border-style: solid;
+    border-top-width: 2px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-schedule tbody tr td {
+    padding: 8px 10px;
+}
+
+/* Date cell */
+.table-schedule tr td:first-child {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.table-schedule .divider {
+    border-right: 1px solid #eee;
+    margin-right: 4px;
+}
+
+
+.table-schedule .lead {
+    font-size: 120%;
+}
+
+.table-schedule a {text-decoration: none;}
+.table-schedule .col-result {
+    padding-left: 0px;
+}

@@ -1,0 +1,665 @@
+﻿/*************************
+Forms 
+***************************/
+.svlag-form-group {
+    margin: 0 0 15px 0;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+    .svlag-form-group:last-child {
+        margin-bottom: 0;
+    }
+
+    .svlag-form-group .svlag-button {
+        font-weight: 500;
+    }
+
+    .svlag-form-group label,
+    .svlag-form-group .label {
+        display: block;
+        color: #777;
+        /*position: absolute;
+            display: inline-block;
+            margin: 7px 0 0 7px;*/
+        /*margin: 0 0 2px 0;
+            font-size: 0.75em;
+            font-weight: 500;
+            text-transform: uppercase;*/
+        /*vertical-align: top;*/
+    }
+
+        .svlag-form-group label span {
+            position: absolute;
+            display: inline-block;
+            margin: 6px 0 0 7px;
+        }
+
+.svlag-popup-form hr {
+    margin: 0px -15px 20px -15px;
+    height: 0;
+    border: 0;
+    border-top: 1px solid #f5f5f5;
+}
+
+/* Use form-filed for all inputs, select or textarea that should be 100% with in mobile */
+.svlag-form-group .form-field {
+    width: 100%;
+}
+
+/* Default style for form elements */
+.svlag-form-group input,
+.svlag-form-group select,
+.svlag-form-group textarea {
+    display: inline-block;
+    height: 34px;
+    padding: 5px 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px rgba(120, 120, 120, .1);
+    vertical-align: top;
+    background-color: white;
+    color: #444;
+    max-width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    /*outline: none;*/
+    /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;*/
+    font-family: "Roboto", sans-serif;
+}
+
+.svlag-form-group select {
+    padding: 5px 0 5px 3px;
+}
+
+.svlag-form-group textarea {
+    padding: 7px 5px 5px 5px;
+    min-height: 80px;
+}
+
+.svlag-form-group input[type="file"] {
+    border: 0;
+    margin-top: 2px;
+    padding: 0;
+    box-shadow: none;
+    height: auto;
+    font-size: 13px;
+    outline: none;
+}
+
+.svlag-form-group input[type=checkbox] {
+    border: 0;
+    margin-top: 2px;
+    padding: 0;
+    box-shadow: none;
+    height: auto;
+    font-size: 13px;
+    outline: none;
+}
+
+/* Focused */
+.svlag-form-group input:focus,
+.svlag-form-group select:focus,
+.svlag-form-group textarea:focus {
+    border-color: #8a8a8a;
+    background-color: #fefefe;
+    outline: none;
+    box-shadow: 0 0 5px #cacaca;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+}
+
+/* Disabled */
+.svlag-form-group *[disabled],
+.svlag-form-group *[readonly] {
+    cursor: not-allowed;
+    background-color: #eee;
+    opacity: 1;
+    color: #999;
+}
+
+/* Placeholders */
+::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+::-moz-placeholder {
+    color: #bbb;
+}
+
+:-ms-input-placeholder {
+    color: #bbb;
+}
+
+:-moz-placeholder {
+    color: #bbb;
+}
+
+
+/* Invalid value */
+.svlag-form-group .invalid {
+    border-color: #ee1122;
+    box-shadow: 0 0 2px 0 rgba(180, 0, 0, .3);
+}
+
+/* Extra element for text or similar.*/
+.svlag-form-group label + .form-element {
+    padding: 0;
+}
+
+.svlag-form-group .form-element {
+    margin: 5px 0 0;
+}
+
+/* Clubmark icon */
+.svlag-form-group .svlag-clubmark-small {
+    max-height: 34px;
+}
+
+/* Autocomplete result */
+.ac_results {
+    box-shadow: 0 5px 10px 1px rgba(0,0,0,0.15);
+}
+
+    .ac_results ul li {
+        padding: 15px 10px;
+        border-bottom: 1px solid #eee;
+    }
+
+/* IE10 select style */
+.svlag-form-group select::-ms-expand {
+    border: 0;
+    background: transparent;
+    width: 10px;
+    padding-right: 5px;
+}
+/* IE10 type=file fix */
+.svlag-form-group input[type=file]::-ms-value {
+    display: none;
+}
+
+.svlag-form-group input[type=file]::-ms-browse {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 5px;
+    outline: none;
+}
+
+/* Input Time/Date *******************************************/
+.svlag-form-group.time {
+    white-space: nowrap;
+}
+
+    .svlag-form-group.time label,
+    .svlag-form-group .time label {
+        vertical-align: top
+    }
+
+    .svlag-form-group.time select,
+    .svlag-form-group .time select {
+        width: 55px;
+    }
+
+    .svlag-form-group.time .hh-mm,
+    .svlag-form-group .time .hh-mm {
+        width: 58px;
+    }
+
+.svlag-form-group .date,
+.svlag-form-group .datepicker {
+    width: 105px;
+}
+
+.svlag-form-group.time span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 34px;
+}
+
+.svlag-form-group.time a {
+    vertical-align: middle;
+}
+
+.ui-datepicker {
+    z-index: 105 !important;
+}
+
+
+/* Input Goals *******************************************/
+.svlag-form-group.goals {
+}
+
+    .svlag-form-group.goals input {
+        width: 50px;
+        text-align: center;
+    }
+
+    .svlag-form-group.goals span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 34px;
+    }
+
+/* Label Links */
+.svlag-form-group label a {
+    float: right;
+    text-transform: none;
+}
+/* Label extra text */
+.svlag-form-group label span {
+    float: right;
+    text-transform: none;
+}
+
+
+
+
+/* Toggle list (table with toggle-buttons+content) *******************************************/
+.svlag-form-group .toggle-list {
+    width: 100%;
+    table-layout: fixed;
+    padding: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+    .svlag-form-group .toggle-list .no-border {
+        border: none;
+    }
+
+    .svlag-form-group .toggle-list tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+        padding-bottom: 10px;
+    }
+
+    .svlag-form-group .toggle-list tr {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+        border-bottom: 1px solid #dfe5ec;
+    }
+
+    .svlag-form-group .toggle-list.no-last-border tr:last-child {
+        border-bottom: none;
+    }
+
+    .svlag-form-group .toggle-list td {
+        padding: 6px 0;
+    }
+
+    .svlag-form-group .toggle-list.toggle-list-extra-padding td {
+        padding: 10px 0;
+    }
+
+    .svlag-form-group .toggle-list td:first-child {
+        padding-left: 15px;
+    }
+
+    .svlag-form-group .toggle-list td:last-child {
+        padding-right: 15px;
+    }
+
+    .svlag-form-group .toggle-list h1 {
+        font-size: 15px;
+        font-weight: 500;
+        margin: 4px 0px 02px 0px;
+        line-height: 100%;
+        text-transform: none;
+    }
+
+    .svlag-form-group .toggle-list .toggle-switch {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 10px 0;
+    }
+
+    .svlag-form-group .toggle-list .toggle-label {
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 10px;
+    }
+
+    .svlag-form-group .toggle-list thead .toggle-label label {
+        margin: 0;
+    }
+
+    .svlag-form-group .toggle-list thead .toggle-switch {
+        padding: 0;
+    }
+
+
+
+
+
+
+/* Toggle (toggle group) *******************************************/
+.svlag-form-group .toggle {
+}
+
+.svlag-form-group i.toggle.active, i.toggle.inactive {
+    font-size: 28px; /* 28px = 1x1 pixels, 25px creats subpixels.*/
+    cursor: pointer;
+}
+
+.svlag-form-group i.toggle.active {
+    color: #17bd80;
+}
+
+.svlag-form-group i.toggle.inactive {
+    color: #c3c3c3;
+}
+
+
+
+
+
+/* Fake checkbox  *******************************************/
+/* 
+    <label class="toggle-box">
+        <input type="checkbox">
+        <i class="fa fa-toggle-on"></i>
+        Toggle button
+    </label>
+*/
+
+.svlag-form-group .toggle-box input {
+    display: none;
+}
+
+.svlag-form-group .toggle-box i {
+    transform: rotate(180deg);
+    font-size: 28px;
+    line-height: 28px;
+    color: #777;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.svlag-form-group .toggle-box input:checked + i {
+    color: #3faf61;
+    transform: rotate(0deg);
+}
+
+
+
+
+/****TEST***/
+.svlag-switch-on,
+.svlag-switch-off {
+}
+
+    .svlag-switch-on .fa-toggle-on,
+    .svlag-switch-off .fa-toggle-on {
+        font-size: 28px;
+        cursor: pointer;
+        color: #17bd80;
+        vertical-align: middle;
+        margin: -2px 5px 0 0;
+    }
+
+    .svlag-switch-off .fa-toggle-on {
+        color: #c3c3c3;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+
+
+/* Vertikal lista med checkboxar */
+.svlag-form-group.toggle-group {
+}
+
+    .svlag-form-group.toggle-group p {
+        line-height: 1.75em;
+        vertical-align: top;
+        margin: 5px 0;
+    }
+
+        .svlag-form-group.toggle-group p:first-child {
+            margin-top: 0;
+        }
+
+        .svlag-form-group.toggle-group p:last-child {
+            margin: 0;
+        }
+
+        .svlag-form-group.toggle-group p input {
+            margin: 5px 0;
+        }
+
+        .svlag-form-group.toggle-group p label {
+            cursor: pointer;
+            margin: 0;
+        }
+
+    .svlag-form-group.toggle-group .svlag-switch {
+        display: none;
+    }
+
+
+
+
+/* Horizontal form group *******************************************/
+.horizontal-group .svlag-form-group {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+}
+
+    .horizontal-group .svlag-form-group.toggle-group p {
+        padding-top: 5px;
+    }
+
+
+
+/* Info text */
+.info-text {
+    color: #31708f;
+    background-color: #ebf8ff;
+    border: 1px solid #bce8f1;
+    padding: 5px;
+    border-radius: 2px;
+    display: block;
+    text-transform: none;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.75em;
+}
+
+    .info-text a, .info-text a:hover {
+        color: #31708f;
+    }
+
+
+/* Block of text */
+.help-block {
+    background: #eee;
+    padding: 10px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+    .help-block img {
+        max-width: 100%;
+    }
+
+i.fa-info-circle {
+    cursor: pointer;
+    color: #247bb4;
+}
+
+
+
+/*********************************
+AngularJS Form validation styling
+**********************************/
+
+.validation.help-block {
+    color: #E07676;
+    font-style: italic;
+}
+
+/* error display font italic, text-danger is red in BS */
+.validation.text-danger {
+    font-style: italic;
+    display: none;
+}
+
+/* invalid & (dirty or touched) => red -- CSS3 only */
+.ng-invalid,
+.ng-invalid.ng-touched:not(:focus) {
+    border-color: #e74c3c;
+}
+
+.custom-validation.ng-touched:not(:focus) {
+    border-color: #ccc;
+}
+
+/* valid & dirty */
+.ng-valid.ng-dirty.ng-touched {
+    border-color: #ccc;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.item-overlay {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+
+
+
+/****** Floating labels - Patrik 
+
+/*
+    <div class="svlag-form-group label-float-group">
+        <input class="form-field" id="test" maxlength="30" name="test" type="text" >
+        <label>Rubrik *</label>
+    </div>
+*/
+
+.label-float-group {
+    position: relative;
+}
+
+.svlag-form-group .label-float-group {
+    display: inline-block;
+}
+
+.label-float-group input,
+.label-float-group select,
+.label-float-group textarea {
+    width: 100%;
+    height: auto;
+    padding: 22px 10px 1px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    line-height: 1.5em;
+}
+
+.label-float-group select {
+    padding: 22px 10px 1px 6px;
+    height: 46px;
+}
+
+
+
+.label-float-group label {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #999;
+    text-transform: none;
+    font-weight: 300;
+}
+
+.label-float-group input:focus ~ label,
+.label-float-group textarea ~ label {
+    top: 6px;
+    left: 11px;
+    font-size: 0.85em;
+    transition: all 0.3s;
+    transform: none;
+}
+
+
+.label-float-group select ~ label,
+.float-label ~ label {
+    font-size: 0.85em;
+    top: 6px;
+    left: 11px;
+    transform: none;
+}
+
+
+.label-float-group input:focus,
+.label-float-group select:focus,
+.label-float-group textarea:focus {
+    box-shadow: 0 0 0 1px #298ccd;
+    border-color: #298ccd;
+    border-radius: 3px;
+}
+
+.grouped .label-float-group,
+.time .label-float-group {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+
+
+
+/*********************************
+Small Phones (iPhone < 5)
+**********************************/
+@media (max-width: 340px) {
+    .svlag-form-group .toggle-list td {
+        padding-left: 15px;
+    }
+}
+
+
+/*********************************
+All modern mobile devices.
+https://bjango.com/articles/min-device-pixel-ratio/
+**********************************/
+@media (-webkit-min-device-pixel-ratio: 1.2) {
+    .svlag-form-group.time select {
+        letter-spacing: -0.07em;
+        padding-left: 0px;
+    }
+
+    .svlag-form-group.toggle-group p input {
+        margin: 7px 0 0 0;
+    }
+}
+
+
+/*********************************
+Popups bigger than 600px
+**********************************/
+@media (min-width: 600px) {
+
+    .svlag-form-group .toggle-list h1 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 3px 0px 2px 0px;
+    }
+}

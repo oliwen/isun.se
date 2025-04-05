@@ -1,0 +1,27 @@
+/* --- Tooltip --- */
+#tip-holder {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10001;
+    max-width: 300px;
+}
+
+    #tip-holder span {
+        display: block;
+        background: #171717;
+        color: white;
+        padding: 8px 10px;
+        font-size: 12px;
+        border-radius: 3px;
+        border: 1px solid #171717;
+        box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+        /*white-space:nowrap;*/
+    }
+
+    #tip-holder .arrow {
+        background: url(../../img/tooltip-arrow.png) top center no-repeat;
+        height: 4px;
+        width: 100%;
+    }

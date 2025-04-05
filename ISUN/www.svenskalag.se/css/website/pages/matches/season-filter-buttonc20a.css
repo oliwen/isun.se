@@ -1,0 +1,126 @@
+﻿
+.sfilter, .sfilter:focus, .sfilter:hover, .sfilter-trigger, .sfilter-trigger:hover, .sfilter-trigger:focus { 
+	display:block; 
+	background: #eee;
+	padding: 7px 10px; 
+	color: #444 !important;
+	margin-bottom: 6px; 
+	text-decoration: none;
+	font-size: 13px;
+	border-radius: 2px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.sfilter .fa {
+	margin-right: 2px;
+    position: relative;
+    font-size:14px;
+    top: 1px;
+}
+
+.sfilter .fa-square {
+	opacity: 0.2;
+}
+
+.sfilter .fa-check-square, .sfilter.selected .fa-square { 
+	display: none;
+}
+.sfilter.selected .fa-check-square{ 
+	display: inline;
+}
+
+.sfilter-trigger {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+    .sfilter-trigger[aria-expanded=false] span.less {
+        display: none;
+    }
+
+    .sfilter-trigger[aria-expanded=true] span.more {
+        display: none;
+    }
+
+/* Matches season colors */
+.season-color0     { border-color: #c5c0ef; }
+.season-color1     { border-color: #cfe4f9; }
+.season-color2     { border-color: #d2eed0; }
+.season-color3     { border-color: #f6eccc; }
+.season-color4     { border-color: #f4d7cb; }
+.season-color5     { border-color: #f4cdda; }
+.season-color6     { border-color: #efcdf8; }
+.season-color7     { border-color: #ddd4f9; }
+.season-color8     { border-color: #d7d7d7; }
+.season-color9     { border-color: #d0f3f6; }
+.season-color10    { border-color: #d0f2df; }
+.season-color11    { border-color: #edf2ca; }
+
+.season-color0-dark     { border-color: #5034ab; }
+.season-color1-dark     { border-color: #2b7add; }
+.season-color2-dark     { border-color: #3caf12; }
+.season-color3-dark     { border-color: #d1a100; }
+.season-color4-dark     { border-color: #a84114; }
+.season-color5-dark     { border-color: #a41a49; }
+.season-color6-dark     { border-color: #9c24b2; }
+.season-color7-dark     { border-color: #5034ab; }
+.season-color8-dark     { border-color: #444; }
+.season-color9-dark     { border-color: #42c5d2; }
+.season-color10-dark    { border-color: #4daa66; }
+.season-color11-dark    { border-color: #abc200; }
+
+.c0, .c0:focus						{ background: #d8d4f9; }
+.c0:hover, .c0.selected		        { background: #c5c0ef; }
+.c0 .fa								{ color: #5034ab; }
+
+.c1, .c1:focus						{ background: #e6f1fc; }
+.c1:hover, .c1.selected		        { background: #cfe4f9; }
+.c1 .fa								{ color: #2b7add; }
+
+.c2, .c2:focus						{ background: #e8f6e8; }
+.c2:hover, .c2.selected		        { background: #d2eed0; }
+.c2 .fa								{ color: #3caf12; }
+
+.c3, .c3:focus						{ background: #faf6e4; }
+.c3:hover, .c3.selected		        { background: #f6eccc; }
+.c3 .fa								{ color: #d1a100; }
+
+.c4, .c4:focus						{ background: #f9ebe5; }
+.c4:hover, .c4.selected		        { background: #f4d7cb; }
+.c4 .fa								{ color: #a84114; }
+
+.c5, .c5:focus						{ background: #f9e5ec; }
+.c5:hover, .c5.selected		        { background: #f4cdda; }
+.c5 .fa								{ color: #a41a49; }
+
+.c6, .c6:focus						{ background: #f7e5fc; }
+.c6:hover, .c6.selected		        { background: #efcdf8; }
+.c6 .fa								{ color: #9c24b2; }
+
+.c7, .c7:focus						{ background: #eee9fc; }
+.c7:hover, .c7.selected		        { background: #ddd4f9; }
+.c7 .fa								{ color: #5034ab; }
+
+.c8, .c8:focus						{ background: #ebebeb; }
+.c8:hover, .c8.selected		        { background: #d7d7d7; }
+.c8 .fa								{ color: #444; }
+
+.c9, .c9:focus						{ background: #e7f9fa; }
+.c9:hover, .c9.selected		        { background: #d0f3f6; }
+.c9 .fa								{ color: #42c5d2; }
+
+.c10, .c10:focus					{ background: #e7f8ef; }
+.c10:hover, .c10.selected	        { background: #d0f2df; }
+.c10 .fa							{ color: #4daa66; }
+
+.c11, .c11:focus					{ background: #f6f8e4; }
+.c11:hover, .c11.selected	        { background: #edf2ca; }
+.c11 .fa							{ color: #abc200; }
+
+@media (max-width: 888px) {
+    .sfilter, .sfilter:focus, .sfilter:hover, .sfilter-trigger, .sfilter-trigger:hover, .sfilter-trigger:focus {
+        padding: 7px 10px;
+    }
+}

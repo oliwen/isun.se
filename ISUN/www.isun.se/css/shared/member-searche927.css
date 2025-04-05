@@ -1,0 +1,59 @@
+
+/* Member search
+ * Search+results on
+ * http://localhost/testbk-fotboll/teams?addteam=1  (Våra lag, lägg till lag)
+ * http://localhost/testbk-fotboll/kontrollpanelen/medlemmar/ny-sok/8 (CP: Lägg till person )
+ * http://localhost/testbkherrar/kontrollpanelen/medlemmar/malsman/148666/daniel-danielsson/   (CP: koppla målsman)
+ * http://localhost/testbk/medlemsregister/lista (Register: - >klicka på en användare -> väl målsmän -> lägg till) 
+ *************************************/
+
+
+
+
+/* member-result-list
+ ***************************/
+
+	.member-result-list .list-group-thumbs .list-group-item {
+    
+        padding:10px;
+    }
+    .member-result-list a.list-group-item:hover {
+        background: #f4f9ff;
+    }
+    /* Dim previous result while searching */
+    .member-result-list .search-dimmed {
+	    opacity: 0.5;
+	}
+
+
+.search-members .search {
+	margin: 20px 0px;
+}
+.search-members .footer {
+	text-align: right;
+	overflow: hidden;
+	padding-top: 20px;
+	border-top: 1px solid #e3ebf4;
+}
+
+/* .list 
+ * used on some search results. 
+ *************************************/
+.member-result-list .list {
+    border-radius: 3px;
+    border: 1px solid #e3ebf4;
+    border-top: 0px;
+    border-bottom: 0px;
+    background: #fff;
+}
+    .member-result-list .list .search-item {
+    	padding:10px;
+    }
+    .member-result-list .list input {
+        margin: 8px 8px 8px 0
+    }
+
+    .member-result-list .list label {
+        width: 100%;
+    }
+

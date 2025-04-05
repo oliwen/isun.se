@@ -1,0 +1,222 @@
+/* --- form-blocks --- */
+.form-blocks {
+	margin: 0 0px 30px 0px;
+	padding: 0px;
+	list-style: none;
+	background: #f3f3f3;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	font-size: 15px;
+	display: table;
+	width: 100%;
+}
+
+
+	.form-blocks.form-blocks-warning {
+		min-height: 52px;
+		color: #8d6c2b;
+		background-color: #fff9e1;
+		border: 1px solid #dcd7c7;
+	}
+
+
+/* Item */
+.form-blocks-item {
+	display: block;
+	padding: 8px 10px;
+	border-top: 1px solid #ddd;
+}
+
+	.form-blocks-item.no-items {
+		display: table-cell;
+		border-top: none;
+	}
+
+	.form-blocks-item:first-child {
+		border-top: none;
+	}
+
+/* Validation error */
+.form-blocks.input-validation-error {
+	border: 1px solid #ff8d8a;
+}
+
+/* Sub level */
+li.block-sub-item {
+	border-top: 1px solid #ddd;
+}
+
+.block-sub-item > ul {
+	border: 0;
+	margin: 10px;
+	padding: 0;
+}
+
+	.block-sub-item > ul .form-blocks-item {
+		padding: 0 30px;
+		border: 0;
+	}
+
+		.block-sub-item > ul .form-blocks-item:hover {
+			background-color: transparent;
+		}
+
+.block-sub-item .form-blocks-item label {
+	padding: 5px 0;
+}
+
+/* Form elements */
+.form-blocks-item input,
+.form-blocks-item select {
+	font-size: 1em;
+	height: 34px;
+	padding: 6px 0 6px 5px;
+}
+
+
+
+/* Inline forms */
+.form-inline .form-blocks-item input,
+.form-inline .form-blocks-item select {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+/* Fake radiobutton */
+.form-blocks.payment-method li input {
+	display: none;
+}
+
+.form-blocks.payment-method li label:before {
+	content: '\f10c';
+	display: inline-block;
+	font-family: "Fontawesome";
+	font-size: 24px;
+	color: #777;
+	vertical-align: middle;
+	margin-top: -4px;
+	margin-right: 2px;
+}
+
+.form-blocks.payment-method li label.vue:before {
+	margin-right: 6px;
+}
+
+.form-blocks.payment-method li.disabled label {
+	cursor: default;
+	user-select: none;
+}
+
+	.form-blocks.payment-method li.disabled label:before {
+		color: #999;
+	}
+
+.form-blocks.payment-method li.active label:before {
+	content: '\f058';
+	color: #3faf61;
+}
+
+
+
+/* Fake checkbox */
+.form-blocks li.item-checkbox input {
+	display: none;
+}
+
+.form-blocks li.item-checkbox label {
+	display: flex;
+	align-items: center;
+}
+
+	.form-blocks li.item-checkbox label:before {
+		content: '\f096';
+		display: inline-block;
+		font-family: "Fontawesome";
+		font-size: 24px;
+		color: #777;
+		margin-right: 6px;
+	}
+
+.form-blocks li.item-checkbox.active label:before {
+	content: '\f14a';
+	color: #3faf61;
+}
+
+
+
+
+/* Inline images */
+.form-blocks-item img {
+	vertical-align: middle;
+}
+
+.form-blocks.payment-method img {
+	margin-top: 3px;
+}
+
+
+
+/* Line height helper for text */
+.form-blocks-item .vheight {
+	line-height: 34px;
+}
+
+
+
+
+
+/* Add color to articles added to the "cart" */
+.form-blocks-item.active,
+.form-blocks-item .active,
+.form-blocks-item.active span {
+	color: #3faf61;
+	font-weight: bold;
+}
+
+	.form-blocks-item.active span.small {
+		font-weight: normal;
+	}
+
+	.form-blocks-item.active select {
+		border-color: #3faf61;
+	}
+
+
+/* Disabled items */
+.form-blocks-item.disabled img {
+	opacity: 0.5;
+}
+
+.form-blocks-item.disabled .toggle-button-label .fa.disabled {
+	opacity: 0.3;
+}
+
+
+.form-blocks-item.disabled span {
+	color: #999;
+}
+
+.form-blocks-item.disabled label {
+	cursor: text;
+}
+
+.form-blocks-item.disabled a {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.form-blocks-item .divider {
+	display: inline-block;
+	width: 1px;
+	height: 34px;
+	margin: 0 4px;
+	background-color: #ddd;
+}
+
+@media (max-width: 500px) {
+	.form-blocks select.form-control {
+		width: auto;
+		display: inline-block;
+	}
+}

@@ -1,0 +1,15 @@
+.btn-input .btn-default:hover {
+    background: #fff;
+    border-color: #ccc;
+}
+
+.btn-input .btn-default:active, .btn-input .btn-default.active {
+    border-color: #ccc;
+    background-color: #f2f2f2;
+    background: linear-gradient(#eee,#f2f2f2);
+    box-shadow: inset 0px 1px 5px rgb(0 0 0 / 6%);
+}
+
+.btn-input.field-validation-error .btn {
+    border-color: #ff8d8a;
+}

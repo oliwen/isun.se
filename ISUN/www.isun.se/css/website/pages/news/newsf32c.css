@@ -1,0 +1,17 @@
+
+
+
+
+/* Social sharing icons
+ * Custom styling on News
+ ******************************/
+.infobox-share h2 {
+    margin-bottom:7px;
+}
+.infobox-share a.share {
+    /*margin-bottom:7px;*/
+    line-height: 30px;
+}
+.infobox-share hr {
+    margin: 10px 0;
+}

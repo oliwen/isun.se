@@ -1,0 +1,79 @@
+/*******************************************
+File icons:
+- Documents
+
+How to use:
+<figure class="file-icon pdf">
+    <img src="/img/icons/filetype/pdf.png">
+</figure>
+*******************************************/
+/* File Icon */
+.file-icon {
+        display:inline-block;
+        width:30px;
+        height:38px;
+        line-height:38px;
+        background:#eee;
+        border-radius:3px;
+        text-align:center;
+        position: relative;
+    }
+        /* Folded corner */
+        .file-icon:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 1px;
+            height: 1px;
+            border-bottom: 8px solid rgba(0,0,0,0.3);
+            border-right: 8px solid #fff;
+            border-left: 0;
+            border-top: 0;
+        }
+        /* Folded corner */
+        .file-icon.folder:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 1px;
+            right: 0;
+            width: 65%;
+            height: 5px;
+            border: 0;
+            border-bottom: 0;
+            border-right: 0;
+            border-left: 5px solid #f8c63d;
+            border-top: 5px solid transparent;
+            border-top-right-radius: 3px;
+            background: #daa924;
+            box-shadow: 0 -1px 0px rgba(255,255,255,0.5);
+        }
+        /*File type icon */
+        .file-icon img {
+            max-width:75%;
+            vertical-align: middle;
+        }
+        /*File icon size */
+        .file-icon.file-icon-small { width:14px; height:16px; line-height:14px; }
+        .file-icon.file-icon-small:after { border-bottom-width: 3px; border-right-width: 3px; }
+
+
+    /* File Icon Colors */
+    .file-icon.folder { background-color:#f8c63d; }
+    .file-icon.folder:after { }
+    .file-icon.photo { background-color:#ff543d; }
+    .file-icon.vector { background-color:#ffa500; }
+    .file-icon.audio { background-color:#562f89; }
+    .file-icon.video { background-color:#e50808; }
+    .file-icon.presentation { background-color:#e75a15; }
+    .file-icon.web { background-color:#2aa8e2; }
+    .file-icon.code { background-color:#44486b; }
+    .file-icon.flash { background-color:#e54b37; }
+    .file-icon.pdf { background-color:#d3220b; }
+    .file-icon.plaintext { background-color:#c4c9d1; }
+    .file-icon.document { background-color:#0091ff; }
+    .file-icon.spreadsheet { background-color:#2db965; }
+    .file-icon.compressed { background-color:#363a56; }
+    .file-icon.unknown { background-color:#ababab; }

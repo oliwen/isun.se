@@ -1,0 +1,39 @@
+.adCarouselContainer		
+{ 
+	background-color:#FFFFFF; 
+	margin-bottom:5px; 
+	padding:5px 10px 5px 10px; 
+	overflow:hidden; 
+}
+
+.adCarousel ul 				
+{ 
+	padding:0px;
+	margin:0px; 
+}
+
+.adCarousel ul li			
+{ 
+	list-style:none; 
+	padding:0px; 
+	margin:0px; 
+	text-align: center;
+	height: 80px;
+}
+
+.adCarousel ul li a
+{
+	display: block;
+	padding: 10px;
+	border:solid #e3e3e3 1px; 
+	margin-top:5px; 
+	text-align: center;
+}
+
+.adCarousel ul li img		
+{ 
+	display: inline-block;
+	max-width: 100%;
+	max-height: 50px;
+}
+

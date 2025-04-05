@@ -1,0 +1,214 @@
+/* Defaults Resets ***************/
+body {
+    font-family: Roboto, Arial, sans-serif !important;
+    -webkit-text-size-adjust: none;
+    font-kerning: none;
+    color: #444;
+    overflow-y: scroll;
+    font-size: 15px;
+}
+
+    body.mobile-body {
+        min-width: 300px !important;
+    }
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+em {
+    font-style: italic;
+}
+
+ul, ol {
+    padding: 5px 0px 5px 30px;
+    margin: 0px;
+}
+
+ul {
+    list-style: square;
+}
+
+label {
+    font-weight: normal;
+    display: inline;
+    margin: 0px;
+    cursor: pointer;
+}
+
+a {
+    outline: 0;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+legend {
+    font-size: inherit;
+}
+
+
+/* General Layout adjustments ---------------------------- */
+#container {
+    margin: auto;
+    min-height: 100%;
+}
+
+#siteCol {
+    margin-top: 30px;
+    padding: 10px;
+    background: #fff;
+    width: 1000px;
+    float: left;
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 0px 25px 5px rgb(0 0 0 / 8%);
+}
+
+.content {
+    float: left;
+    width: 720px;
+    margin: 25px 20px 30px 30px;
+    min-height: 700px;
+    position: relative; /* Needed for .hovercard */
+}
+
+.colMid {
+    width: 500px;
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Layout fix ----------------------------------------*/
+.device-desktop.rightCol-visible {
+    min-width: 1310px;
+}
+
+    .device-desktop.rightCol-visible #container {
+        width: 1310px;
+    }
+
+/*no ads - center container&sitCol*/
+.device-desktop.rightCol-hidden #container {
+    width: 1000px;
+}
+
+/*no ads - center container&sitCol*/
+.device-desktop.rightCol-hidden #rightCol {
+    display: none;
+}
+
+.device-desktop.rightCol-visible .system-nav {
+    min-width: 1310px;
+}
+
+.device-desktop.rightCol-hidden .system-nav {
+    min-width: 1000px;
+}
+
+
+
+/* Ads ---------------------------- */
+.ad-mittenspalt {
+    margin: 30px 0px 10px 0px;
+    background-image: url("../img/ad-bg-mittenspalt77ae.gif?ver=2");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #eaeaea;
+    text-align: center;
+    text-align: center;
+    padding: 25px 0px 25px 0px;
+    clear: both;
+}
+
+.ad-panorama {
+    padding-bottom: 5px;
+}
+
+
+
+/* Default dropdown items.
+ * edit-section-tools, redigera aktivitet, välj serie..
+**************************************************************/
+.dropdown-menu li a {
+    padding: 7px 14px;
+    display: block;
+    clear: both;
+    line-height: 1.428571429;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/* hide empty tel: links on sektioner, våra lag */
+.popover-content a.phone_0 {
+    display: none;
+}
+
+
+/*********************************************************************************
+**********************************************************************************
+    Desktop specific CSS
+**********************************************************************************
+*********************************************************************************/
+@media (min-width: 888px) {
+    html {
+        min-width: 1000px;
+    }
+
+
+    /* --- SIDEMENU (sticky) -------------------------------------------------------------------- */
+    #sideMenu.dropdown {
+        z-index: 0; /* Prevent z-index problem with main navigation dropdowns. */
+    }
+
+    .menu .dropdown-menu {
+        display: block;
+        position: static;
+        width: 100%;
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0px;
+        margin: 0px;
+        z-index: initial;
+    }
+
+    .menu .dropdown [data-toggle=dropdown] {
+        display: none;
+    }
+
+
+
+    /* ---  Tabell / Standings -------------------------------------------------------------------- */
+    .standings-panel .btn {
+        display: none;
+    }
+
+    .standings-panel .collapse, .seasons-collapse {
+        display: block;
+        visibility: visible;
+        height: auto !important;
+    }
+
+    .colRight .hidden-xs {
+        display: block !important;
+    }
+}
+
+.date-postponed, .date-cancelled, .date-cancelled .text-muted {
+    text-decoration: line-through;
+    color: #d9534f !important;
+}
+
+[v-cloak] {
+    display: none !important;
+}

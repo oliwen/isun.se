@@ -1,0 +1,92 @@
+﻿.table-stats {
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+    .table-stats tbody tr:hover {
+        background-color: #f7f7f7;
+    }
+
+    .table-stats thead > tr > th,
+    .table-stats tbody > tr > td {
+        text-align: center;
+        width: 44px;
+        padding: 6px 0;
+        vertical-align: middle;
+    }
+
+    .table-stats thead > tr > th {
+        padding: 10px 0;
+    }
+
+    .table-stats tbody > tr > td {
+        border-top: 1px solid #eee !important;
+    }
+
+    .table-stats th:first-child,
+    .table-stats td:first-child {
+        text-align: left;
+        width: unset;
+        padding-left: 5px;
+    }
+
+    .table-stats th.column-sort-active.headerSortUp,
+    .table-stats th.column-sort-active.headerSortDown {
+        background: #eee;
+    }
+
+    .table-stats th.col-player.column-sort-active {
+        background-color: #f7f7f7;
+    }
+
+        .table-stats th.col-player.column-sort-active:after {
+            content: '\f0d8'; /*down: \f0d7;*/
+            font-family: 'FontAwesome';
+            position: absolute;
+            margin-top: -1px;
+            margin-left: 4px;
+        }
+
+    .table-stats th.col-player.headerSortDown.column-sort-active:after {
+        content: ' \f0d7'; /*down: \f0d7;*/
+        font-family: 'FontAwesome';
+    }
+
+    .table-stats th img {
+        width: 18px;
+    }
+
+    .table-stats .shirt-number {
+        display: inline-block;
+        min-width: 25px;
+        text-align: right;
+        color: #999;
+        margin-right: 3px;
+    }
+
+
+
+    .table-stats .player-name {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+        .table-stats .player-name div {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 100%;
+        }
+
+
+    .table-stats .member-photo {
+        margin-right: 2px;
+    }
+
+#statsYears .btn {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 13px;
+}

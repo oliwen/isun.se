@@ -1,0 +1,191 @@
+#rightCol {
+    width: 310px;
+    padding: 30px 0px 40px 10px;
+    float: right;
+}
+
+
+/* Sponsor templates  *****************************************************************************************************************/
+.banner {
+}
+
+.banner {
+    display: block;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+
+.banner-title {
+    margin-top: 20px;
+}
+
+    .banner-title:first-child {
+        margin-top: 0px;
+    }
+
+.banner img {
+    display: block;
+    max-width: 100%;
+}
+
+.banner-image {
+    background: #fff;
+}
+
+    .banner-image img {
+        margin: auto;
+    }
+
+.banner.magic {
+    /*    padding: 15px 60px;*/
+    background: #fff;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 0px;
+}
+
+    .banner.magic:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .banner.magic img {
+        display: inline;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .banner.magic.sm {
+        height: 70px;
+        padding: 12px 60px;
+    }
+
+        .banner.magic.sm.banner-extra-padding {
+            padding: 16px 75px;
+        }
+
+    .banner.magic.md {
+        height: 85px;
+        padding: 16px 50px;
+    }
+
+        .banner.magic.md.banner-extra-padding {
+            padding: 20px 65px;
+        }
+
+    .banner.magic.lg {
+        height: 110px;
+        padding: 20px 40px;
+    }
+
+        .banner.magic.lg.banner-extra-padding {
+            padding: 24px 45px;
+        }
+
+
+
+/* ---  Banner Title --- */
+.banner fieldset.title {
+    border: 1px solid rgba(0,0,0,0.75);
+    border-bottom: 0;
+    margin: 0;
+    overflow: visible;
+    opacity: .95;
+}
+
+    .banner fieldset.title legend {
+        width: auto;
+        padding: 1px 10px 0;
+        margin: 0 auto;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.4px;
+        border: none;
+    }
+
+    /* 100% opacity */
+    .banner fieldset.title.full-opacity {
+        opacity: 1;
+    }
+
+    /* Title Colors */
+    .banner fieldset.title.light {
+        border-color: rgba(255,255,255,0.75);
+    }
+
+        .banner fieldset.title.light legend {
+            color: #fff;
+        }
+
+    .banner fieldset.title.gold {
+        border-color: #f0d208;
+    }
+
+        .banner fieldset.title.gold legend {
+            color: #f0d208;
+        }
+
+    .banner fieldset.title.silver {
+        border-color: #e2e7e9;
+    }
+
+        .banner fieldset.title.silver legend {
+            color: #e2e7e9;
+        }
+
+    .banner fieldset.title.bronze {
+        border-color: #e19f13;
+    }
+
+        .banner fieldset.title.bronze legend {
+            color: #e19f13;
+        }
+
+
+
+/* --- Svenskalag i sponsorspalten -------------------------------------------------*/
+
+.svelag-logo-link {
+    display: block;
+    background: #fff url(../../../../img/svelag-logo-linkeccb.png?3) center no-repeat;
+    height: 80px
+}
+
+    .svelag-logo-link.h60 {
+        height: 60px
+    }
+
+    .svelag-logo-link.h70 {
+        height: 70px
+    }
+
+    .svelag-logo-link.h80 {
+        height: 80px
+    }
+
+    .svelag-logo-link.h90 {
+        height: 90px
+    }
+
+    .svelag-logo-link.h100 {
+        height: 100px
+    }
+
+    .svelag-logo-link.h100 {
+        height: 110px
+    }
+
+    .svelag-logo-link.h120 {
+        height: 120px
+    }
+
+    .svelag-logo-link:hover {
+        background-color: #298ccd;
+        background-image: url(../../../../img/svelag-logo-link-whiteeccb.png?3);
+    }

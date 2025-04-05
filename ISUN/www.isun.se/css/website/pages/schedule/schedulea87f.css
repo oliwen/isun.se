@@ -1,0 +1,304 @@
+﻿table.table tr td {
+    padding: 8px 0px;
+}
+
+table.table tr td span.activity-name  {
+    font-weight:500;
+}
+
+
+.table > tbody > tr.danger > td span.date * {
+    color: #c46262 !important;
+}
+
+.table > tbody > tr > td {
+    border-color: #eee;
+}
+
+.table > tbody > tr:first-child > td {
+    border-color: #ddd;
+}
+
+.table > tbody + tbody {
+    border-top: 1px solid #ddd;
+}
+
+.table > tbody > tr > td.week-row {
+    background: linear-gradient(#fff,#f5f5f5);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/*Remove margin on mobile ads*/
+.mobile-rect-cell .mobile-rect {
+    margin-bottom: 0;
+    box-shadow: 0 1px 0 0 #eee;
+}
+
+/* Remove negative margin */
+.mobile-rect.top {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+.table tbody tr.danger td {
+    background-color: #fdf6f6;
+}
+
+.table tbody tr.today td {
+    background-color: #fdf6d2 !important;
+}
+
+
+
+
+
+/* Schedule */
+tr.RowBgExpanded td {
+    padding: 4px 0;
+}
+
+tr.RowBgExpanded {
+    background-color: #edfbff;
+}
+
+    tr.RowBgExpanded div.collapse {
+        background-position: 0 -15px;
+    }
+
+td.ScheduleItem.first {
+    padding-top: 5px;
+}
+
+tr.last td.ScheduleItem {
+    padding-bottom: 5px;
+}
+
+div.icon-collapse {
+    margin-top: 3px;
+    background-image: url('../../../../img/icons/collapse-sprite.png');
+    width: 15px;
+    height: 15px;
+    float: left;
+    line-height: 145%;
+    cursor: pointer;
+}
+
+div.more-info {
+    padding: 4px 0 2px 0;
+}
+
+
+.members td, .members td a, .members td select {
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+@media print {
+    * {
+        box-shadow: none !important;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+        .table > tbody > tr > td {
+            padding: 5px;
+        }
+
+    .signup-footer-ad {
+        display: none;
+    }
+
+    .footer {
+        border: none;
+    }
+
+
+
+    /* Enable background color for rows */
+    .table tr.danger,
+    .table tr.active,
+    .table tr.today {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .table tr td {
+        z-index: 3;
+        position: relative;
+    }
+
+    .table tr.danger td:after,
+    .table tr.active td:after,
+    .table tr.today td:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        border: 0;
+        border-top-style: solid;
+        border-top-width: 44px;
+    }
+
+    .table tr.danger td:after {
+        border-color: #fdf6f6;
+    }
+
+    .table tr.active td:after {
+        border-color: #f5f5f5;
+    }
+
+    .table tr.today td:after {
+        border-color: #fdf6d2;
+    }
+}
+
+
+
+/* ASP Schedule_print.asp
+ * Print page 
+ **********************************/
+.options {
+    display: none;
+    background: white;
+    border: 1px solid #999;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.15);
+    width: 160px;
+    border-radius: 2px;
+    margin-top: 3px;
+    padding: 8px 5px;
+    overflow: hidden;
+    position: absolute;
+}
+
+#months {
+    border-top: 1px solid #ebebeb;
+    margin-top: 8px;
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+    #months a {
+        padding: 6px 0px;
+        width: 49px;
+        text-align: center;
+        float: left;
+        border-radius: 2px;
+        color: #333;
+        text-decoration: none;
+    }
+
+        #months a:hover {
+            background: #ebebeb;
+            cursor: pointer;
+        }
+
+        #months a.active {
+            background: #265da0;
+            color: white;
+        }
+
+#year {
+    text-align: center;
+    font-weight: bold;
+}
+
+#left-arrow {
+    float: left;
+    border-radius: 2px;
+    background: #fff;
+}
+
+#right-arrow {
+    float: right;
+    border-radius: 2px;
+    background: #fff;
+}
+
+    #left-arrow:hover, #right-arrow:hover {
+        background: #ebebeb;
+    }
+
+
+
+.table tbody tr:hover td {
+    background-color: #f8f8f8;
+}
+
+.table tbody tr.active:hover td {
+    background-color: #efefef !important;
+}
+
+.table tbody tr.danger:hover td {
+    background-color: #f5f0f0 !important;
+}
+
+.table tbody tr.today:hover td {
+    background-color: #f6f0cd !important;
+}
+
+
+.label.label-default-light {
+    padding: 3px 6px;
+    color: #666;
+    background: rgba(0,0,0,0.055);
+}
+
+
+
+
+.invisible-link {
+    display: block;
+    text-decoration: none;
+    color: unset;
+}
+
+#schedule-list-app .invisible-link {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+    #schedule-list-app .invisible-link.border-left {
+        border-left: 1px solid rgba(0, 0, 0, 0.09);
+    }
+
+
+.invisible-link:hover {
+    color: unset;
+    text-decoration: none;
+}
+
+    .invisible-link:focus {
+        color: unset;
+        text-decoration: none;
+    }
+
+
+
+.invite-status-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 1px 6px 1px 5px;
+    border-radius: 20px;
+    margin-right: 3px;
+    background-color: #298ccd;
+}
+
+    .invite-status-badge fa-icon {
+        padding: 0;
+        margin: 0;
+        font-size: 9px;
+    }

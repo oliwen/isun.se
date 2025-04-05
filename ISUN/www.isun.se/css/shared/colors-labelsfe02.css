@@ -1,0 +1,56 @@
+﻿.label-primary {
+    background-color: #298ccd !important;
+    color: #fff;
+}
+
+.label-primary-light {
+    background-color: rgba(62,165,235,0.15) !important;
+    color: #4b8bb6;
+}
+
+a.label.label-primary-light:hover, a.label.label-primary-light:focus {
+    color: #4b8bb6;
+}
+
+.label-success-light {
+    background-color: rgba(86,189,125,0.15) !important;
+    color: #56bd7d;
+}
+
+.label-danger-light {
+    background-color: rgba(235,68,90,0.15) !important;
+    color: #eb445a;
+}
+
+
+
+.label-secondary {
+    background-color: #ffebac !important;
+    color: #b5772b;
+}
+
+.label-success {
+    background-color: #41bd7f !important;
+    color: #fff;
+}
+
+.label-danger {
+    background-color: #eb445a !important;
+    color: #fff;
+}
+
+.label-warning {
+    background-color: #f2b736 !important;
+    color: #fff;
+}
+
+.label-muted {
+    background-color: #eee !important;
+    color: #999999;
+}
+
+.label-default {
+    background-color: #999 !important;
+    color: #fff;
+}
+
